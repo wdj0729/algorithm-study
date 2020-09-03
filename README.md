@@ -23,7 +23,7 @@
 3. python sorted 에 대해서([http://blog.weirdx.io/post/50236](http://blog.weirdx.io/post/50236))
 4. [파이썬(Python)] 회전행렬 / 2차원배열 회전하는 법 구현하기([https://deepwelloper.tistory.com/117](https://deepwelloper.tistory.com/117))
 5. [Python] 2차원 리스트 초기화([http://blog.naver.com/PostView.nhn?blogId=ambidext&logNo=221417120233&parentCategoryNo=10&categoryNo=&viewDate=&isShowPopularPosts=true&from=search](http://blog.naver.com/PostView.nhn?blogId=ambidext&logNo=221417120233&parentCategoryNo=10&categoryNo=&viewDate=&isShowPopularPosts=true&from=search))
-6. 1. collections 모듈 - deque([https://excelsior-cjh.tistory.com/96](https://excelsior-cjh.tistory.com/96))
+6. collections 모듈 - deque([https://excelsior-cjh.tistory.com/96](https://excelsior-cjh.tistory.com/96))
 7. (Python) 파이썬 약수구하기, Python 약수([https://sun-kakao.tistory.com/96](https://sun-kakao.tistory.com/96))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
