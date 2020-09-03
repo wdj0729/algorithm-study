@@ -24,6 +24,7 @@
 4. [파이썬(Python)] 회전행렬 / 2차원배열 회전하는 법 구현하기([https://deepwelloper.tistory.com/117](https://deepwelloper.tistory.com/117))
 5. [Python] 2차원 리스트 초기화([http://blog.naver.com/PostView.nhn?blogId=ambidext&logNo=221417120233&parentCategoryNo=10&categoryNo=&viewDate=&isShowPopularPosts=true&from=search](http://blog.naver.com/PostView.nhn?blogId=ambidext&logNo=221417120233&parentCategoryNo=10&categoryNo=&viewDate=&isShowPopularPosts=true&from=search))
 6. 1. collections 모듈 - deque([https://excelsior-cjh.tistory.com/96](https://excelsior-cjh.tistory.com/96))
+7. (Python) 파이썬 약수구하기, Python 약수([https://sun-kakao.tistory.com/96](https://sun-kakao.tistory.com/96))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
@@ -432,4 +433,38 @@ def solution(priorities, location):
         deq_list = list(deq_list)
         cnt+=1
         #print(deq_list)
+```
+
+5. 카펫([https://programmers.co.kr/learn/courses/30/lessons/42842#](https://programmers.co.kr/learn/courses/30/lessons/42842#))
+```
+import statistics
+
+def solution(brown, yellow):
+    num = brown+yellow
+    ans_list = []
+    for i in range(1, num+1):
+        if num % i == 0:
+            ans_list.append(i)
+    #print(ans_list)
+    if len(ans_list)%2 == 0:
+        for i in range(0,int(len(ans_list)/2)):
+            row = ans_list[i] - 2
+            col = ans_list[len(ans_list)-i-1] - 2
+            if row * col == yellow:
+                if row > col:
+                    return [row+2,col+2]
+                else:
+                    return [col+2,row+2]
+    else:
+        for i in range(0,int(len(ans_list)/2)):
+            row = ans_list[i] - 2
+            col = ans_list[len(ans_list)-i-1] - 2
+            if row * col == yellow:
+                if row > col:
+                    return [row+2,col+2]
+                else:
+                    return [col+2,row+2]
+        row = ans_list[int(len(ans_list)/2)] -2 
+        if row * row == yellow:
+            return [row+2,row+2]
 ```
