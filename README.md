@@ -18,12 +18,12 @@
 4. 문자열([https://snakify.org/ko/lessons/strings_str/](https://snakify.org/ko/lessons/strings_str/))
 
 ### DAY 3 (20.09.03)
-1. collections 모듈 - deque([https://excelsior-cjh.tistory.com/96](https://excelsior-cjh.tistory.com/96))
-2. [python] 문자열 거꾸로 출력하기 ([https://itholic.github.io/python-reverse-string/](https://itholic.github.io/python-reverse-string/))
-3. 파이썬을 사용한 이진 트리와 순회 알고리즘 구현([http://ejklike.github.io/2018/01/09/traversing-a-binary-tree-1.html](http://ejklike.github.io/2018/01/09/traversing-a-binary-tree-1.html))
-4. python sorted 에 대해서([http://blog.weirdx.io/post/50236](http://blog.weirdx.io/post/50236))
-5. [파이썬(Python)] 회전행렬 / 2차원배열 회전하는 법 구현하기([https://deepwelloper.tistory.com/117](https://deepwelloper.tistory.com/117))
-6. [Python] 2차원 리스트 초기화([http://blog.naver.com/PostView.nhn?blogId=ambidext&logNo=221417120233&parentCategoryNo=10&categoryNo=&viewDate=&isShowPopularPosts=true&from=search](http://blog.naver.com/PostView.nhn?blogId=ambidext&logNo=221417120233&parentCategoryNo=10&categoryNo=&viewDate=&isShowPopularPosts=true&from=search))
+1. [python] 문자열 거꾸로 출력하기 ([https://itholic.github.io/python-reverse-string/](https://itholic.github.io/python-reverse-string/))
+2. 파이썬을 사용한 이진 트리와 순회 알고리즘 구현([http://ejklike.github.io/2018/01/09/traversing-a-binary-tree-1.html](http://ejklike.github.io/2018/01/09/traversing-a-binary-tree-1.html))
+3. python sorted 에 대해서([http://blog.weirdx.io/post/50236](http://blog.weirdx.io/post/50236))
+4. [파이썬(Python)] 회전행렬 / 2차원배열 회전하는 법 구현하기([https://deepwelloper.tistory.com/117](https://deepwelloper.tistory.com/117))
+5. [Python] 2차원 리스트 초기화([http://blog.naver.com/PostView.nhn?blogId=ambidext&logNo=221417120233&parentCategoryNo=10&categoryNo=&viewDate=&isShowPopularPosts=true&from=search](http://blog.naver.com/PostView.nhn?blogId=ambidext&logNo=221417120233&parentCategoryNo=10&categoryNo=&viewDate=&isShowPopularPosts=true&from=search))
+6. 1. collections 모듈 - deque([https://excelsior-cjh.tistory.com/96](https://excelsior-cjh.tistory.com/96))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
@@ -401,4 +401,35 @@ def solution(citations):
         if y>=h and nam<=h:
             ans_list.append(h)
     return max((ans_list))
+```
+
+4. 프린터([https://programmers.co.kr/learn/courses/30/lessons/42587](https://programmers.co.kr/learn/courses/30/lessons/42587))
+```
+from collections import deque
+
+def solution(priorities, location):
+    deq_list = []
+    for i in range(0,len(priorities)):
+        deq_list.append([priorities[i],i])
+    cnt = 1
+    while(True):
+        idx = 0
+        max_elem = max(deq_list)
+        max_num = max_elem[0]
+        for i in deq_list:
+            idx+=1
+            if i[0] < max_num:
+                deq_list.append(i)
+            else:
+                #loc 체크
+                if i[1] == location:
+                    return cnt
+                else:
+                    break
+        deq_list = deque(deq_list)
+        for i in range(0,idx):
+            deq_list.popleft()
+        deq_list = list(deq_list)
+        cnt+=1
+        #print(deq_list)
 ```
