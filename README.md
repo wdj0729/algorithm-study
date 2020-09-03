@@ -159,7 +159,6 @@ def solution(numbers):
             ans_list.append(int(j))
     my_set = set(ans_list)
     new_list = list(my_set)
-    #print(new_list)
     def isPrime(a):
         if(a<2):
             return False
@@ -432,20 +431,16 @@ def solution(priorities, location):
             deq_list.popleft()
         deq_list = list(deq_list)
         cnt+=1
-        #print(deq_list)
 ```
 
 5. 카펫([https://programmers.co.kr/learn/courses/30/lessons/42842#](https://programmers.co.kr/learn/courses/30/lessons/42842#))
 ```
-import statistics
-
 def solution(brown, yellow):
     num = brown+yellow
     ans_list = []
     for i in range(1, num+1):
         if num % i == 0:
             ans_list.append(i)
-    #print(ans_list)
     if len(ans_list)%2 == 0:
         for i in range(0,int(len(ans_list)/2)):
             row = ans_list[i] - 2
