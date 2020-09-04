@@ -32,6 +32,7 @@
 2. [파이썬] 2진수, 8진수, 16진수 다루기([https://www.daleseo.com/python-int-bases/](https://www.daleseo.com/python-int-bases/))
 3. [Python] 행렬의 곱셈([https://brownbears.tistory.com/449](https://brownbears.tistory.com/449))
 4. 리스트에 map 사용하기([https://dojang.io/mod/page/view.php?id=2286](https://dojang.io/mod/page/view.php?id=2286))
+5. 파이썬 join([https://zetawiki.com/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC_join()](https://zetawiki.com/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC_join()))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
@@ -562,4 +563,15 @@ def solution(s):
     min_num = min(ans)
     max_num = max(ans)
     return str(min_num)+' '+str(max_num)
+```
+
+7. JadenCase 문자열 만들기([https://programmers.co.kr/learn/courses/30/lessons/12951](https://programmers.co.kr/learn/courses/30/lessons/12951))
+```
+def solution(s):
+    s_list = list(map(str,s.split(' ')))
+    ans_list = []
+    for i in s_list:
+        i = i.lower().capitalize()
+        ans_list.append(i)
+    return ' '.join(ans_list)
 ```
