@@ -463,3 +463,19 @@ def solution(brown, yellow):
         if row * row == yellow:
             return [row+2,row+2]
 ```
+
+### DAY 4 (20.09.04)
+1. 예산([https://programmers.co.kr/learn/courses/30/lessons/12982](https://programmers.co.kr/learn/courses/30/lessons/12982))
+```
+def solution(d, budget):
+    sort_list = sorted(d)
+    sum = 0
+    cnt = 0
+    for i in sort_list:
+        sum += i
+        if sum <= budget:
+            cnt+=1
+        else:
+            break
+    return cnt
+```
