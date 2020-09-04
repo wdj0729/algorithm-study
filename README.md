@@ -542,3 +542,13 @@ def solution(n):
             if cnt1 == cnt2:
                 return(int(bin_i,2))
 ```
+
+5. 폰켓몬([https://programmers.co.kr/learn/courses/30/lessons/1845](https://programmers.co.kr/learn/courses/30/lessons/1845))
+```
+def solution(nums):
+    new_nums = list(set(nums))
+    if len(new_nums) < int(len(nums)/2):
+        return len(new_nums)
+    else:
+        return int(len(nums)/2)
+```
