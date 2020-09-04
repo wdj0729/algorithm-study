@@ -33,6 +33,7 @@
 3. [Python] 행렬의 곱셈([https://brownbears.tistory.com/449](https://brownbears.tistory.com/449))
 4. 리스트에 map 사용하기([https://dojang.io/mod/page/view.php?id=2286](https://dojang.io/mod/page/view.php?id=2286))
 5. 파이썬 join([https://zetawiki.com/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC_join()](https://zetawiki.com/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC_join()))
+6. [Python] 사칙연산을 위한 7가지 연산자)[https://includestdio.tistory.com/16](https://includestdio.tistory.com/16))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
@@ -493,7 +494,7 @@ def solution(d, budget):
 from math import gcd
 
 def lcm(x,y):
-    return int(x*y/gcd(x,y))
+    return x*y//gcd(x,y)
 
 def solution(n, m):
     return[gcd(n,m),lcm(n,m)]
@@ -574,4 +575,18 @@ def solution(s):
         i = i.lower().capitalize()
         ans_list.append(i)
     return ' '.join(ans_list)
+```
+
+8. N개의 최소공배수([https://programmers.co.kr/learn/courses/30/lessons/12953](https://programmers.co.kr/learn/courses/30/lessons/12953))
+```
+from math import gcd
+
+def solution(arr):
+    def lcm(x,y):
+        return x*y // gcd(x,y)
+
+    while True:
+        arr.append(lcm(arr.pop(),arr.pop()))
+        if len(arr) == 1:
+            return arr[0]
 ```
