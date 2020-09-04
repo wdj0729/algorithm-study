@@ -31,6 +31,7 @@
 1. [python] 최대공약수, 최소공배수, N개의 최소공배수([https://brownbears.tistory.com/454](https://brownbears.tistory.com/454))
 2. [파이썬] 2진수, 8진수, 16진수 다루기([https://www.daleseo.com/python-int-bases/](https://www.daleseo.com/python-int-bases/))
 3. [Python] 행렬의 곱셈([https://brownbears.tistory.com/449](https://brownbears.tistory.com/449))
+4. 리스트에 map 사용하기([https://dojang.io/mod/page/view.php?id=2286](https://dojang.io/mod/page/view.php?id=2286))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
@@ -552,4 +553,13 @@ def solution(nums):
         return len(new_nums)
     else:
         return int(len(nums)/2)
+```
+
+6. 최댓값과 최솟값([https://programmers.co.kr/learn/courses/30/lessons/12939](https://programmers.co.kr/learn/courses/30/lessons/12939))
+```
+def solution(s):
+    ans = list(map(int,s.split()))
+    min_num = min(ans)
+    max_num = max(ans)
+    return str(min_num)+' '+str(max_num)
 ```
