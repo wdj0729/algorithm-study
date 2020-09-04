@@ -494,3 +494,30 @@ def lcm(x,y):
 def solution(n, m):
     return[gcd(n,m),lcm(n,m)]
 ```
+
+3. 영어 끝말잇기([https://programmers.co.kr/learn/courses/30/lessons/12981](https://programmers.co.kr/learn/courses/30/lessons/12981))
+```
+def solution(n, words):
+    tmp = ''
+    word_dict = {}
+    idx = 0
+    time = 1
+    for i in words:
+        idx+=1
+        if tmp == '':
+            tmp = i[len(i)-1]
+            word_dict[i] = 1
+        else:
+            if tmp == i[0]:
+                if i in word_dict:
+                    return(idx,time)
+                else:
+                    tmp = i[len(i)-1]
+                    word_dict[i]= 1
+            else:
+                return (idx,time)
+        if idx%n == 0:
+            idx = 0
+            time += 1
+    return [0,0]
+```
