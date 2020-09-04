@@ -30,6 +30,7 @@
 ### DAY 4 (20.09.04)
 1. [python] 최대공약수, 최소공배수, N개의 최소공배수([https://brownbears.tistory.com/454](https://brownbears.tistory.com/454))
 2. [파이썬] 2진수, 8진수, 16진수 다루기([https://www.daleseo.com/python-int-bases/](https://www.daleseo.com/python-int-bases/))
+3. [Python] 행렬의 곱셈([https://brownbears.tistory.com/449](https://brownbears.tistory.com/449))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
