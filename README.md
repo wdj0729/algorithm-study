@@ -29,6 +29,7 @@
 
 ### DAY 4 (20.09.04)
 1. [python] 최대공약수, 최소공배수, N개의 최소공배수([https://brownbears.tistory.com/454](https://brownbears.tistory.com/454))
+2. [파이썬] 2진수, 8진수, 16진수 다루기([https://www.daleseo.com/python-int-bases/](https://www.daleseo.com/python-int-bases/))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
@@ -520,4 +521,24 @@ def solution(n, words):
             idx = 0
             time += 1
     return [0,0]
+```
+
+4. 다음 큰 숫자([https://programmers.co.kr/learn/courses/30/lessons/12911](https://programmers.co.kr/learn/courses/30/lessons/12911))
+```
+def solution(n):
+    bin_n = bin(n)
+    cnt1 = 0
+    for i in range(0,len(bin_n)):
+        if bin_n[i] == '1':
+            cnt1+=1
+    ans_list = []
+    for i in range(n+1,2*n):
+        cnt2 = 0
+        bin_i = bin(i)
+        if int(bin_i,2) > n:
+            for i in range(0,len(bin_i)):
+                if bin_i[i] == '1':
+                    cnt2+=1
+            if cnt1 == cnt2:
+                return(int(bin_i,2))
 ```
