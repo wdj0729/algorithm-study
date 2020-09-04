@@ -22,9 +22,13 @@
 2. 파이썬을 사용한 이진 트리와 순회 알고리즘 구현([http://ejklike.github.io/2018/01/09/traversing-a-binary-tree-1.html](http://ejklike.github.io/2018/01/09/traversing-a-binary-tree-1.html))
 3. python sorted 에 대해서([http://blog.weirdx.io/post/50236](http://blog.weirdx.io/post/50236))
 4. [파이썬(Python)] 회전행렬 / 2차원배열 회전하는 법 구현하기([https://deepwelloper.tistory.com/117](https://deepwelloper.tistory.com/117))
-5. [Python] 2차원 리스트 초기화([http://blog.naver.com/PostView.nhn?blogId=ambidext&logNo=221417120233&parentCategoryNo=10&categoryNo=&viewDate=&isShowPopularPosts=true&from=search](http://blog.naver.com/PostView.nhn?blogId=ambidext&logNo=221417120233&parentCategoryNo=10&categoryNo=&viewDate=&isShowPopularPosts=true&from=search))
+5. [Python] 2차원 리스트 초기화([http://blog.naver.com/PostView.nhn?blogId=ambidext&logNo=221417120233](http://blog.naver.com/PostView.nhn?blogId=ambidext&logNo=221417120233))
 6. collections 모듈 - deque([https://excelsior-cjh.tistory.com/96](https://excelsior-cjh.tistory.com/96))
 7. (Python) 파이썬 약수구하기, Python 약수([https://sun-kakao.tistory.com/96](https://sun-kakao.tistory.com/96))
+
+
+### DAY 4 (20.09.04)
+1. [python] 최대공약수, 최소공배수, N개의 최소공배수([https://brownbears.tistory.com/454](https://brownbears.tistory.com/454))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
@@ -248,7 +252,7 @@ def solution(clothes):
     return sum
 ```
 
-3. 실패율([https://programmers.co.kr/learn/courses/30/lessons/42889?language=python3](https://programmers.co.kr/learn/courses/30/lessons/42889?language=python3))
+3. 실패율([https://programmers.co.kr/learn/courses/30/lessons/42889](https://programmers.co.kr/learn/courses/30/lessons/42889))
 ```
 def solution(N, stages):
     ans_list = []
@@ -274,7 +278,7 @@ def solution(N, stages):
     return res_list
 ```
 
-4. 괄호 변환([https://programmers.co.kr/learn/courses/30/lessons/60058?language=python3](https://programmers.co.kr/learn/courses/30/lessons/60058?language=python3))
+4. 괄호 변환([https://programmers.co.kr/learn/courses/30/lessons/60058](https://programmers.co.kr/learn/courses/30/lessons/60058))
 ```
 def solution(p):
     def hi(p):
@@ -332,7 +336,7 @@ def solution(p):
 ```
 
 ### DAY 3 (20.09.03)
-1. 124 나라의 숫자([https://programmers.co.kr/learn/courses/30/lessons/12899#](https://programmers.co.kr/learn/courses/30/lessons/12899#))
+1. 124 나라의 숫자([https://programmers.co.kr/learn/courses/30/lessons/12899](https://programmers.co.kr/learn/courses/30/lessons/12899))
 ```
 def solution(n):
     s_list = []
@@ -346,7 +350,7 @@ def solution(n):
     s_list.reverse()  
     return(''.join(s_list))  # 거꾸로 뒤집어진 리스트를 연결해서 출력
 ```
-2. 문자열 압축([https://programmers.co.kr/learn/courses/30/lessons/60057#](https://programmers.co.kr/learn/courses/30/lessons/60057#))
+2. 문자열 압축([https://programmers.co.kr/learn/courses/30/lessons/60057](https://programmers.co.kr/learn/courses/30/lessons/60057))
 ```
 def solution(s):
     if len(s) == 1:
@@ -433,7 +437,7 @@ def solution(priorities, location):
         cnt+=1
 ```
 
-5. 카펫([https://programmers.co.kr/learn/courses/30/lessons/42842#](https://programmers.co.kr/learn/courses/30/lessons/42842#))
+5. 카펫([https://programmers.co.kr/learn/courses/30/lessons/42842](https://programmers.co.kr/learn/courses/30/lessons/42842))
 ```
 def solution(brown, yellow):
     num = brown+yellow
@@ -478,4 +482,15 @@ def solution(d, budget):
         else:
             break
     return cnt
+```
+
+2. 최대공약수와 최소공배수([https://programmers.co.kr/learn/courses/30/lessons/12940](https://programmers.co.kr/learn/courses/30/lessons/12940))
+```
+from math import gcd
+
+def lcm(x,y):
+    return int(x*y/gcd(x,y))
+
+def solution(n, m):
+    return[gcd(n,m),lcm(n,m)]
 ```
