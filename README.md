@@ -592,3 +592,33 @@ def solution(arr):
         if len(arr) == 1:
             return arr[0]
 ```
+
+### DAY 5 (20.09.05)
+1. 소수 만들기([https://programmers.co.kr/learn/courses/30/lessons/12977](https://programmers.co.kr/learn/courses/30/lessons/12977))
+```
+from itertools import combinations
+
+def solution(nums):    
+    def prime_list(n):
+        # 에라토스테네스의 체 초기화: n개 요소에 True 설정(소수로 간주)
+        sieve = [True] * n
+        # n의 최대 약수가 sqrt(n) 이하이므로 i=sqrt(n)까지 검사
+        m = int(n ** 0.5)
+        for i in range(2, m + 1):
+            if sieve[i] == True:           # i가 소수인 경우 
+                for j in range(i+i, n, i): # i이후 i의 배수들을 False 판정
+                    sieve[j] = False
+        # 소수 목록 산출
+        return [i for i in range(2, n) if sieve[i] == True]
+    
+    prime_list = (prime_list(3000))
+    ans_list = list(combinations(nums, 3))
+    ans = 0
+    for i in ans_list:
+        sum = 0
+        for j in i:
+            sum += j
+        if sum in prime_list:
+            ans+=1
+    return ans
+```
