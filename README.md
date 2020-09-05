@@ -37,6 +37,7 @@
 ### DAY 5 (20.09.05)
 1. [python] 소수 찾기 - 에라토스테네스의 체([https://bit.ly/3btztW2](https://bit.ly/3btztW2))
 2. [알고리즘 자습]그래프(Graph) - 2. DFS(깊이 우선 탐색)의 정의와 활용, 예제, 파이썬(Python3)([https://sexy-developer.tistory.com/m/55?category=882923](https://sexy-developer.tistory.com/m/55?category=882923))
+3. 6.4 입력 값을 변수 두 개에 저장하기([https://dojang.io/mod/page/view.php?id=2179](https://dojang.io/mod/page/view.php?id=2179))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
