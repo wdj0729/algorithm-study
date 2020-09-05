@@ -7,7 +7,7 @@
 ### DAY 1 (20.09.01)
 1. [파이썬] heapq 모듈 사용법([https://www.daleseo.com/python-heapq/](https://www.daleseo.com/python-heapq/))
 2. 순열과 조합 - combinations, permutations([https://programmers.co.kr/learn/courses/4008/lessons/12836](https://programmers.co.kr/learn/courses/4008/lessons/12836))
-3. Python에서 리스트 중복 제거하기([https://velog.io/@daybreak/Python%EC%97%90%EC%84%9C-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%A4%91%EB%B3%B5%EC%A0%9C%EA%B1%B0](https://velog.io/@daybreak/Python%EC%97%90%EC%84%9C-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%A4%91%EB%B3%B5%EC%A0%9C%EA%B1%B0))
+3. Python에서 리스트 중복 제거하기([https://bit.ly/3bxz9G6](https://bit.ly/3bxz9G6))
 4. python으로 피보나치 수열 갖고 놀기([https://www.crocus.co.kr/1643](https://www.crocus.co.kr/1643))
 5. [Python] 파이썬 특정문자 찾기(find,startswith,endswith)([https://dpdpwl.tistory.com/119](https://dpdpwl.tistory.com/119))
 
@@ -26,7 +26,6 @@
 6. collections 모듈 - deque([https://excelsior-cjh.tistory.com/96](https://excelsior-cjh.tistory.com/96))
 7. (Python) 파이썬 약수구하기, Python 약수([https://sun-kakao.tistory.com/96](https://sun-kakao.tistory.com/96))
 
-
 ### DAY 4 (20.09.04)
 1. [python] 최대공약수, 최소공배수, N개의 최소공배수([https://brownbears.tistory.com/454](https://brownbears.tistory.com/454))
 2. [파이썬] 2진수, 8진수, 16진수 다루기([https://www.daleseo.com/python-int-bases/](https://www.daleseo.com/python-int-bases/))
@@ -34,6 +33,9 @@
 4. 리스트에 map 사용하기([https://dojang.io/mod/page/view.php?id=2286](https://dojang.io/mod/page/view.php?id=2286))
 5. 파이썬 join([https://zetawiki.com/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC_join()](https://zetawiki.com/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC_join()))
 6. [Python] 사칙연산을 위한 7가지 연산자)[https://includestdio.tistory.com/16](https://includestdio.tistory.com/16))
+
+### DAY 5 (20.09.05)
+1. [python] 소수 찾기 - 에라토스테네스의 체([https://bit.ly/3btztW2](https://bit.ly/3btztW2))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
