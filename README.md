@@ -33,7 +33,7 @@
 3. [Python] 행렬의 곱셈([https://brownbears.tistory.com/449](https://brownbears.tistory.com/449))
 4. 리스트에 map 사용하기([https://dojang.io/mod/page/view.php?id=2286](https://dojang.io/mod/page/view.php?id=2286))
 5. 파이썬 join([https://zetawiki.com/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC_join()](https://zetawiki.com/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC_join()))
-6. [Python] 사칙연산을 위한 7가지 연산자)[https://includestdio.tistory.com/16](https://includestdio.tistory.com/16))
+6. [Python] 사칙연산을 위한 7가지 연산자)([https://includestdio.tistory.com/16](https://includestdio.tistory.com/16))
 
 ### DAY 5 (20.09.05)
 1. [python] 소수 찾기 - 에라토스테네스의 체([https://bit.ly/3btztW2](https://bit.ly/3btztW2))
