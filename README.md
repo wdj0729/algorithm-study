@@ -640,3 +640,24 @@ def solution(s):
     else:
         return 0          
 ```
+
+3. 예상 대진표([https://programmers.co.kr/learn/courses/30/lessons/12985](https://programmers.co.kr/learn/courses/30/lessons/12985))
+```
+def solution(n,a,b):
+    ans = 1
+    for i in range(0,n//2):
+        if a < b and abs(a-b) == 1 and (a%2==1 and b%2==0):
+            return ans
+        elif a > b and abs(a-b) == 1 and (a%2==0 and b%2==1):
+            return ans
+        else:
+            if a%2==1:
+                a = (a+1)/2
+            else:
+                a /= 2
+            if b%2==1:
+                b = (b+1)/2
+            else:
+                b /= 2
+        ans+=1
+```
