@@ -2,6 +2,7 @@
 ======================
 ## 1. 공부중인 사이트 목록
 1. 코딩테스트 연습 | 프로그래머스([https://programmers.co.kr/learn/courses/30](https://programmers.co.kr/learn/courses/30))
+2. Baekjoon Online Judge([https://www.acmicpc.net/](https://www.acmicpc.net/))
 
 ## 2. 파이썬 참고자료 목록
 ### DAY 1 (20.09.01)
