@@ -661,3 +661,18 @@ def solution(n,a,b):
                 b /= 2
         ans+=1
 ```
+
+4. 숫자 게임([https://programmers.co.kr/learn/courses/30/lessons/12987](https://programmers.co.kr/learn/courses/30/lessons/12987))
+```
+def solution(A, B):
+    A = sorted(A)
+    B = sorted(B)
+    ans = 0
+    for i in A:
+        for j in B:
+            if i<j:
+                ans+=1
+                B.remove(j)
+                break
+    return ans
+```
