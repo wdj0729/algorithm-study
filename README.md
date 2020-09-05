@@ -622,3 +622,21 @@ def solution(nums):
             ans+=1
     return ans
 ```
+
+2. 짝지어 제거하기([https://programmers.co.kr/learn/courses/30/lessons/12973](https://programmers.co.kr/learn/courses/30/lessons/12973))
+```
+def solution(s):
+    stk = []
+    for i in s:
+        if len(stk) == 0:
+            stk.append(i)
+        else:
+            if i == stk[len(stk)-1]:
+                stk.pop()
+            else:
+                stk.append(i)
+    if len(stk) == 0:
+        return 1
+    else:
+        return 0          
+```
