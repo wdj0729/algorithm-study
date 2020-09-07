@@ -39,6 +39,9 @@
 1. [python] 소수 찾기 - 에라토스테네스의 체([https://bit.ly/3btztW2](https://bit.ly/3btztW2))
 2. 6.4 입력 값을 변수 두 개에 저장하기([https://dojang.io/mod/page/view.php?id=2179](https://dojang.io/mod/page/view.php?id=2179))
 
+### DAY 6 (20.09.07)
+1. [프로그래머스] 네트워크 / BFS,DFS / Python([https://gingerkang.tistory.com/5](https://gingerkang.tistory.com/5))
+
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
 1. 크레인 인형뽑기 게임([https://programmers.co.kr/learn/courses/30/lessons/64061](https://programmers.co.kr/learn/courses/30/lessons/64061))
