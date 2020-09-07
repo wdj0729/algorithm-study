@@ -41,6 +41,7 @@
 
 ### DAY 6 (20.09.07)
 1. [프로그래머스] 네트워크 / BFS,DFS / Python([https://gingerkang.tistory.com/5](https://gingerkang.tistory.com/5))
+2. 프로그래머스 - 단어 변환([https://bit.ly/3bzlRcb](https://bit.ly/3bzlRcb))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
@@ -716,4 +717,33 @@ def solution(numbers, target):
             dfs(numbers,temp-numbers[idx],idx+1)
     dfs(numbers,0,0)
     return ans
+```
+
+3. 단어 변환([https://programmers.co.kr/learn/courses/30/lessons/43163](https://programmers.co.kr/learn/courses/30/lessons/43163))
+```
+stack = []
+visited = []
+
+def solution(begin, target, words):
+    def dfs(word,depth):
+        if word == target:
+            stack.append(depth)
+        else:
+            for i in range(0,len(words)):
+                if visited[i] == 0:
+                    diff = 0
+                    for j in range(0,len(word)):
+                        if word[j] != words[i][j]:
+                            diff +=1
+                    if diff == 1:
+                        visited[i]=1
+                        dfs(words[i],depth+1)
+                        visited[i]=0
+    diff = 0
+    visited = [0 for i in range (len(words))]
+    dfs(begin,0)
+    if len(stack)==0:
+        return 0
+    else:
+        return min(stack)
 ```
