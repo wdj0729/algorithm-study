@@ -678,3 +678,21 @@ def solution(A, B):
                 break
     return ans
 ```
+
+### DAY 6 (20.09.07)
+1. 네트워크 ([https://programmers.co.kr/learn/courses/30/lessons/43162](https://programmers.co.kr/learn/courses/30/lessons/43162))
+```
+def solution(n, computers):
+    def dfs(computers,visited,v):
+        visited[v]=1
+        for i in range(len(computers)):
+            if computers[v][i]==1 and visited[i]==0:
+                dfs(computers,visited,i)
+    visited = [0 for i in range(n)]
+    ans = 0
+    for i in range(n):
+        if visited[i] == 0:
+            dfs(computers,visited,i)
+            ans+=1
+    return ans
+```
