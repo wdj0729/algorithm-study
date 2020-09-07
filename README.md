@@ -699,3 +699,21 @@ def solution(n, computers):
             ans+=1
     return ans
 ```
+
+2. 타켓 넘버([https://programmers.co.kr/learn/courses/30/lessons/43165](https://programmers.co.kr/learn/courses/30/lessons/43165))
+```
+ans = 0
+
+def solution(numbers, target):
+    def dfs(numbers,temp,idx):
+        if idx == len(numbers):
+            if temp == target:
+                global ans
+                ans+=1
+            return
+        else:
+            dfs(numbers,temp+numbers[idx],idx+1)
+            dfs(numbers,temp-numbers[idx],idx+1)
+    dfs(numbers,0,0)
+    return ans
+```
