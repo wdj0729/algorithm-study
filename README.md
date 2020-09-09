@@ -2,7 +2,7 @@
 ======================
 ## 1. 공부중인 사이트 목록
 1. 코딩테스트 연습 | 프로그래머스([https://programmers.co.kr/learn/courses/30](https://programmers.co.kr/learn/courses/30))
-2. Baekjoon Online Judge([https://www.acmicpc.net/](https://www.acmicpc.net/))
+2. AtCoder([https://atcoder.jp/home](https://atcoder.jp/home))
 
 ## 2. 파이썬 참고자료 목록
 ### DAY 1 (20.09.01)
@@ -746,4 +746,13 @@ def solution(begin, target, words):
         return 0
     else:
         return min(stack)
+```
+
+### DAY 7 (20.09.09)
+```
+n = int(input())
+wr = input()
+R_cnt = wr.count('R')
+ans = wr.count('W',0,R_cnt)
+print(ans)
 ```
