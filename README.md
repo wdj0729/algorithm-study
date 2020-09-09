@@ -47,7 +47,8 @@
 1. count, len 함수 설명과 예제([https://blockdmask.tistory.com/410](https://blockdmask.tistory.com/410))
 2. 얕은 복사(shallow copy)와 깊은 복사(deep copy)([https://wikidocs.net/16038](https://wikidocs.net/16038))
 3. 프로그래머스 - 불량 사용자([https://codedrive.tistory.com/351](https://codedrive.tistory.com/351))
-4. 2차원 list 중복 제거([https://inma.tistory.com/132](https://inma.tistory.com/132)) 
+4. 2차원 list 중복 제거([https://inma.tistory.com/132](https://inma.tistory.com/132))
+5. 하노이 탑([https://www.youtube.com/watch?v=FYCGV6F1NuY](https://www.youtube.com/watch?v=FYCGV6F1NuY))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
@@ -819,4 +820,18 @@ def solution(user_id, banned_id):
                 break
     # 2차원 list 중복 제거
     return(len(set([tuple(set(item)) for item in ans])))
+```
+
+4. 하노이의 탑([https://programmers.co.kr/learn/courses/30/lessons/12946](https://programmers.co.kr/learn/courses/30/lessons/12946))
+```
+def solution(n):
+    ans = []
+    def hanoi(n,fro,to,other): #원반개수, 시작, 목표, 보조
+        if n==0:
+            return
+        hanoi(n-1,fro,other,to) 
+        ans.append([fro,to])
+        hanoi(n-1,other,to,fro)
+    hanoi(n,1,3,2)
+    return ans
 ```
