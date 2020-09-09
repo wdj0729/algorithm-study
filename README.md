@@ -836,3 +836,19 @@ def solution(n):
     hanoi(n,1,3,2)
     return ans
 ```
+
+5. 가장 큰 수([https://programmers.co.kr/learn/courses/30/lessons/42746](https://programmers.co.kr/learn/courses/30/lessons/42746))
+```
+def solution(numbers):
+    str_numbers = []
+    for i in numbers:
+        str_numbers.append(str(i)*4) # numbers의 원소가 1000이 최대이므로 4자리까지 맞춰서 비교
+    str_numbers = (sorted(str_numbers,reverse=True))
+    ans = ''
+    for i in str_numbers:
+        ans += i[0:len(i)//4]
+    if int(ans) == 0:
+        return "0"
+    else:
+        return ans
+```
