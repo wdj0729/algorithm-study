@@ -827,9 +827,10 @@ def solution(user_id, banned_id):
 def solution(n):
     ans = []
     def hanoi(n,fro,to,other): #원반개수, 시작, 목표, 보조
-        if n==0:
+        if n==1:
+            ans.append([fro,to]) 
             return
-        hanoi(n-1,fro,other,to) 
+        hanoi(n-1,fro,other,to)
         ans.append([fro,to])
         hanoi(n-1,other,to,fro)
     hanoi(n,1,3,2)
