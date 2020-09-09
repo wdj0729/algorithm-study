@@ -826,7 +826,8 @@ def solution(user_id, banned_id):
 ```
 def solution(n):
     ans = []
-    def hanoi(n,fro,to,other): #원반개수, 시작, 목표, 보조
+    # 원반개수, 시작, 목표, 보조
+    def hanoi(n,fro,to,other):
         if n==1:
             ans.append([fro,to]) 
             return
@@ -841,8 +842,9 @@ def solution(n):
 ```
 def solution(numbers):
     str_numbers = []
+    # numbers의 원소가 1000이 최대이므로 4자리까지 맞춰서 비교
     for i in numbers:
-        str_numbers.append(str(i)*4) # numbers의 원소가 1000이 최대이므로 4자리까지 맞춰서 비교
+        str_numbers.append(str(i)*4)
     str_numbers = (sorted(str_numbers,reverse=True))
     ans = ''
     for i in str_numbers:
