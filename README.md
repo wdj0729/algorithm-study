@@ -789,18 +789,19 @@ def solution(tickets):
 import itertools
 
 def solution(user_id, banned_id):
+    # 모든 경우의 수에 대한 조합
     ans_list = (list(set(itertools.permutations(user_id,len(banned_id)))))
     ans = []
-    for i in range(0,len(ans_list)):
+    for i in range(0,len(ans_list)): # (frodo, fradi)
         flag = True
         cnt = 0
-        for j in range(0,len(ans_list[i])):
-            if len(ans_list[i][j]) == len(banned_id[j]):
-                for k in range(0,len(ans_list[i][j])):
+        for j in range(0,len(ans_list[i])): # 1. frodo -> 2. fradi
+            if len(ans_list[i][j]) == len(banned_id[j]): # frodo 길이 == fr*d*
+                for k in range(0,len(ans_list[i][j])): # string 하나씩 비교
                     if ans_list[i][j][k] == banned_id[j][k]:
                         continue
                     else:
-                        if banned_id[j][k] == '*':
+                        if banned_id[j][k] == '*': 
                             continue
                         else:
                             flag = False
@@ -809,9 +810,11 @@ def solution(user_id, banned_id):
                     break
                 else:
                     cnt +=1
+                    # 일치한 개수 == banned_id 개수
                     if cnt == len(banned_id):
                         ans.append(list(ans_list[i]))
             else:
                 break
+    # 2차원 list 중복 제거
     return(len(set([tuple(set(item)) for item in ans])))
 ```
