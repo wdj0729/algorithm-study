@@ -15,7 +15,7 @@
 ### DAY 2 (20.09.02)
 1. 절대값(abs)함수 ([https://blockdmask.tistory.com/380](https://blockdmask.tistory.com/380))
 2. 리스트 중복 요소 개수 찾기([https://infinitt.tistory.com/78](https://infinitt.tistory.com/78))
-3. 사전 딕셔너리 값 value 로 정렬하는 방법 - lambda 식 응용 - 단어 수 세기, 텍스트에서 가장 많이 출현한 단어 세기([https://korbillgates.tistory.com/171](https://korbillgates.tistory.com/171))
+3. 사전 딕셔너리 값 value 로 정렬하는 방법 - lambda 식 응용([https://korbillgates.tistory.com/171](https://korbillgates.tistory.com/171))
 4. 문자열([https://snakify.org/ko/lessons/strings_str/](https://snakify.org/ko/lessons/strings_str/))
 
 ### DAY 3 (20.09.03)
@@ -50,6 +50,7 @@
 4. 2차원 list 중복 제거([https://inma.tistory.com/132](https://inma.tistory.com/132))
 5. 하노이 탑([https://www.youtube.com/watch?v=FYCGV6F1NuY](https://www.youtube.com/watch?v=FYCGV6F1NuY))
 6. 프로그래머스 - 가장 큰 수([https://dailyheumsi.tistory.com/102](https://dailyheumsi.tistory.com/102))
+7. Dynamic Programming([https://bit.ly/2Zkgpox](https://bit.ly/2Zkgpox))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
@@ -854,4 +855,15 @@ def solution(numbers):
         return "0"
     else:
         return ans
+```
+
+6. 멀리 뛰기([https://programmers.co.kr/learn/courses/30/lessons/12914](https://programmers.co.kr/learn/courses/30/lessons/12914))
+```
+def solution(n):
+    dp = [0 for _ in range(n+1)]
+    dp[0]=1
+    dp[1]=1
+    for i in range(2,n+1):
+        dp[i] = dp[i-1]+dp[i-2]
+    return(dp[n]%1234567)
 ```
