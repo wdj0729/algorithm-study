@@ -49,6 +49,7 @@
 3. 프로그래머스 - 불량 사용자([https://codedrive.tistory.com/351](https://codedrive.tistory.com/351))
 4. 2차원 list 중복 제거([https://inma.tistory.com/132](https://inma.tistory.com/132))
 5. 하노이 탑([https://www.youtube.com/watch?v=FYCGV6F1NuY](https://www.youtube.com/watch?v=FYCGV6F1NuY))
+6. 프로그래머스 - 가장 큰 수([https://dailyheumsi.tistory.com/102](https://dailyheumsi.tistory.com/102))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
