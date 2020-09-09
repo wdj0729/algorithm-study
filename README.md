@@ -43,6 +43,10 @@
 1. [프로그래머스] 네트워크 / BFS,DFS / Python([https://gingerkang.tistory.com/5](https://gingerkang.tistory.com/5))
 2. 프로그래머스 - 단어 변환([https://bit.ly/3bzlRcb](https://bit.ly/3bzlRcb))
 
+### DAY 7 (20.09.09)
+1. [Programmers] 2019 Kakao 불량 사용자([https://codedrive.tistory.com/351](https://codedrive.tistory.com/351))
+2. [Python] 2차원 list 중복 제거([https://inma.tistory.com/132](https://inma.tistory.com/132)) 
+
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
 1. 크레인 인형뽑기 게임([https://programmers.co.kr/learn/courses/30/lessons/64061](https://programmers.co.kr/learn/courses/30/lessons/64061))
@@ -778,4 +782,36 @@ def solution(tickets):
         st.pop()
     dfs("ICN",tickets, visited,0)
     return sorted(ans)[0]
+```
+
+3. 불량 사용자([https://programmers.co.kr/learn/courses/30/lessons/64064](https://programmers.co.kr/learn/courses/30/lessons/64064))
+```
+import itertools
+
+def solution(user_id, banned_id):
+    ans_list = (list(set(itertools.permutations(user_id,len(banned_id)))))
+    ans = []
+    for i in range(0,len(ans_list)): # 모든 조합
+        flag = True
+        cnt = 0
+        for j in range(0,len(ans_list[i])):
+            if len(ans_list[i][j]) == len(banned_id[j]):
+                for k in range(0,len(ans_list[i][j])):
+                    if ans_list[i][j][k] == banned_id[j][k]:
+                        continue
+                    else:
+                        if banned_id[j][k] == '*':
+                            continue
+                        else:
+                            flag = False
+                            break
+                if flag == False:
+                    break
+                else:
+                    cnt +=1
+                    if cnt == len(banned_id):
+                        ans.append(list(ans_list[i]))
+            else:
+                break
+    return(len(set([tuple(set(item)) for item in ans])))
 ```
