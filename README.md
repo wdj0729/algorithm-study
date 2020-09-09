@@ -749,6 +749,7 @@ def solution(begin, target, words):
 ```
 
 ### DAY 7 (20.09.09)
+1. D - Alter Altar([https://atcoder.jp/contests/abc174/tasks/abc174_d](https://atcoder.jp/contests/abc174/tasks/abc174_d))
 ```
 n = int(input())
 wr = input()
