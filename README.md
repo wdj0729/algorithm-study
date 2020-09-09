@@ -757,3 +757,25 @@ R_cnt = wr.count('R')
 ans = wr.count('W',0,R_cnt)
 print(ans)
 ```
+
+2. 여행경로([https://programmers.co.kr/learn/courses/30/lessons/43164](https://programmers.co.kr/learn/courses/30/lessons/43164))
+```
+import copy
+
+def solution(tickets):
+    visited = [0 for i in tickets]
+    st = []
+    ans = []
+    def dfs(start,tickets,visited,cnt):
+        st.append(start)
+        if cnt >= len(tickets):
+            ans.append(copy.deepcopy(st))
+        for i in range(0,len(tickets)):
+            if tickets[i][0] == start and visited[i] == 0:
+                visited[i] = 1
+                dfs(tickets[i][1],tickets,visited,cnt+1)
+                visited[i] = 0
+        st.pop()
+    dfs("ICN",tickets, visited,0)
+    return sorted(ans)[0]
+```
