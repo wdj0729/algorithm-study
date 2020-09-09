@@ -867,3 +867,25 @@ def solution(n):
         dp[i] = dp[i-1]+dp[i-2]
     return(dp[n]%1234567)
 ```
+
+### DAY 8 (20.09.10)
+1. D - Chat in a Circle([https://atcoder.jp/contests/abc173/tasks/abc173_d](https://atcoder.jp/contests/abc173/tasks/abc173_d))
+```
+n = int(input())
+p_list = input().split()
+p_list = map(int,p_list)
+p_list = sorted(p_list,reverse=True)
+print(p_list)
+ans_list = []
+ans = 0
+for i in range(0,len(p_list)):
+  if i!=0:
+    ans_list.append(p_list[i])
+    ans_list.append(p_list[i])
+  else:
+    ans_list.append(p_list[i])
+print(ans_list)
+for i in range(0,n-1):
+	ans += int(ans_list[i])
+print(ans)
+```
