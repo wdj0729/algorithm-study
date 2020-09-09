@@ -791,7 +791,7 @@ import itertools
 def solution(user_id, banned_id):
     ans_list = (list(set(itertools.permutations(user_id,len(banned_id)))))
     ans = []
-    for i in range(0,len(ans_list)): # 모든 조합
+    for i in range(0,len(ans_list)):
         flag = True
         cnt = 0
         for j in range(0,len(ans_list[i])):
