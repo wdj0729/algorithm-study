@@ -44,9 +44,10 @@
 2. 프로그래머스 - 단어 변환([https://bit.ly/3bzlRcb](https://bit.ly/3bzlRcb))
 
 ### DAY 7 (20.09.09)
-1. 12. 얕은 복사(shallow copy)와 깊은 복사(deep copy)([https://wikidocs.net/16038](https://wikidocs.net/16038))
-2. [Programmers] 2019 Kakao 불량 사용자([https://codedrive.tistory.com/351](https://codedrive.tistory.com/351))
-3. [Python] 2차원 list 중복 제거([https://inma.tistory.com/132](https://inma.tistory.com/132)) 
+1. [python] 파이썬 count, len 함수 설명과 에제([https://blockdmask.tistory.com/410](https://blockdmask.tistory.com/410))
+2. 12. 얕은 복사(shallow copy)와 깊은 복사(deep copy)([https://wikidocs.net/16038](https://wikidocs.net/16038))
+3. [Programmers] 2019 Kakao 불량 사용자([https://codedrive.tistory.com/351](https://codedrive.tistory.com/351))
+4. [Python] 2차원 list 중복 제거([https://inma.tistory.com/132](https://inma.tistory.com/132)) 
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
