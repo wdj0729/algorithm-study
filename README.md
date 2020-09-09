@@ -792,11 +792,11 @@ def solution(user_id, banned_id):
     # 모든 경우의 수에 대한 조합
     ans_list = (list(set(itertools.permutations(user_id,len(banned_id)))))
     ans = []
-    for i in range(0,len(ans_list)): # (frodo, fradi)
+    for i in range(0,len(ans_list)): # e.g) (frodo, fradi)
         flag = True
         cnt = 0
-        for j in range(0,len(ans_list[i])): # 1. frodo -> 2. fradi
-            if len(ans_list[i][j]) == len(banned_id[j]): # frodo 길이 == fr*d*
+        for j in range(0,len(ans_list[i])): # e.g.) 1. frodo -> 2. fradi
+            if len(ans_list[i][j]) == len(banned_id[j]): # e.g.) frodo 길이 == fr*d* 길이
                 for k in range(0,len(ans_list[i][j])): # string 하나씩 비교
                     if ans_list[i][j][k] == banned_id[j][k]:
                         continue
