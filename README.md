@@ -40,13 +40,13 @@
 2. 입력 값을 변수 두 개에 저장하기([https://dojang.io/mod/page/view.php?id=2179](https://dojang.io/mod/page/view.php?id=2179))
 
 ### DAY 6 (20.09.07)
-1. 네트워크 / BFS,DFS([https://gingerkang.tistory.com/5](https://gingerkang.tistory.com/5))
-2. 단어 변환([https://bit.ly/3bzlRcb](https://bit.ly/3bzlRcb))
+1. 프로그래머스 - 네트워크 / BFS,DFS([https://gingerkang.tistory.com/5](https://gingerkang.tistory.com/5))
+2. 프로그래머스 - 단어 변환([https://bit.ly/3bzlRcb](https://bit.ly/3bzlRcb))
 
 ### DAY 7 (20.09.09)
 1. count, len 함수 설명과 예제([https://blockdmask.tistory.com/410](https://blockdmask.tistory.com/410))
 2. 얕은 복사(shallow copy)와 깊은 복사(deep copy)([https://wikidocs.net/16038](https://wikidocs.net/16038))
-3. 2019 Kakao 불량 사용자([https://codedrive.tistory.com/351](https://codedrive.tistory.com/351))
+3. 프로그래머스 - 불량 사용자([https://codedrive.tistory.com/351](https://codedrive.tistory.com/351))
 4. 2차원 list 중복 제거([https://inma.tistory.com/132](https://inma.tistory.com/132)) 
 
 ## 3. 파이썬으로 푼 문제 연습 목록
