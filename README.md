@@ -904,3 +904,6 @@ def solution(land):
         land[i+1][3] += max(land[i][0], land[i][1], land[i][2])
     return(max(land[-1]))
 ```
+
+3. 프로그래머스 월간 코드 챌린지 시즌1([https://bit.ly/3icvbVL](https://bit.ly/3icvbVL))
+![1](https://user-images.githubusercontent.com/26870568/92739723-2516ba80-f3b8-11ea-9849-32d7225de37d.PNG)
