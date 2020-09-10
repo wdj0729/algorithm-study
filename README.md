@@ -52,6 +52,9 @@
 6. 프로그래머스 - 가장 큰 수([https://dailyheumsi.tistory.com/102](https://dailyheumsi.tistory.com/102))
 7. Dynamic Programming([https://bit.ly/2Zkgpox](https://bit.ly/2Zkgpox))
 
+### DAY 8 (20.09.10)
+1. 프로그래머스 - 땅따먹기 ([https://ghwlchlaks.github.io/Algorithm-land](https://ghwlchlaks.github.io/Algorithm-land))
+
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
 1. 크레인 인형뽑기 게임([https://programmers.co.kr/learn/courses/30/lessons/64061](https://programmers.co.kr/learn/courses/30/lessons/64061))
@@ -888,4 +891,15 @@ print(ans_list)
 for i in range(0,n-1):
 	ans += int(ans_list[i])
 print(ans)
+```
+
+2. 땅따먹기([https://programmers.co.kr/learn/courses/30/lessons/12913](https://programmers.co.kr/learn/courses/30/lessons/12913))
+```
+def solution(land):
+    for i in range(len(land)-1):
+        land[i+1][0] += max(land[i][1], land[i][2], land[i][3])
+        land[i+1][1] += max(land[i][0], land[i][2], land[i][3])
+        land[i+1][2] += max(land[i][0], land[i][1], land[i][3])
+        land[i+1][3] += max(land[i][0], land[i][1], land[i][2])
+    return(max(land[-1]))
 ```
