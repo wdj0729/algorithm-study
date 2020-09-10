@@ -54,6 +54,7 @@
 
 ### DAY 8 (20.09.10)
 1. 프로그래머스 - 땅따먹기 ([https://ghwlchlaks.github.io/Algorithm-land](https://ghwlchlaks.github.io/Algorithm-land))
+2. 달팽이삼각형([https://machine-geon.tistory.com/64](https://machine-geon.tistory.com/64))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
