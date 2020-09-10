@@ -7,7 +7,7 @@
 ## 2. 파이썬 참고자료 목록
 ### DAY 1 (20.09.01)
 1. heapq 모듈 사용법([https://www.daleseo.com/python-heapq/](https://www.daleseo.com/python-heapq/))
-2. 순열과 조합 - combinations, permutations([https://programmers.co.kr/learn/courses/4008/lessons/12836](https://programmers.co.kr/learn/courses/4008/lessons/12836))
+2. 순열과 조합 - combinations, permutations([https://bit.ly/32gkqMM](https://bit.ly/32gkqMM))
 3. 리스트 중복 제거하기([https://bit.ly/3bxz9G6](https://bit.ly/3bxz9G6))
 4. 피보나치 수열 갖고 놀기([https://www.crocus.co.kr/1643](https://www.crocus.co.kr/1643))
 5. 파이썬 특정문자 찾기(find,startswith,endswith)([https://dpdpwl.tistory.com/119](https://dpdpwl.tistory.com/119))
@@ -20,10 +20,10 @@
 
 ### DAY 3 (20.09.03)
 1. 문자열 거꾸로 출력하기 ([https://itholic.github.io/python-reverse-string/](https://itholic.github.io/python-reverse-string/))
-2. 이진 트리와 순회 알고리즘 구현([http://ejklike.github.io/2018/01/09/traversing-a-binary-tree-1.html](http://ejklike.github.io/2018/01/09/traversing-a-binary-tree-1.html))
+2. 이진 트리와 순회 알고리즘 구현([https://bit.ly/2GFLigA](https://bit.ly/2GFLigA))
 3. sorted 에 대해서([http://blog.weirdx.io/post/50236](http://blog.weirdx.io/post/50236))
 4. 회전행렬 / 2차원배열 회전하는 법 구현하기([https://deepwelloper.tistory.com/117](https://deepwelloper.tistory.com/117))
-5. 2차원 리스트 초기화([http://blog.naver.com/PostView.nhn?blogId=ambidext&logNo=221417120233](http://blog.naver.com/PostView.nhn?blogId=ambidext&logNo=221417120233))
+5. 2차원 리스트 초기화([https://bit.ly/32gTVGE](https://bit.ly/32gTVGE))
 6. collections 모듈 - deque([https://excelsior-cjh.tistory.com/96](https://excelsior-cjh.tistory.com/96))
 7. 약수구하기([https://sun-kakao.tistory.com/96](https://sun-kakao.tistory.com/96))
 
@@ -31,13 +31,13 @@
 1. 최대공약수, 최소공배수, N개의 최소공배수([https://brownbears.tistory.com/454](https://brownbears.tistory.com/454))
 2. 2진수, 8진수, 16진수 다루기([https://www.daleseo.com/python-int-bases/](https://www.daleseo.com/python-int-bases/))
 3. 행렬의 곱셈([https://brownbears.tistory.com/449](https://brownbears.tistory.com/449))
-4. 리스트에 map 사용하기([https://dojang.io/mod/page/view.php?id=2286](https://dojang.io/mod/page/view.php?id=2286))
-5. join([https://zetawiki.com/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC_join()](https://zetawiki.com/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC_join()))
+4. 리스트에 map 사용하기([https://bit.ly/3k4BmMg](https://bit.ly/3k4BmMg))
+5. join([https://bit.ly/3ij6VBj](https://bit.ly/3ij6VBj))
 6. 사칙연산을 위한 7가지 연산자([https://includestdio.tistory.com/16](https://includestdio.tistory.com/16))
 
 ### DAY 5 (20.09.05)
 1. 소수 찾기 - 에라토스테네스의 체([https://bit.ly/3btztW2](https://bit.ly/3btztW2))
-2. 입력 값을 변수 두 개에 저장하기([https://dojang.io/mod/page/view.php?id=2179](https://dojang.io/mod/page/view.php?id=2179))
+2. 입력 값을 변수 두 개에 저장하기([https://bit.ly/35lMjVx](https://bit.ly/35lMjVx))
 
 ### DAY 6 (20.09.07)
 1. 프로그래머스 - 네트워크 / BFS,DFS([https://gingerkang.tistory.com/5](https://gingerkang.tistory.com/5))
