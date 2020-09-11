@@ -976,7 +976,7 @@ for i in range(0,n):
 
 3. 연속합([https://www.acmicpc.net/problem/1912](https://www.acmicpc.net/problem/1912))
 ```
-n =int(input())
+n = int(input())
 num_list = list(map(int,input().split()))
 dp = [0 for _ in range(n)]
 
