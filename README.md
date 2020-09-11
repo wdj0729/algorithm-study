@@ -24,7 +24,7 @@
 2. 이진 트리와 순회 알고리즘 구현([https://bit.ly/2GFLigA](https://bit.ly/2GFLigA))
 3. sorted 에 대해서([http://blog.weirdx.io/post/50236](http://blog.weirdx.io/post/50236))
 4. 회전행렬 / 2차원배열 회전하는 법 구현하기([https://deepwelloper.tistory.com/117](https://deepwelloper.tistory.com/117))
-5. 2차원 리스트 초기화([https://bit.ly/32gTVGE](https://bit.ly/32gTVGE))
+5. 2차원 배열 간단하게 생성하기([https://andrew0409.tistory.com/53](https://andrew0409.tistory.com/53))
 6. collections 모듈 - deque([https://excelsior-cjh.tistory.com/96](https://excelsior-cjh.tistory.com/96))
 7. 약수구하기([https://sun-kakao.tistory.com/96](https://sun-kakao.tistory.com/96))
 
