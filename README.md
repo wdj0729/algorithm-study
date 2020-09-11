@@ -984,3 +984,27 @@ for i in range(n):
     dp[i] = max(dp[i-1] + num_list[i], num_list[i])
 print(max(dp))
 ```
+
+4. 캐시([https://programmers.co.kr/learn/courses/30/lessons/17680](https://programmers.co.kr/learn/courses/30/lessons/17680))
+```
+import collections
+
+def solution(cacheSize, cities):
+    if cacheSize == 0:
+        return len(cities)*5
+    else:
+        ans_list = collections.deque()
+        ans = 0
+        for i in cities:
+            i = i.upper()
+            if i in list(ans_list):
+                ans+=1
+                ans_list.remove(i)
+                ans_list.append(i)
+            else:
+                if len(ans_list) == cacheSize and len(ans_list)!=0:
+                    ans_list.popleft()
+                ans_list.append(i)
+                ans+=5
+        return(ans)
+```
