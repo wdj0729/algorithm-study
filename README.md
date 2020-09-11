@@ -908,3 +908,47 @@ def solution(land):
 3. 프로그래머스 월간 코드 챌린지 시즌1([https://bit.ly/3icvbVL](https://bit.ly/3icvbVL))
 
 ![1](https://user-images.githubusercontent.com/26870568/92739723-2516ba80-f3b8-11ea-9849-32d7225de37d.PNG)
+
+### DAY 9 (20.09.11)
+1. 키패드 누르기([https://programmers.co.kr/learn/courses/30/lessons/67256](https://programmers.co.kr/learn/courses/30/lessons/67256))
+```
+import math
+
+def solution(numbers, hand):
+    ans = ''
+    loc = {1: (0,0), 2: (0,1), 3: (0,2),
+           4: (1,0), 5: (1,1), 6: (1,2),
+           7: (2,0), 8: (2,1), 9: (2,2),
+           '*': (3,0), 0: (3,1), '#': (3,2)}
+    left = '*'
+    right = '#'
+    for i in numbers:
+        if i == 1 or i == 4 or i == 7:
+            left = i
+            ans += 'L'
+        elif i == 3 or i == 6 or i == 9:
+            right = i
+            ans += 'R'
+        else:
+            # 두 점 사이의 거리 공식 X
+            lx = abs(loc[left][0] - loc[i][0])
+            ly = abs(loc[left][1] - loc[i][1])
+            ll = lx+ly
+            rx = abs(loc[right][0] - loc[i][0])
+            ry = abs(loc[right][1] - loc[i][1])
+            rl = rx+ry
+            if ll < rl:
+                left = i
+                ans += 'L'
+            elif ll > rl:
+                right = i
+                ans += 'R'
+            else:
+                if hand == "right":
+                    right = i
+                    ans += 'R'
+                else:
+                    left = i
+                    ans += 'L'
+    return(ans)
+```
