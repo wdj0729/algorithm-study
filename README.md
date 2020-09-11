@@ -60,6 +60,8 @@
 ### DAY 9 (20.09.11)
 1. 백준 - 연속합([https://claude-u.tistory.com/175](https://claude-u.tistory.com/175))
 2. 입력 받기([https://bit.ly/33kp0sA](https://bit.ly/33kp0sA))
+3. 프로그래머스 - 뉴스 클러스터링([https://bit.ly/2RdLgi2](https://bit.ly/2RdLgi2))
+4. Counter([https://www.daleseo.com/python-collections-counter/](https://www.daleseo.com/python-collections-counter/))
 
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
@@ -1007,4 +1009,31 @@ def solution(cacheSize, cities):
                 ans_list.append(i)
                 ans+=5
         return(ans)
+```
+
+5. 뉴스 클러스터링([https://programmers.co.kr/learn/courses/30/lessons/17677](https://programmers.co.kr/learn/courses/30/lessons/17677))
+```
+from collections import Counter
+
+def solution(str1, str2):
+    str1 = str1.upper()
+    str2 = str2.upper()
+    str1_list = []
+    str2_list = []
+    for i in range(0,len(str1)-1):
+        if (str1[i:i+1] >= 'A' and str1[i:i+1] <= 'Z') and (str1[i+1:i+2] >= 'A' and str1[i+1:i+2] <= 'Z'): 
+            str1_list.append(str1[i:i+2])
+    for i in range(0,len(str2)-1):
+        if (str2[i:i+1] >= 'A' and str2[i:i+1] <= 'Z') and (str2[i+1:i+2] >= 'A' and str2[i+1:i+2] <= 'Z'): 
+            str2_list.append(str2[i:i+2])
+    if len(str1_list) == 0 and len(str2_list) == 0:
+        return 65536
+    else:
+        str1_cnt = Counter(str1_list)
+        str2_cnt = Counter(str2_list)
+        intersect = set(str1_list) & set(str2_list)
+        union = set(str1_list) | set(str2_list)
+        intersect = sum([min(str1_cnt[i], str2_cnt[i]) for i in intersect])
+        union = sum([max(str1_cnt[i], str2_cnt[i]) for i in union])
+        return int(intersect/union*65536)
 ```
