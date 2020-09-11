@@ -57,6 +57,10 @@
 1. 프로그래머스 - 땅따먹기 ([https://ghwlchlaks.github.io/Algorithm-land](https://ghwlchlaks.github.io/Algorithm-land))
 2. 달팽이삼각형([https://machine-geon.tistory.com/64](https://machine-geon.tistory.com/64))
 
+### DAY 9 (20.09.11)
+1. 백준 - 연속합([https://claude-u.tistory.com/175](https://claude-u.tistory.com/175))
+2. 입력 받기([https://bit.ly/33kp0sA](https://bit.ly/33kp0sA))
+
 ## 3. 파이썬으로 푼 문제 연습 목록
 ### DAY 1 (20.09.01)
 1. 크레인 인형뽑기 게임([https://programmers.co.kr/learn/courses/30/lessons/64061](https://programmers.co.kr/learn/courses/30/lessons/64061))
@@ -968,4 +972,15 @@ for i in range(0,n):
         if i!=j and (p_list[i][0] < p_list[j][0] and p_list[i][1] < p_list[j][1]):
             rank+=1
     print(rank)
+```
+
+3. 연속합([https://www.acmicpc.net/problem/1912](https://www.acmicpc.net/problem/1912))
+```
+n =int(input())
+num_list = list(map(int,input().split()))
+dp = [0 for _ in range(n)]
+
+for i in range(n):
+    dp[i] = max(dp[i-1] + num_list[i], num_list[i])
+print(max(dp))
 ```
