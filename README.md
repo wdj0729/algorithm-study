@@ -1037,3 +1037,8 @@ def solution(str1, str2):
         union = sum([max(str1_cnt[i], str2_cnt[i]) for i in union])
         return int(intersect/union*65536)
 ```
+
+### DAY 10 (20.09.12)
+1. 2021 KAKAO BLIND RECRUITMENT([https://www.welcomekakao.com/competitions/317/2021-kakao-blind-recruitment](https://www.welcomekakao.com/competitions/317/2021-kakao-blind-recruitment))
+
+![캡처](https://user-images.githubusercontent.com/26870568/92994257-cfffb380-f533-11ea-87be-261f82454f61.PNG)
