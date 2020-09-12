@@ -917,7 +917,6 @@ def solution(land):
 
 3. 프로그래머스 월간 코드 챌린지 시즌1([https://bit.ly/3icvbVL](https://bit.ly/3icvbVL))
 
-정답 문항/총 문제: 2.5/4
 ![1](https://user-images.githubusercontent.com/26870568/92739723-2516ba80-f3b8-11ea-9849-32d7225de37d.PNG)
 
 ### DAY 9 (20.09.11)
@@ -1045,5 +1044,4 @@ def solution(str1, str2):
 ### DAY 10 (20.09.12)
 1. 2021 KAKAO BLIND RECRUITMENT([https://www.welcomekakao.com/competitions/317/2021-kakao-blind-recruitment](https://www.welcomekakao.com/competitions/317/2021-kakao-blind-recruitment)) 
 
-정답 문항/총 문제: 2.5/7
 ![1](https://user-images.githubusercontent.com/26870568/92994298-21a83e00-f534-11ea-979f-e88409ffa133.PNG)
