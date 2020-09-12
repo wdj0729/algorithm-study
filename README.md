@@ -1046,7 +1046,7 @@ def solution(str1, str2):
 
 ![1](https://user-images.githubusercontent.com/26870568/92994298-21a83e00-f534-11ea-979f-e88409ffa133.PNG)
 
-### LICENSE
+## 4. 라이센스
 ```
 MIT License
 
