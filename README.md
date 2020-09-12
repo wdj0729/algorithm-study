@@ -1041,4 +1041,4 @@ def solution(str1, str2):
 ### DAY 10 (20.09.12)
 1. 2021 KAKAO BLIND RECRUITMENT([https://www.welcomekakao.com/competitions/317/2021-kakao-blind-recruitment](https://www.welcomekakao.com/competitions/317/2021-kakao-blind-recruitment))
 
-![캡처](https://user-images.githubusercontent.com/26870568/92994257-cfffb380-f533-11ea-87be-261f82454f61.PNG)
+![캡처](https://user-images.githubusercontent.com/26870568/92994272-f1609f80-f533-11ea-9880-e303875ab284.PNG)
