@@ -889,7 +889,6 @@ n = int(input())
 p_list = input().split()
 p_list = map(int,p_list)
 p_list = sorted(p_list,reverse=True)
-print(p_list)
 ans_list = []
 ans = 0
 for i in range(0,len(p_list)):
@@ -898,7 +897,6 @@ for i in range(0,len(p_list)):
     ans_list.append(p_list[i])
   else:
     ans_list.append(p_list[i])
-print(ans_list)
 for i in range(0,n-1):
 	ans += int(ans_list[i])
 print(ans)
