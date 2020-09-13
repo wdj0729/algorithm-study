@@ -1044,6 +1044,11 @@ def solution(str1, str2):
 
 ![1](https://user-images.githubusercontent.com/26870568/92994298-21a83e00-f534-11ea-979f-e88409ffa133.PNG)
 
+### DAY 11 (20.09.13)
+1. 2020 SW개발 신입 LINER 공개채용 코딩테스트
+
+2. AtCoder Beginner Contest 178([https://atcoder.jp/contests/abc178](https://atcoder.jp/contests/abc178))
+
 ## 4. 라이센스
 ```
 MIT License
