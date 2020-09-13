@@ -66,7 +66,7 @@
 ### DAY 10 (20.09.12)
 1. 2021 카카오 신입개발자 블라인드 채용 1차 총평([https://blog.encrypted.gg/951](https://blog.encrypted.gg/951))
 
-## 3. 파이썬으로 푼 문제 연습 목록
+## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
 1. 크레인 인형뽑기 게임([https://programmers.co.kr/learn/courses/30/lessons/64061](https://programmers.co.kr/learn/courses/30/lessons/64061))
 ```
