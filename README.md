@@ -1045,7 +1045,9 @@ def solution(str1, str2):
 ![1](https://user-images.githubusercontent.com/26870568/92994298-21a83e00-f534-11ea-979f-e88409ffa133.PNG)
 
 ### DAY 11 (20.09.13)
-1. 2020 SW개발 신입 LINER 공개채용 코딩테스트
+1. 2020 SW개발 신입 LINER 공개채용 코딩테스트([https://programmers.co.kr/tryouts/17581/result](https://programmers.co.kr/tryouts/17581/result))
+
+![1](https://user-images.githubusercontent.com/26870568/93016711-3d781680-f5fe-11ea-8825-891d7737d718.PNG)
 
 2. AtCoder Beginner Contest 178([https://atcoder.jp/contests/abc178](https://atcoder.jp/contests/abc178))
 
