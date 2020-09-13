@@ -1051,7 +1051,7 @@ def solution(str1, str2):
 
 2. AtCoder Beginner Contest 178([https://atcoder.jp/contests/abc178](https://atcoder.jp/contests/abc178))
 
-![1](https://user-images.githubusercontent.com/26870568/93016840-03f3db00-f5ff-11ea-8e27-f2b22f3206f1.PNG)
+![1](https://user-images.githubusercontent.com/26870568/93016870-44535900-f5ff-11ea-8939-127717a54165.PNG)
 
 ## 4. 라이센스
 ```
