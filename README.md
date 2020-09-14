@@ -68,6 +68,7 @@
 
 ### DAY 12 (20.09.14)
 1. 프로그래머스 - 점프와 순간 이동([https://dotheright.tistory.com/146](https://dotheright.tistory.com/146))
+2. 프로그래머스 - N진수 게임([https://twoearth.tistory.com/13](https://twoearth.tistory.com/13))
 
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
@@ -1068,6 +1069,27 @@ def solution(n):
         else:
             n = n//2
     return ans
+```
+
+2. N진수 게임([https://programmers.co.kr/learn/courses/30/lessons/17687](https://programmers.co.kr/learn/courses/30/lessons/17687))
+```
+def solution(n, t, m, p):
+    s = "0"
+    def convert(number, base):
+        T = "0123456789ABCDEF"
+        q, r = divmod(number, base)
+        if q == 0:
+            return T[r]
+        else:
+            return convert(q, base) + T[r]
+    for i in range(1,t*m):
+        s += convert(i,n)
+    q = p-1
+    result = ""
+    for i in range(0,t):
+        result += s[q]
+        q += m
+    return(result)
 ```
 
 ## 4. 라이센스
