@@ -66,6 +66,9 @@
 ### DAY 10 (20.09.12)
 1. 2021 카카오 신입개발자 블라인드 채용 1차 총평([https://blog.encrypted.gg/951](https://blog.encrypted.gg/951))
 
+### DAY 12 (20.09.14)
+1. 프로그래머스 - 점프와 순간 이동([https://dotheright.tistory.com/146](https://dotheright.tistory.com/146))
+
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
 1. 크레인 인형뽑기 게임([https://programmers.co.kr/learn/courses/30/lessons/64061](https://programmers.co.kr/learn/courses/30/lessons/64061))
@@ -1052,6 +1055,20 @@ def solution(str1, str2):
 2. AtCoder Beginner Contest 178([https://atcoder.jp/contests/abc178](https://atcoder.jp/contests/abc178))
 
 ![1](https://user-images.githubusercontent.com/26870568/93016870-44535900-f5ff-11ea-8939-127717a54165.PNG)
+
+### DAY 12 (20.09.14)
+1. 점프와 순간 이동([https://programmers.co.kr/learn/courses/30/lessons/12980](https://programmers.co.kr/learn/courses/30/lessons/12980))
+```
+def solution(n):
+    ans = 0
+    while n > 0:
+        if n%2 == 1:
+            ans+=1
+            n = (n-1)//2
+        else:
+            n = n//2
+    return ans
+```
 
 ## 4. 라이센스
 ```
