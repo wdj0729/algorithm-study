@@ -69,6 +69,7 @@
 ### DAY 12 (20.09.14)
 1. 프로그래머스 - 점프와 순간 이동([https://dotheright.tistory.com/146](https://dotheright.tistory.com/146))
 2. 프로그래머스 - N진수 게임([https://twoearth.tistory.com/13](https://twoearth.tistory.com/13))
+3. 프로그래머스 - 단속카메라([https://woongsin94.tistory.com/234](https://woongsin94.tistory.com/234))
 
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
@@ -1090,6 +1091,21 @@ def solution(n, t, m, p):
         result += s[q]
         q += m
     return(result)
+```
+
+3. 단속카메라([https://programmers.co.kr/learn/courses/30/lessons/42884](https://programmers.co.kr/learn/courses/30/lessons/42884))
+```
+def solution(routes):
+    ans = 1
+    routes = sorted(routes)
+    camera = routes[0][1]
+    for i in range(0,len(routes)):
+        if camera >= routes[i][1]:
+            camera = routes[i][1]
+        if camera < routes[i][0]:
+            ans+=1
+            camera = routes[i][1]
+    return(ans)
 ```
 
 ## 4. 라이센스
