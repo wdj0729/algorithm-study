@@ -71,6 +71,11 @@
 2. 프로그래머스 - N진수 게임([https://twoearth.tistory.com/13](https://twoearth.tistory.com/13))
 3. 프로그래머스 - 단속카메라([https://woongsin94.tistory.com/234](https://woongsin94.tistory.com/234))
 
+### DAY 13 (20.09.16)
+1. 프로그래머스 - 파일명 정렬([https://bit.ly/3iBuNAq](https://bit.ly/3iBuNAq))
+2. 정규표현식([https://wikidocs.net/4308](https://wikidocs.net/4308))
+3. 정규표현식([https://mzl.la/2H0dmvf](https://mzl.la/2H0dmvf))
+
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
 1. 크레인 인형뽑기 게임([https://programmers.co.kr/learn/courses/30/lessons/64061](https://programmers.co.kr/learn/courses/30/lessons/64061))
@@ -1106,6 +1111,28 @@ def solution(routes):
             ans+=1
             camera = routes[i][1]
     return(ans)
+```
+
+### DAY 13 (20.09.16)
+1. 파일명 정렬([https://programmers.co.kr/learn/courses/30/lessons/17686](https://programmers.co.kr/learn/courses/30/lessons/17686))
+```
+import re
+
+def solution(files):
+    answer = []
+    p = re.compile("([a-z\-\s]+)([0-9]+)(.*)")
+    s_list = []
+    for temp in files:
+        g = p.search(temp.lower())
+        head = g.group(1)
+        num = int(g.group(2))
+        
+        s_list.append((head,num,temp))
+    
+    s_list = sorted(s_list,key=lambda x:(x[0],x[1]))
+    for i in s_list:
+        answer.append(i[2])
+    return(answer)
 ```
 
 ## 4. 라이센스
