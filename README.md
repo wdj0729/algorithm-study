@@ -75,6 +75,7 @@
 1. 프로그래머스 - 파일명 정렬([https://bit.ly/3iBuNAq](https://bit.ly/3iBuNAq))
 2. 정규표현식([https://wikidocs.net/4308](https://wikidocs.net/4308))
 3. 정규표현식([https://mzl.la/2H0dmvf](https://mzl.la/2H0dmvf))
+4. 프로그래머스 - 방금그곡([https://bit.ly/3c1bSwe](https://bit.ly/3c1bSwe))
 
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
@@ -1133,6 +1134,40 @@ def solution(files):
     for i in s_list:
         answer.append(i[2])
     return(answer)
+```
+
+2. 방금그곡([https://programmers.co.kr/learn/courses/30/lessons/17683](https://programmers.co.kr/learn/courses/30/lessons/17683))
+```
+def solution(m, musicinfos):
+    m = m.replace('C#','c').replace('D#','d').replace('E#','e').replace('F#','f').replace('G#','g').replace('A#','a')
+    s_list = []
+    s_dict = {}
+    for i in musicinfos:
+        s_list = i.split(",")
+        s_time = s_list[0]
+        e_time = s_list[1]
+        s_h = int(s_time[0:2])
+        s_m = int(s_time[3:5])
+        e_h = int(e_time[0:2])
+        e_m = int(e_time[3:5])
+        hour = e_h - s_h
+        minute = e_m - s_m
+        t = hour*60 + minute
+        melody = s_list[3].replace('C#','c').replace('D#','d').replace('E#','e').replace('F#','f').replace('G#','g').replace('A#','a')
+        mok = t//len(melody)
+        nam = t%len(melody)
+        new_str = melody*mok + melody[0:nam]
+        s_dict[s_list[2]] = new_str
+    answer = ["",""]
+    for key,value in s_dict.items():
+        if m in value:
+            if len(answer[1]) < len(value): 
+                answer[0] = key
+                answer[1] = value
+    if len(answer[0]) == 0:
+        return "(None)" 
+    else:
+        return answer[0]
 ```
 
 ## 4. 라이센스
