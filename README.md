@@ -77,6 +77,10 @@
 3. 정규표현식([https://mzl.la/2H0dmvf](https://mzl.la/2H0dmvf))
 4. 프로그래머스 - 방금그곡([https://bit.ly/3c1bSwe](https://bit.ly/3c1bSwe))
 
+### DAY 14 (20.09.18)
+1. 프로그래머스 - 베스트앨범([https://bit.ly/2FIY7Xj](https://bit.ly/2FIY7Xj))
+2. 정렬, 다중조건([https://dailyheumsi.tistory.com/67](https://dailyheumsi.tistory.com/67))
+
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
 1. 크레인 인형뽑기 게임([https://programmers.co.kr/learn/courses/30/lessons/64061](https://programmers.co.kr/learn/courses/30/lessons/64061))
@@ -1168,6 +1172,37 @@ def solution(m, musicinfos):
         return "(None)" 
     else:
         return answer[0]
+```
+
+### DAY 14 (20.09.18)
+1. 베스트앨범([https://programmers.co.kr/learn/courses/30/lessons/42579](https://programmers.co.kr/learn/courses/30/lessons/42579))
+```
+def solution(genres, plays):
+    answer = []
+    g_dict = {}
+    g_t_play = {}
+    
+    for i in range(len(genres)):
+        if genres[i] not in g_dict:
+            g_dict[genres[i]] = [(plays[i],i)]
+            g_t_play[genres[i]] = plays[i]
+        else:
+            g_dict[genres[i]].append((plays[i],i))
+            g_t_play[genres[i]] = g_t_play[genres[i]] + plays[i]
+    # value값으로 정렬
+    sorted_t_play = sorted(g_t_play.items(),key=lambda x:x[1], reverse=True)
+    
+    for key in sorted_t_play:
+        play_list = g_dict[key[0]]
+        
+        # 오름차순
+        play_list = sorted(play_list,key=lambda x:(-x[0],x[1]))
+        
+        for i in range(len(play_list)):
+            if i == 2:
+                break
+            answer.append(play_list[i][1])
+    return(answer)
 ```
 
 ## 4. 라이센스
