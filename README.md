@@ -80,6 +80,7 @@
 ### DAY 14 (20.09.18)
 1. 프로그래머스 - 베스트앨범([https://bit.ly/2FIY7Xj](https://bit.ly/2FIY7Xj))
 2. 정렬, 다중조건([https://dailyheumsi.tistory.com/67](https://dailyheumsi.tistory.com/67))
+3. Array 사용법([https://blog.wonkyunglee.io/3](https://blog.wonkyunglee.io/3))
 
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
