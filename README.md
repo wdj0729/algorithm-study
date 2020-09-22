@@ -82,6 +82,9 @@
 2. 정렬, 다중조건([https://dailyheumsi.tistory.com/67](https://dailyheumsi.tistory.com/67))
 3. Array 사용법([https://blog.wonkyunglee.io/3](https://blog.wonkyunglee.io/3))
 
+### DAY 15 (20.09.22)
+1. 백준 - 문자열 폭발([https://simsimjae.tistory.com/40](https://simsimjae.tistory.com/40))
+
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
 1. 크레인 인형뽑기 게임([https://programmers.co.kr/learn/courses/30/lessons/64061](https://programmers.co.kr/learn/courses/30/lessons/64061))
@@ -1204,6 +1207,29 @@ def solution(genres, plays):
                 break
             answer.append(play_list[i][1])
     return(answer)
+```
+
+### DAY 15 (20.09.22)
+1. 문자열 폭발([https://www.acmicpc.net/problem/9935](https://www.acmicpc.net/problem/9935))
+```
+n=input()
+k=input()
+ans = []
+for i in range(len(n)):
+    ans.append(n[i])
+    if len(ans) >= len(k):
+        flag = True
+        for j in range(1, len(k)+1):
+            if ans[-j] != k[-j]:
+                flag = False
+                break
+        if flag:
+            for j in range(len(k)):
+                ans.pop()
+if len(ans) == 0:
+    print("FRULA")
+else:
+    print("".join(ans))
 ```
 
 ## 4. 라이센스
