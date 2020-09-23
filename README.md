@@ -86,6 +86,9 @@
 1. 백준 - 문자열 폭발([https://simsimjae.tistory.com/40](https://simsimjae.tistory.com/40))
 2. 효율적인 약수의 개수를 찾는 알고리즘([https://hsdevelopment.tistory.com/110](https://hsdevelopment.tistory.com/110))
 
+### DAY 16 (20.09.23)
+1. 백준 - 부분합([https://log-laboratory.tistory.com/111](https://log-laboratory.tistory.com/111))
+
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
 1. 크레인 인형뽑기 게임([https://programmers.co.kr/learn/courses/30/lessons/64061](https://programmers.co.kr/learn/courses/30/lessons/64061))
@@ -1231,6 +1234,33 @@ if len(ans) == 0:
     print("FRULA")
 else:
     print("".join(ans))
+```
+
+### DAY 16 (20.09.23)
+1. 부분합([https://www.acmicpc.net/problem/1806](https://www.acmicpc.net/problem/1806))
+```
+import sys
+
+n,s = map(int,sys.stdin.readline().split())
+arr = list(map(int,sys.stdin.readline().split()))
+
+result,Sum,start,end = 100001,0,0,0
+
+while True:
+    if Sum >= s:
+        Sum -= arr[start]
+        result = min(result,(end-start))
+        start+=1
+    elif end == n:
+        break
+    else:
+        Sum += arr[end]
+        end+=1
+
+if result == 100001:
+    print(0)
+else:
+    print(result)
 ```
 
 ## 4. 라이센스
