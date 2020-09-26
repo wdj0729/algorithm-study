@@ -89,6 +89,9 @@
 ### DAY 16 (20.09.23)
 1. 백준 - 부분합([https://log-laboratory.tistory.com/111](https://log-laboratory.tistory.com/111))
 
+### DAY 17 (20.09.26)
+1. 프로그래머스 - 입국심사([https://life-with-coding.tistory.com/346](https://life-with-coding.tistory.com/346))
+
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
 1. 크레인 인형뽑기 게임([https://programmers.co.kr/learn/courses/30/lessons/64061](https://programmers.co.kr/learn/courses/30/lessons/64061))
@@ -1261,6 +1264,28 @@ if result == 100001:
     print(0)
 else:
     print(result)
+```
+
+### DAY 17 (20.09.26)
+1. 입국심사([https://programmers.co.kr/learn/courses/30/lessons/43238](https://programmers.co.kr/learn/courses/30/lessons/43238))
+```
+def solution(n, times):
+    left = 0
+    right = max(times)*n
+    ans = right
+    
+    while left <= right:
+        temp = 0
+        mid = (left+right)//2
+        for i in times:
+            temp += mid//i
+        if temp < n:
+            left = mid + 1
+        else:
+            if mid <= ans:
+                ans = mid
+            right = mid - 1
+    return ans
 ```
 
 ## 4. 라이센스
