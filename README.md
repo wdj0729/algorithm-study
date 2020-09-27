@@ -1292,6 +1292,11 @@ def solution(n, times):
 
 ![1](https://user-images.githubusercontent.com/26870568/94339610-12e28080-0036-11eb-933e-3cf9bb4f6b1f.PNG)
 
+### DAY 18 (20.09.27)
+1. NAVER 2020 신입 개발자 공개채용 온라인 코딩테스트([https://programmers.co.kr/tryouts/18041/result](https://programmers.co.kr/tryouts/18041/result))
+
+![1](https://user-images.githubusercontent.com/26870568/93016711-3d781680-f5fe-11ea-8825-891d7737d718.PNG)
+
 ## 4. 라이센스
 ```
 MIT License
