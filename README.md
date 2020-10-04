@@ -1288,7 +1288,7 @@ def solution(n, times):
     return ans
 ```
 
-2. Atcoder ACL Beginner Contest 179 ([https://atcoder.jp/contests/abl](https://atcoder.jp/contests/abl))
+2. Atcoder ACL Beginner Contest 179([https://atcoder.jp/contests/abl](https://atcoder.jp/contests/abl))
 
 ![1](https://user-images.githubusercontent.com/26870568/94339610-12e28080-0036-11eb-933e-3cf9bb4f6b1f.PNG)
 
@@ -1298,7 +1298,7 @@ def solution(n, times):
 ![1](https://user-images.githubusercontent.com/26870568/93016711-3d781680-f5fe-11ea-8825-891d7737d718.PNG)
 
 ### DAY 19 (20.10.03)
-1. Atcoder ACL Regular Contest 104 ([https://atcoder.jp/contests/arc104](https://atcoder.jp/contests/arc104))
+1. Atcoder ACL Regular Contest 104([https://atcoder.jp/contests/arc104](https://atcoder.jp/contests/arc104))
 
 ![1](https://user-images.githubusercontent.com/26870568/95008863-623d3800-0658-11eb-8635-aac9c282cae7.PNG)
 
