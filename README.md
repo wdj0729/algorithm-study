@@ -1340,6 +1340,42 @@ for i in st:
     print(i)
 ```
 
+2. DFS와 BFS([https://www.acmicpc.net/problem/1260](https://www.acmicpc.net/problem/1260))
+```
+from collections import deque
+
+n,m,v = map(int, input().split())
+board = [[0]*(n+1) for i in range(n+1)]
+visited = [0 for i in range(n+1)]
+
+for i in range(m):
+    x,y = map(int, input().split())
+    board[x][y] = 1
+    board[y][x] = 1
+
+def dfs(v):
+    print(v,end=' ')
+    visited[v] = 1
+    for i in range(1,n+1):
+        if visited[i] == 0 and board[v][i] == 1:
+            dfs(i)
+dfs(v)
+print()
+
+def bfs(v):
+    dq = deque()
+    dq.append(v)
+    visited[v] = 0
+    while dq:
+        v = dq.popleft()
+        print(v,end= ' ')
+        for i in range(1,n+1):
+            if visited[i] == 1 and board[v][i] == 1:
+                dq.append(i)
+                visited[i] = 0
+bfs(v)
+```
+
 ## 4. 라이센스
 ```
 MIT License
