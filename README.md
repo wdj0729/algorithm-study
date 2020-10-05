@@ -1302,6 +1302,44 @@ def solution(n, times):
 
 ![1](https://user-images.githubusercontent.com/26870568/95008863-623d3800-0658-11eb-8635-aac9c282cae7.PNG)
 
+### DAY 20 (20.10.05)
+1. 단지번호붙이기([https://www.acmicpc.net/problem/2667](https://www.acmicpc.net/problem/2667))
+```
+from collections import deque
+
+dx = [0,0,1,-1]
+dy = [1,-1,0,0]
+
+n = int(input())
+board = [list(map(int, list(input()))) for _ in range(n)]
+dq = deque()
+visited = [[False]*n for _ in range(n)]
+
+ans = 0
+st = []
+for i in range(n):
+    for j in range(n):
+        if visited[i][j] == False and board[i][j] == 1:
+            visited[i][j] = True
+            dq.append((i,j))
+            cnt = 1
+            ans+=1
+            while dq:
+                x,y = dq.popleft()
+                for k in range(4):
+                    nx, ny = x+dx[k], y+dy[k]
+                    if 0 <= nx < n and 0 <= ny < n:
+                        if visited[nx][ny] == False and board[nx][ny] == 1:
+                            dq.append((nx,ny))
+                            cnt+=1
+                            visited[nx][ny] = True
+            st.append(cnt)
+print(ans)
+st = sorted(st)
+for i in st:
+    print(i)
+```
+
 ## 4. 라이센스
 ```
 MIT License
