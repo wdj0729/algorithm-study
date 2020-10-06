@@ -1428,6 +1428,25 @@ class Solution(object):
         return dp[n]
 ```
 
+4. House Robber([https://leetcode.com/problems/house-robber/](https://leetcode.com/problems/house-robber/))
+```
+from collections import defaultdict
+
+class Solution(object):
+    def rob(self, nums):
+        if len(nums) == 0:
+            return 0
+        
+        dp = defaultdict(int)
+        dp[0] = 0
+        dp[1] = nums[0]
+        
+        for i in range(2,len(nums)+1):
+            dp[i] = max(dp[i-1],dp[i-2]+nums[i-1])
+            
+        return dp[len(nums)]
+```
+
 ## 4. 라이센스
 ```
 MIT License
