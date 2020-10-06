@@ -1423,6 +1423,32 @@ class Solution(object):
         return dp[len(nums)]
 ```
 
+5. Valid Parentheses([https://leetcode.com/problems/valid-parentheses/](https://leetcode.com/problems/valid-parentheses/))
+```
+class Solution(object):
+    def isValid(self, s):
+        st = []
+        for i in s:
+            if i == '(' or i=='{' or i=='[':
+                st.append(i)
+            else:
+                if len(st) == 0:
+                    return False
+                else:
+                    if i==')' and st[-1]=='(':
+                        st.pop()
+                    elif i =='}' and st[-1]=='{':
+                        st.pop()
+                    elif i==']' and st[-1]=='[':
+                        st.pop()
+                    else:
+                        return False
+        if len(st) == 0:
+            return True
+        else:
+            return False
+```
+
 ## 4. 라이센스
 ```
 MIT License
