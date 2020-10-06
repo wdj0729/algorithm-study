@@ -4,6 +4,7 @@
 1. 코딩테스트 연습 | 프로그래머스([https://programmers.co.kr/learn/courses/30](https://programmers.co.kr/learn/courses/30))
 2. AtCoder([https://atcoder.jp/home](https://atcoder.jp/home))
 3. Baekjoon Online Judge([https://www.acmicpc.net/](https://www.acmicpc.net/))
+4. LeetCode([https://leetcode.com/](https://leetcode.com/))
 
 ## 2. 파이썬 참고자료 목록
 ### DAY 1 (20.09.01)
@@ -1374,6 +1375,21 @@ def bfs(v):
                 dq.append(i)
                 visited[i] = 0
 bfs(v)
+```
+
+### DAY 21 (20.10.06)
+1. Find All Numbers Disappeared in an Array([https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/))
+```
+class Solution(object):
+    def findDisappearedNumbers(self, nums):
+        ans = [0 for i in range(len(nums)+1)]
+        for i in range(len(nums)):
+            ans[nums[i]]+=1
+        st = []
+        for i in range(1,len(ans)):
+            if ans[i] == 0:
+                st.append(i)
+        return(st)
 ```
 
 ## 4. 라이센스
