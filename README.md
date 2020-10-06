@@ -1392,6 +1392,28 @@ class Solution(object):
         return(st)
 ```
 
+2. Best Time to Buy and Sell Stock([https://leetcode.com/problems/best-time-to-buy-and-sell-stock/](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/))
+```
+class Solution(object):
+    def maxProfit(self, prices):
+        if len(prices) == 0:
+            return 0
+        elif len(prices) == 1:
+            return 0
+        else:
+            a = prices[0]
+            b = prices[0]
+            st = []
+            for i in range(1,len(prices)):
+                if a >= prices[i]:
+                    a = prices[i]
+                    b = prices[i]
+                if b <= prices[i]:
+                    b = prices[i]
+                st.append(b-a)
+            return max(st)    
+```
+
 ## 4. 라이센스
 ```
 MIT License
