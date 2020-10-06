@@ -41,57 +41,33 @@
 1. 소수 찾기 - 에라토스테네스의 체([https://bit.ly/3btztW2](https://bit.ly/3btztW2))
 2. 입력 값을 변수 두 개에 저장하기([https://bit.ly/35lMjVx](https://bit.ly/35lMjVx))
 
-### DAY 6 (20.09.07)
-1. 프로그래머스 - 네트워크 / BFS,DFS([https://gingerkang.tistory.com/5](https://gingerkang.tistory.com/5))
-2. 프로그래머스 - 단어 변환([https://bit.ly/3bzlRcb](https://bit.ly/3bzlRcb))
-
 ### DAY 7 (20.09.09)
 1. count, len 함수 설명과 예제([https://blockdmask.tistory.com/410](https://blockdmask.tistory.com/410))
 2. 얕은 복사(shallow copy)와 깊은 복사(deep copy)([https://wikidocs.net/16038](https://wikidocs.net/16038))
-3. 프로그래머스 - 불량 사용자([https://codedrive.tistory.com/351](https://codedrive.tistory.com/351))
-4. 2차원 list 중복 제거([https://inma.tistory.com/132](https://inma.tistory.com/132))
-5. 하노이 탑([https://www.youtube.com/watch?v=FYCGV6F1NuY](https://www.youtube.com/watch?v=FYCGV6F1NuY))
-6. 프로그래머스 - 가장 큰 수([https://dailyheumsi.tistory.com/102](https://dailyheumsi.tistory.com/102))
-7. Dynamic Programming([https://bit.ly/2Zkgpox](https://bit.ly/2Zkgpox))
+3. 2차원 list 중복 제거([https://inma.tistory.com/132](https://inma.tistory.com/132))
+4. 하노이 탑([https://www.youtube.com/watch?v=FYCGV6F1NuY](https://www.youtube.com/watch?v=FYCGV6F1NuY))
+5. Dynamic Programming([https://bit.ly/2Zkgpox](https://bit.ly/2Zkgpox))
 
 ### DAY 8 (20.09.10)
-1. 프로그래머스 - 땅따먹기 ([https://ghwlchlaks.github.io/Algorithm-land](https://ghwlchlaks.github.io/Algorithm-land))
-2. 달팽이삼각형([https://machine-geon.tistory.com/64](https://machine-geon.tistory.com/64))
+1. 달팽이삼각형([https://machine-geon.tistory.com/64](https://machine-geon.tistory.com/64))
 
 ### DAY 9 (20.09.11)
-1. 백준 - 연속합([https://claude-u.tistory.com/175](https://claude-u.tistory.com/175))
-2. 입력 받기([https://bit.ly/33kp0sA](https://bit.ly/33kp0sA))
-3. 프로그래머스 - 뉴스 클러스터링([https://bit.ly/2RdLgi2](https://bit.ly/2RdLgi2))
-4. Counter([https://www.daleseo.com/python-collections-counter/](https://www.daleseo.com/python-collections-counter/))
+1. 입력 받기([https://bit.ly/33kp0sA](https://bit.ly/33kp0sA))
+2. Counter([https://www.daleseo.com/python-collections-counter/](https://www.daleseo.com/python-collections-counter/))
 
 ### DAY 10 (20.09.12)
 1. 2021 카카오 신입개발자 블라인드 채용 1차 총평([https://blog.encrypted.gg/951](https://blog.encrypted.gg/951))
 
-### DAY 12 (20.09.14)
-1. 프로그래머스 - 점프와 순간 이동([https://dotheright.tistory.com/146](https://dotheright.tistory.com/146))
-2. 프로그래머스 - N진수 게임([https://twoearth.tistory.com/13](https://twoearth.tistory.com/13))
-3. 프로그래머스 - 단속카메라([https://woongsin94.tistory.com/234](https://woongsin94.tistory.com/234))
-
 ### DAY 13 (20.09.16)
-1. 프로그래머스 - 파일명 정렬([https://bit.ly/3iBuNAq](https://bit.ly/3iBuNAq))
-2. 정규표현식([https://wikidocs.net/4308](https://wikidocs.net/4308))
-3. 정규표현식([https://mzl.la/2H0dmvf](https://mzl.la/2H0dmvf))
-4. 프로그래머스 - 방금그곡([https://bit.ly/3c1bSwe](https://bit.ly/3c1bSwe))
+1. 정규표현식([https://wikidocs.net/4308](https://wikidocs.net/4308))
+2. 정규표현식([https://mzl.la/2H0dmvf](https://mzl.la/2H0dmvf))
 
 ### DAY 14 (20.09.18)
-1. 프로그래머스 - 베스트앨범([https://bit.ly/2FIY7Xj](https://bit.ly/2FIY7Xj))
-2. 정렬, 다중조건([https://dailyheumsi.tistory.com/67](https://dailyheumsi.tistory.com/67))
-3. Array 사용법([https://blog.wonkyunglee.io/3](https://blog.wonkyunglee.io/3))
+1. 정렬, 다중조건([https://dailyheumsi.tistory.com/67](https://dailyheumsi.tistory.com/67))
+2. Array 사용법([https://blog.wonkyunglee.io/3](https://blog.wonkyunglee.io/3))
 
 ### DAY 15 (20.09.22)
-1. 백준 - 문자열 폭발([https://simsimjae.tistory.com/40](https://simsimjae.tistory.com/40))
-2. 효율적인 약수의 개수를 찾는 알고리즘([https://hsdevelopment.tistory.com/110](https://hsdevelopment.tistory.com/110))
-
-### DAY 16 (20.09.23)
-1. 백준 - 부분합([https://log-laboratory.tistory.com/111](https://log-laboratory.tistory.com/111))
-
-### DAY 17 (20.09.26)
-1. 프로그래머스 - 입국심사([https://life-with-coding.tistory.com/346](https://life-with-coding.tistory.com/346))
+1. 효율적인 약수의 개수를 찾는 알고리즘([https://hsdevelopment.tistory.com/110](https://hsdevelopment.tistory.com/110))
 
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
