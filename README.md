@@ -1449,6 +1449,11 @@ class Solution(object):
             return False
 ```
 
+### DAY 22 (20.10.08)
+1. 프로그래머스 월간 코드 챌린지 시즌1([https://bit.ly/3nFgC0a](https://bit.ly/3nFgC0a))
+
+![1](https://user-images.githubusercontent.com/26870568/95467986-0ad0fc00-09b9-11eb-888e-cd01dc679f80.PNG)
+
 ## 4. 라이센스
 ```
 MIT License
