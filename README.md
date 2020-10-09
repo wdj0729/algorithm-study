@@ -1454,6 +1454,104 @@ class Solution(object):
 
 ![1](https://user-images.githubusercontent.com/26870568/95467986-0ad0fc00-09b9-11eb-888e-cd01dc679f80.PNG)
 
+### DAY 23 (20.10.09)
+1. 트리 순회([https://www.acmicpc.net/problem/1991](https://www.acmicpc.net/problem/1991))
+```
+class Node:
+    def __init__(self,item,left,right):
+        self.item = item
+        self.left = left
+        self.right = right
+
+def preorder(node):
+    print(node.item, end='')
+    if node.left != '.':
+        preorder(tree[node.left])
+    if node.right != '.':
+        preorder(tree[node.right])
+
+def inorder(node):
+    if node.left != '.':
+        inorder(tree[node.left])
+    print(node.item, end='')
+    if node.right != '.':
+        inorder(tree[node.right])
+        
+def postorder(node):
+    if node.left != '.':
+        postorder(tree[node.left])
+    if node.right != '.':
+        postorder(tree[node.right])
+    print(node.item, end='')
+        
+N = int(input())
+tree = {}
+    
+for _ in range(N):
+    node,left,right = map(str,input().split())
+    tree[node] = Node(item=node,left=left,right=right)
+    
+preorder(tree['A'])
+print()
+inorder(tree['A'])
+print()
+postorder(tree['A'])
+```
+
+2. 트리의 부모 찾기([https://www.acmicpc.net/problem/11725](https://www.acmicpc.net/problem/11725))
+```
+import sys
+sys.setrecursionlimit(10 ** 9)
+
+n = int(sys.stdin.readline())
+tree = [[] for _ in range(n+1)]
+
+for _ in range(n-1):
+    i,j = map(int,sys.stdin.readline().split())
+    tree[i].append(j)
+    tree[j].append(i)
+
+parents = [0 for _ in range(n+1)]
+
+def dfs(start,tree,parents):
+    for i in tree[start]:
+        if parents[i] == 0:
+            parents[i] = start
+            dfs(i,tree,parents)
+
+dfs(1,tree,parents)
+
+for i in range(2,n+1):
+    print(parents[i])
+```
+
+3. 가장 먼 노드([https://programmers.co.kr/learn/courses/30/lessons/49189](https://programmers.co.kr/learn/courses/30/lessons/49189))
+```
+import sys
+sys.setrecursionlimit(10 ** 9)
+from collections import deque
+
+def solution(n, edge):
+    graph = [[] for _ in range(n+1)]
+    for i in range(len(edge)):
+        s,e = edge[i][0],edge[i][1]
+        graph[s].append(e)
+        graph[e].append(s)
+        
+    visited = [0 for _ in range(n+1)]
+    dq = deque([[1,0]])
+    
+    while dq:
+        cur_node, dist = dq.popleft()
+        
+        for next_node in graph[cur_node]:
+            if visited[next_node] == 0 and next_node!=1:
+                dq.append([next_node,dist+1])
+                visited[next_node] = dist+1
+                
+    return(visited.count(max(visited)))
+```
+
 ## 4. 라이센스
 ```
 MIT License
