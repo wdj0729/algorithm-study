@@ -1552,7 +1552,7 @@ def solution(n, edge):
     return(visited.count(max(visited)))
 ```
 
-4. 온라인 테크 캠퍼스 리크루팅([https://programmers.co.kr/tryouts/18379/result](https://programmers.co.kr/tryouts/18379/result))
+4. 쿠팡 테크 캠퍼스 리크루팅([https://programmers.co.kr/tryouts/18379/result](https://programmers.co.kr/tryouts/18379/result))
 
 ![1](https://user-images.githubusercontent.com/26870568/93016711-3d781680-f5fe-11ea-8825-891d7737d718.PNG)
 
