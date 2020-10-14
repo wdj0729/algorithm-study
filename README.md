@@ -1702,7 +1702,7 @@ while True:
         print(cnt)
 ```
 
-4. 경로 찾기([https://www.acmicpc.net/problem/11403](https://www.acmicpc.net/problem/11403))
+3. 경로 찾기([https://www.acmicpc.net/problem/11403](https://www.acmicpc.net/problem/11403))
 ```
 import sys
 
