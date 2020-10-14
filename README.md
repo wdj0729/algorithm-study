@@ -1791,6 +1791,53 @@ for i in dp[1:]:
         print('INF')
 ```
 
+6. 숫자 카드([https://www.acmicpc.net/problem/10815](https://www.acmicpc.net/problem/10815))
+```
+import sys
+
+n = int(input())
+arr = list(map(int,sys.stdin.readline().split()))
+arr.sort()
+
+m = int(input())
+arr2 = list(map(int,sys.stdin.readline().split()))
+
+def binary_search(val):
+    first, last = 0, n-1
+    while first<=last:
+        mid = (first+last)//2
+        if arr[mid] == val: return 1
+        if arr[mid] > val: last = mid-1
+        else: first = mid+1
+    return 0
+
+for i in arr2:
+    print(binary_search(i), end=' ')
+```
+
+7. 수들의 합 5([https://www.acmicpc.net/problem/2018](https://www.acmicpc.net/problem/2018))
+```
+n = int(input())
+
+left = 1
+right = 1
+Sum = 0
+ans = 0
+
+while left<=right and right<=n+1:
+    if Sum < n:
+        Sum += right
+        right+=1
+    elif Sum > n:
+        Sum -= left
+        left+=1
+    else:
+        ans+=1
+        Sum += right
+        right+=1
+print(ans)
+```
+
 ## 4. 라이센스
 ```
 MIT License
