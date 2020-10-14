@@ -1556,6 +1556,151 @@ def solution(n, edge):
 
 ![1](https://user-images.githubusercontent.com/26870568/93016711-3d781680-f5fe-11ea-8825-891d7737d718.PNG)
 
+### DAY 24 (20.10.14)
+1. RGB거리([https://www.acmicpc.net/problem/1149](https://www.acmicpc.net/problem/1149))
+```
+import sys
+
+n = int(input())
+cost = []
+dp = [[0 for _ in range(3)] for _ in range(n)]
+
+for i in range(n):
+    cost.append(list(map(int,sys.stdin.readline().split())))
+for i in range(n):
+    if i == 0:
+        dp[i][0] = cost[i][0]
+        dp[i][1] = cost[i][1]
+        dp[i][2] = cost[i][2]
+    else:
+        dp[i][0] = cost[i][0] + min(dp[i-1][1],dp[i-1][2])
+        dp[i][1] = cost[i][1] + min(dp[i-1][0],dp[i-1][2])
+        dp[i][2] = cost[i][2] + min(dp[i-1][0],dp[i-1][1])
+print(min(dp[n-1][0],dp[n-1][1],dp[n-1][2]))
+```
+
+2. 섬의 개수([https://www.acmicpc.net/problem/4963](https://www.acmicpc.net/problem/4963))
+```
+import sys
+sys.setrecursionlimit(10**5)
+
+dx = [-1,-1,-1,0,0,1,1,1]
+dy = [-1,0,1,-1,1,-1,0,1]
+w = h = 0
+
+def dfs(x,y):
+    visited[x][y] = 1
+
+    for i in range(8):
+        nx = x + dx[i]
+        ny = y + dy[i]
+
+        if 0<=nx<h and 0<=ny<w and board[nx][ny]==1 and visited[nx][ny]==0:
+            dfs(nx,ny)
+
+while True:
+    w,h = map(int,sys.stdin.readline().split())
+    if w == 0 and h == 0:
+        break
+    else:
+        board = [[0 for col in range(w)] for row in range(h)]
+
+        for i in range(h):
+            arr = list(map(int,sys.stdin.readline().split()))
+            for j in range(w):
+                board[i][j] = arr[j]
+
+        visited = [[0]*w for _ in range(h)]
+
+        cnt = 0
+
+        for i in range(h):
+            for j in range(w):
+                if visited[i][j]==0 and board[i][j]==1:
+                    dfs(i,j)
+                    cnt+=1
+        print(cnt)
+```
+
+3. 촌수계산([https://www.acmicpc.net/problem/2644](https://www.acmicpc.net/problem/2644))
+```
+import sys
+
+n = int(sys.stdin.readline())
+board = [[0]*(n+1) for i in range(n+1)]
+visited = [0 for i in range(n+1)]
+
+ex,ey = map(int,sys.stdin.readline().split())
+m = int(sys.stdin.readline())
+
+for i in range(m):
+    x,y = map(int,sys.stdin.readline().split())
+    board[y][x] = 1
+    board[x][y] = 1
+
+def dfs(v,cnt):
+    visited[v] = 1
+    if v == ey:
+        print(cnt)
+        return
+    for i in range(1,n+1):
+        if visited[i] == 0 and board[v][i] == 1:
+            dfs(i,cnt+1)
+dfs(ex,0)
+
+if visited[ey] != 1:
+    print(-1)
+```
+
+4. 연산자 끼워넣기 (2)([https://www.acmicpc.net/problem/15658](https://www.acmicpc.net/problem/15658))
+```
+import sys
+
+n = int(input())
+num = list(map(int,sys.stdin.readline().split()))
+cal = list(map(int,sys.stdin.readline().split()))
+
+ans = []
+
+def recur(num,idx,plus,minus,multi,div,res):
+    if idx == n:
+        ans.append(res)
+        return
+    if plus > 0:
+        recur(num,idx+1,plus-1,minus,multi,div,res+num[idx])
+    if minus > 0:
+        recur(num,idx+1,plus,minus-1,multi,div,res-num[idx])
+    if multi > 0:
+        recur(num,idx+1,plus,minus,multi-1,div,res*num[idx])
+    if div > 0:
+        if res < 0:
+            recur(num,idx+1,plus,minus,multi,div-1,-(-res//num[idx]))
+        else:
+            recur(num,idx+1,plus,minus,multi,div-1,res//num[idx])
+
+recur(num,1,cal[0],cal[1],cal[2],cal[3],num[0])
+
+print(max(ans))
+print(min(ans))
+```
+
+5. 비슷한 단어([https://www.acmicpc.net/problem/2607](https://www.acmicpc.net/problem/2607))
+```
+import sys
+from collections import Counter
+
+n = int(sys.stdin.readline())
+s1 = sys.stdin.readline()
+ans = 0
+c = Counter(s1)
+for i in range(n-1):
+    temp = sys.stdin.readline()
+    t_c = Counter(temp)
+    if len(list((c-t_c).elements()))<=1 and len(list((t_c-c).elements()))<=1:
+        ans+=1
+print(ans)
+```
+
 ## 4. 라이센스
 ```
 MIT License
