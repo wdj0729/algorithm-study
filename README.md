@@ -1557,6 +1557,86 @@ def solution(n, edge):
 ![1](https://user-images.githubusercontent.com/26870568/93016711-3d781680-f5fe-11ea-8825-891d7737d718.PNG)
 
 ### DAY 23 (20.10.13)
+1. 촌수계산([https://www.acmicpc.net/problem/2644](https://www.acmicpc.net/problem/2644))
+```
+import sys
+
+n = int(sys.stdin.readline())
+board = [[0]*(n+1) for i in range(n+1)]
+visited = [0 for i in range(n+1)]
+
+ex,ey = map(int,sys.stdin.readline().split())
+m = int(sys.stdin.readline())
+
+for i in range(m):
+    x,y = map(int,sys.stdin.readline().split())
+    board[y][x] = 1
+    board[x][y] = 1
+
+def dfs(v,cnt):
+    visited[v] = 1
+    if v == ey:
+        print(cnt)
+        return
+    for i in range(1,n+1):
+        if visited[i] == 0 and board[v][i] == 1:
+            dfs(i,cnt+1)
+dfs(ex,0)
+
+if visited[ey] != 1:
+    print(-1)
+```
+
+2. 연산자 끼워넣기 (2)([https://www.acmicpc.net/problem/15658](https://www.acmicpc.net/problem/15658))
+```
+import sys
+
+n = int(input())
+num = list(map(int,sys.stdin.readline().split()))
+cal = list(map(int,sys.stdin.readline().split()))
+
+ans = []
+
+def recur(num,idx,plus,minus,multi,div,res):
+    if idx == n:
+        ans.append(res)
+        return
+    if plus > 0:
+        recur(num,idx+1,plus-1,minus,multi,div,res+num[idx])
+    if minus > 0:
+        recur(num,idx+1,plus,minus-1,multi,div,res-num[idx])
+    if multi > 0:
+        recur(num,idx+1,plus,minus,multi-1,div,res*num[idx])
+    if div > 0:
+        if res < 0:
+            recur(num,idx+1,plus,minus,multi,div-1,-(-res//num[idx]))
+        else:
+            recur(num,idx+1,plus,minus,multi,div-1,res//num[idx])
+
+recur(num,1,cal[0],cal[1],cal[2],cal[3],num[0])
+
+print(max(ans))
+print(min(ans))
+```
+
+3. 비슷한 단어([https://www.acmicpc.net/problem/2607](https://www.acmicpc.net/problem/2607))
+```
+import sys
+from collections import Counter
+
+n = int(sys.stdin.readline())
+s1 = sys.stdin.readline()
+ans = 0
+c = Counter(s1)
+for i in range(n-1):
+    temp = sys.stdin.readline()
+    t_c = Counter(temp)
+    if len(list((c-t_c).elements()))<=1 and len(list((t_c-c).elements()))<=1:
+        ans+=1
+print(ans)
+```
+
+### DAY 24 (20.10.14)
 1. RGB거리([https://www.acmicpc.net/problem/1149](https://www.acmicpc.net/problem/1149))
 ```
 import sys
@@ -1622,83 +1702,26 @@ while True:
         print(cnt)
 ```
 
-3. 촌수계산([https://www.acmicpc.net/problem/2644](https://www.acmicpc.net/problem/2644))
-```
-import sys
-
-n = int(sys.stdin.readline())
-board = [[0]*(n+1) for i in range(n+1)]
-visited = [0 for i in range(n+1)]
-
-ex,ey = map(int,sys.stdin.readline().split())
-m = int(sys.stdin.readline())
-
-for i in range(m):
-    x,y = map(int,sys.stdin.readline().split())
-    board[y][x] = 1
-    board[x][y] = 1
-
-def dfs(v,cnt):
-    visited[v] = 1
-    if v == ey:
-        print(cnt)
-        return
-    for i in range(1,n+1):
-        if visited[i] == 0 and board[v][i] == 1:
-            dfs(i,cnt+1)
-dfs(ex,0)
-
-if visited[ey] != 1:
-    print(-1)
-```
-
-4. 연산자 끼워넣기 (2)([https://www.acmicpc.net/problem/15658](https://www.acmicpc.net/problem/15658))
+4. 경로 찾기([https://www.acmicpc.net/problem/11403](https://www.acmicpc.net/problem/11403))
 ```
 import sys
 
 n = int(input())
-num = list(map(int,sys.stdin.readline().split()))
-cal = list(map(int,sys.stdin.readline().split()))
+graph = []
 
-ans = []
+for i in range(n):
+    graph.append(list(map(int,sys.stdin.readline().split())))
 
-def recur(num,idx,plus,minus,multi,div,res):
-    if idx == n:
-        ans.append(res)
-        return
-    if plus > 0:
-        recur(num,idx+1,plus-1,minus,multi,div,res+num[idx])
-    if minus > 0:
-        recur(num,idx+1,plus,minus-1,multi,div,res-num[idx])
-    if multi > 0:
-        recur(num,idx+1,plus,minus,multi-1,div,res*num[idx])
-    if div > 0:
-        if res < 0:
-            recur(num,idx+1,plus,minus,multi,div-1,-(-res//num[idx]))
-        else:
-            recur(num,idx+1,plus,minus,multi,div-1,res//num[idx])
+for k in range(n):
+    for i in range(n):
+        for j in range(n):
+            if graph[i][j] == 1 or (graph[i][k] == 1 and graph[k][j] == 1):
+                graph[i][j] = 1
 
-recur(num,1,cal[0],cal[1],cal[2],cal[3],num[0])
-
-print(max(ans))
-print(min(ans))
-```
-
-5. 비슷한 단어([https://www.acmicpc.net/problem/2607](https://www.acmicpc.net/problem/2607))
-```
-import sys
-from collections import Counter
-
-n = int(sys.stdin.readline())
-s1 = sys.stdin.readline()
-ans = 0
-c = Counter(s1)
-for i in range(n-1):
-    temp = sys.stdin.readline()
-    t_c = Counter(temp)
-    if len(list((c-t_c).elements()))<=1 and len(list((t_c-c).elements()))<=1:
-        ans+=1
-print(ans)
+for row in graph:
+    for col in row:
+        print(col, end=' ')
+    print()
 ```
 
 ## 4. 라이센스
