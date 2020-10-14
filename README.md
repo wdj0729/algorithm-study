@@ -1556,7 +1556,7 @@ def solution(n, edge):
 
 ![1](https://user-images.githubusercontent.com/26870568/93016711-3d781680-f5fe-11ea-8825-891d7737d718.PNG)
 
-### DAY 24 (20.10.14)
+### DAY 23 (20.10.13)
 1. RGB거리([https://www.acmicpc.net/problem/1149](https://www.acmicpc.net/problem/1149))
 ```
 import sys
