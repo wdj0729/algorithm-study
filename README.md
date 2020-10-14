@@ -1755,6 +1755,42 @@ for i in range(1,n+1):
     print(*cost[i][1:])
 ```
 
+5. 최단경로([https://www.acmicpc.net/problem/1753](https://www.acmicpc.net/problem/1753))
+``
+import sys
+from heapq import heappush, heappop
+
+input = sys.stdin.readline
+INF=sys.maxsize
+
+v,e = map(int,input().split())
+k = int(input())
+graph = [[] for _ in range(v+1)]
+dp = [INF] * (v+1)
+heap = []
+
+for i in range(e):
+    u,v,w = map(int,input().split())
+    graph[u].append([v,w])
+
+def dijkstra(start):
+    dp[start] = 0
+    heappush(heap,[0,start])
+    while heap:
+        wei,now = heappop(heap)
+        for next_node, w in graph[now]:
+            next_wei = w + wei
+            if next_wei < dp[next_node]:
+                dp[next_node] = next_wei
+                heappush(heap,[next_wei,next_node])
+dijkstra(k)
+for i in dp[1:]:
+    if i != INF:
+        print(i)
+    else:
+        print('INF')
+``
+
 ## 4. 라이센스
 ```
 MIT License
