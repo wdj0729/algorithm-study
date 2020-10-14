@@ -1756,7 +1756,7 @@ for i in range(1,n+1):
 ```
 
 5. 최단경로([https://www.acmicpc.net/problem/1753](https://www.acmicpc.net/problem/1753))
-``
+```
 import sys
 from heapq import heappush, heappop
 
@@ -1789,7 +1789,7 @@ for i in dp[1:]:
         print(i)
     else:
         print('INF')
-``
+```
 
 ## 4. 라이센스
 ```
