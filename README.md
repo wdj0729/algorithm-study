@@ -1855,7 +1855,7 @@ for _ in range(int(input())):
             print(0)
 ```
 
-2.알약([https://www.acmicpc.net/problem/4811](https://www.acmicpc.net/problem/4811))
+2. 알약([https://www.acmicpc.net/problem/4811](https://www.acmicpc.net/problem/4811))
 ```
 dp =[[0 for _ in range(32)] for _ in range(32)]
 for i in range(0,31):
