@@ -1838,6 +1838,42 @@ while left<=right and right<=n+1:
 print(ans)
 ```
 
+### DAY 25 (20.10.15)
+1. 최소 힙([https://www.acmicpc.net/problem/1927](https://www.acmicpc.net/problem/1927))
+```
+import sys
+import heapq
+heap = []
+for _ in range(int(input())):
+    num = int(sys.stdin.readline())
+    if num != 0:
+        heapq.heappush(heap,num)
+    else:
+        if heap:
+            print(heapq.heappop(heap))
+        else:
+            print(0)
+```
+
+2.알약([https://www.acmicpc.net/problem/4811](https://www.acmicpc.net/problem/4811))
+```
+dp =[[0 for _ in range(32)] for _ in range(32)]
+for i in range(0,31):
+    dp[0][i] = 1
+for w in range(1,31):
+    for h in range(0,31):
+        if h == 0:
+            dp[w][h] = dp[w-1][1]
+        else:
+            dp[w][h] = dp[w-1][h+1] + dp[w][h-1]
+while True:
+    n = int(input())
+    if n == 0:
+        break
+    else:
+        print(dp[n-1][1])
+```
+
 ## 4. 라이센스
 ```
 MIT License
