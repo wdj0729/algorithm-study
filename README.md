@@ -1806,6 +1806,32 @@ for i in range(n):
 print(ans)
 ```
 
+3. 쿼드트리([https://www.acmicpc.net/problem/1992](https://www.acmicpc.net/problem/1992))
+```
+n = int(input())
+board = [input() for _ in range(n)]
+
+def quad(x,y,n):
+    global ans
+    tmp = board[x][y]
+    for i in range(x,x+n):
+        for j in range(y,y+n):
+            if tmp != board[i][j]:
+                ans += '('
+                quad(x,y,n//2)
+                quad(x,y+n//2,n//2)
+                quad(x+n//2,y,n//2)
+                quad(x+n//2,y+n//2,n//2)
+                ans += ')'
+                return
+    if tmp == '0':
+        ans += '0'
+    else:
+        ans += '1'
+ans = ''
+quad(0,0,n)
+print(ans)
+```
 ## 4. 라이센스
 ```
 MIT License
