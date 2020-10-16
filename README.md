@@ -131,7 +131,6 @@ def solution(s):
 def solution(skill, skill_trees):
     ans = 0
     for skill_tree in skill_trees:
-        #print(skill_tree)
         checkList = skill
         flag = True
         for j in skill_tree:
@@ -476,54 +475,8 @@ def solution(priorities, location):
         cnt+=1
 ```
 
-5. 카펫([https://programmers.co.kr/learn/courses/30/lessons/42842](https://programmers.co.kr/learn/courses/30/lessons/42842))
-```
-def solution(brown, yellow):
-    num = brown+yellow
-    ans_list = []
-    for i in range(1, num+1):
-        if num % i == 0:
-            ans_list.append(i)
-    if len(ans_list)%2 == 0:
-        for i in range(0,int(len(ans_list)/2)):
-            row = ans_list[i] - 2
-            col = ans_list[len(ans_list)-i-1] - 2
-            if row * col == yellow:
-                if row > col:
-                    return [row+2,col+2]
-                else:
-                    return [col+2,row+2]
-    else:
-        for i in range(0,int(len(ans_list)/2)):
-            row = ans_list[i] - 2
-            col = ans_list[len(ans_list)-i-1] - 2
-            if row * col == yellow:
-                if row > col:
-                    return [row+2,col+2]
-                else:
-                    return [col+2,row+2]
-        row = ans_list[int(len(ans_list)/2)] -2 
-        if row * row == yellow:
-            return [row+2,row+2]
-```
-
 ### DAY 4 (20.09.04)
-1. 예산([https://programmers.co.kr/learn/courses/30/lessons/12982](https://programmers.co.kr/learn/courses/30/lessons/12982))
-```
-def solution(d, budget):
-    sort_list = sorted(d)
-    sum = 0
-    cnt = 0
-    for i in sort_list:
-        sum += i
-        if sum <= budget:
-            cnt+=1
-        else:
-            break
-    return cnt
-```
-
-2. 최대공약수와 최소공배수([https://programmers.co.kr/learn/courses/30/lessons/12940](https://programmers.co.kr/learn/courses/30/lessons/12940))
+1. 최대공약수와 최소공배수([https://programmers.co.kr/learn/courses/30/lessons/12940](https://programmers.co.kr/learn/courses/30/lessons/12940))
 ```
 from math import gcd
 
@@ -534,7 +487,7 @@ def solution(n, m):
     return[gcd(n,m),lcm(n,m)]
 ```
 
-3. 영어 끝말잇기([https://programmers.co.kr/learn/courses/30/lessons/12981](https://programmers.co.kr/learn/courses/30/lessons/12981))
+2. 영어 끝말잇기([https://programmers.co.kr/learn/courses/30/lessons/12981](https://programmers.co.kr/learn/courses/30/lessons/12981))
 ```
 def solution(n, words):
     tmp = ''
@@ -561,7 +514,7 @@ def solution(n, words):
     return [0,0]
 ```
 
-4. 다음 큰 숫자([https://programmers.co.kr/learn/courses/30/lessons/12911](https://programmers.co.kr/learn/courses/30/lessons/12911))
+3. 다음 큰 숫자([https://programmers.co.kr/learn/courses/30/lessons/12911](https://programmers.co.kr/learn/courses/30/lessons/12911))
 ```
 def solution(n):
     bin_n = bin(n)
@@ -581,37 +534,7 @@ def solution(n):
                 return(int(bin_i,2))
 ```
 
-5. 폰켓몬([https://programmers.co.kr/learn/courses/30/lessons/1845](https://programmers.co.kr/learn/courses/30/lessons/1845))
-```
-def solution(nums):
-    new_nums = list(set(nums))
-    if len(new_nums) < int(len(nums)/2):
-        return len(new_nums)
-    else:
-        return int(len(nums)/2)
-```
-
-6. 최댓값과 최솟값([https://programmers.co.kr/learn/courses/30/lessons/12939](https://programmers.co.kr/learn/courses/30/lessons/12939))
-```
-def solution(s):
-    ans = list(map(int,s.split()))
-    min_num = min(ans)
-    max_num = max(ans)
-    return str(min_num)+' '+str(max_num)
-```
-
-7. JadenCase 문자열 만들기([https://programmers.co.kr/learn/courses/30/lessons/12951](https://programmers.co.kr/learn/courses/30/lessons/12951))
-```
-def solution(s):
-    s_list = list(map(str,s.split(' ')))
-    ans_list = []
-    for i in s_list:
-        i = i.lower().capitalize()
-        ans_list.append(i)
-    return ' '.join(ans_list)
-```
-
-8. N개의 최소공배수([https://programmers.co.kr/learn/courses/30/lessons/12953](https://programmers.co.kr/learn/courses/30/lessons/12953))
+4. N개의 최소공배수([https://programmers.co.kr/learn/courses/30/lessons/12953](https://programmers.co.kr/learn/courses/30/lessons/12953))
 ```
 from math import gcd
 
@@ -775,16 +698,7 @@ def solution(begin, target, words):
 ```
 
 ### DAY 7 (20.09.09)
-1. D - Alter Altar([https://atcoder.jp/contests/abc174/tasks/abc174_d](https://atcoder.jp/contests/abc174/tasks/abc174_d))
-```
-n = int(input())
-wr = input()
-R_cnt = wr.count('R')
-ans = wr.count('W',0,R_cnt)
-print(ans)
-```
-
-2. 여행경로([https://programmers.co.kr/learn/courses/30/lessons/43164](https://programmers.co.kr/learn/courses/30/lessons/43164))
+1. 여행경로([https://programmers.co.kr/learn/courses/30/lessons/43164](https://programmers.co.kr/learn/courses/30/lessons/43164))
 ```
 import copy
 
@@ -806,7 +720,7 @@ def solution(tickets):
     return sorted(ans)[0]
 ```
 
-3. 불량 사용자([https://programmers.co.kr/learn/courses/30/lessons/64064](https://programmers.co.kr/learn/courses/30/lessons/64064))
+2. 불량 사용자([https://programmers.co.kr/learn/courses/30/lessons/64064](https://programmers.co.kr/learn/courses/30/lessons/64064))
 ```
 import itertools
 
@@ -841,23 +755,7 @@ def solution(user_id, banned_id):
     return(len(set([tuple(set(item)) for item in ans])))
 ```
 
-4. 하노이의 탑([https://programmers.co.kr/learn/courses/30/lessons/12946](https://programmers.co.kr/learn/courses/30/lessons/12946))
-```
-def solution(n):
-    ans = []
-    # 원반개수, 시작, 목표, 보조
-    def hanoi(n,fro,to,other):
-        if n==1:
-            ans.append([fro,to]) 
-            return
-        hanoi(n-1,fro,other,to)
-        ans.append([fro,to])
-        hanoi(n-1,other,to,fro)
-    hanoi(n,1,3,2)
-    return ans
-```
-
-5. 가장 큰 수([https://programmers.co.kr/learn/courses/30/lessons/42746](https://programmers.co.kr/learn/courses/30/lessons/42746))
+3. 가장 큰 수([https://programmers.co.kr/learn/courses/30/lessons/42746](https://programmers.co.kr/learn/courses/30/lessons/42746))
 ```
 def solution(numbers):
     str_numbers = []
@@ -874,7 +772,7 @@ def solution(numbers):
         return ans
 ```
 
-6. 멀리 뛰기([https://programmers.co.kr/learn/courses/30/lessons/12914](https://programmers.co.kr/learn/courses/30/lessons/12914))
+4. 멀리 뛰기([https://programmers.co.kr/learn/courses/30/lessons/12914](https://programmers.co.kr/learn/courses/30/lessons/12914))
 ```
 def solution(n):
     dp = [0 for _ in range(n+1)]
@@ -886,26 +784,7 @@ def solution(n):
 ```
 
 ### DAY 8 (20.09.10)
-1. D - Chat in a Circle([https://atcoder.jp/contests/abc173/tasks/abc173_d](https://atcoder.jp/contests/abc173/tasks/abc173_d))
-```
-n = int(input())
-p_list = input().split()
-p_list = map(int,p_list)
-p_list = sorted(p_list,reverse=True)
-ans_list = []
-ans = 0
-for i in range(0,len(p_list)):
-  if i!=0:
-    ans_list.append(p_list[i])
-    ans_list.append(p_list[i])
-  else:
-    ans_list.append(p_list[i])
-for i in range(0,n-1):
-	ans += int(ans_list[i])
-print(ans)
-```
-
-2. 땅따먹기([https://programmers.co.kr/learn/courses/30/lessons/12913](https://programmers.co.kr/learn/courses/30/lessons/12913))
+1. 땅따먹기([https://programmers.co.kr/learn/courses/30/lessons/12913](https://programmers.co.kr/learn/courses/30/lessons/12913))
 ```
 def solution(land):
     for i in range(len(land)-1):
@@ -916,7 +795,7 @@ def solution(land):
     return(max(land[-1]))
 ```
 
-3. 프로그래머스 월간 코드 챌린지 시즌1([https://bit.ly/3icvbVL](https://bit.ly/3icvbVL))
+2. 프로그래머스 월간 코드 챌린지 시즌1([https://bit.ly/3icvbVL](https://bit.ly/3icvbVL))
 
 ![1](https://user-images.githubusercontent.com/26870568/92739723-2516ba80-f3b8-11ea-9849-32d7225de37d.PNG)
 
@@ -1354,43 +1233,7 @@ bfs(v)
 ```
 
 ### DAY 21 (20.10.06)
-1. Find All Numbers Disappeared in an Array([https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/))
-```
-class Solution(object):
-    def findDisappearedNumbers(self, nums):
-        ans = [0 for i in range(len(nums)+1)]
-        for i in range(len(nums)):
-            ans[nums[i]]+=1
-        st = []
-        for i in range(1,len(ans)):
-            if ans[i] == 0:
-                st.append(i)
-        return(st)
-```
-
-2. Best Time to Buy and Sell Stock([https://leetcode.com/problems/best-time-to-buy-and-sell-stock/](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/))
-```
-class Solution(object):
-    def maxProfit(self, prices):
-        if len(prices) == 0:
-            return 0
-        elif len(prices) == 1:
-            return 0
-        else:
-            a = prices[0]
-            b = prices[0]
-            st = []
-            for i in range(1,len(prices)):
-                if a >= prices[i]:
-                    a = prices[i]
-                    b = prices[i]
-                if b <= prices[i]:
-                    b = prices[i]
-                st.append(b-a)
-            return max(st)    
-```
-
-3. Climbing Stairs([https://leetcode.com/problems/climbing-stairs/](https://leetcode.com/problems/climbing-stairs/))
+1. Climbing Stairs([https://leetcode.com/problems/climbing-stairs/](https://leetcode.com/problems/climbing-stairs/))
 ```
 class Solution(object):
     def climbStairs(self, n):
@@ -1404,7 +1247,7 @@ class Solution(object):
         return dp[n]
 ```
 
-4. House Robber([https://leetcode.com/problems/house-robber/](https://leetcode.com/problems/house-robber/))
+2. House Robber([https://leetcode.com/problems/house-robber/](https://leetcode.com/problems/house-robber/))
 ```
 from collections import defaultdict
 
@@ -1423,7 +1266,7 @@ class Solution(object):
         return dp[len(nums)]
 ```
 
-5. Valid Parentheses([https://leetcode.com/problems/valid-parentheses/](https://leetcode.com/problems/valid-parentheses/))
+3. Valid Parentheses([https://leetcode.com/problems/valid-parentheses/](https://leetcode.com/problems/valid-parentheses/))
 ```
 class Solution(object):
     def isValid(self, s):
