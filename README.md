@@ -1575,27 +1575,27 @@ INF=2**32
 n = int(input())
 m = int(input())
 
-cost = [[INF for _ in range(100)] for _ in range(100)]
+cost = [[INF for _ in range(n+1)] for _ in range(n+1)]
 
-for i in range(n):
+for i in range(1,n+1):
     cost[i][i] = 0
 
 for _ in range(m):
     a,b,c = map(int,sys.stdin.readline().split())
-    cost[a-1][b-1] = min(cost[a-1][b-1],c)
+    cost[a][b] = min(cost[a][b],c)
 
-for k in range(n):
-    for i in range(n):
-        for j in range(n):
-            if i==j or j==k or k==i:
-                continue
-            elif cost[i][j] > cost[i][k] + cost[k][j]:
-                cost[i][j] = cost[i][k]+cost[k][j]
+for k in range(1,n+1):
+    for i in range(1,n+1):
+        for j in range(1,n+1):
+            cost[i][j] = min(cost[i][j],cost[i][k]+cost[k][j])
 
-for i in range(n):
-    for j in range(n):
-        print(cost[i][j],end=' ')
-    print()
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if cost[i][j] == INF:
+            cost[i][j] = 0
+
+for i in range(1,n+1):
+    print(*cost[i][1:])
 ```
 
 5. 최단경로([https://www.acmicpc.net/problem/1753](https://www.acmicpc.net/problem/1753))
