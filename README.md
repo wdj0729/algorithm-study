@@ -1757,6 +1757,44 @@ for _ in range(int(input())):
     print(cnt)
 ```
 
+2. 친구([https://www.acmicpc.net/problem/1058](https://www.acmicpc.net/problem/1058))
+```
+INF = 2**32
+
+n = int(input())
+board = [[INF]*(50) for _ in range(50)]
+
+for i in range(n):
+    arr = list(input())
+    for j in range(n):
+        if i == j:
+            board[i][j] = 0
+        else: 
+            if arr[j] == 'Y':
+                board[i][j] = 1
+
+def floyd():
+    for k in range(n):
+        for i in range(n):
+            for j in range(n):
+                if i==j or j==k or k==i:
+                    continue
+                elif board[i][j] > board[i][k] + board[k][j]:
+                    board[i][j] = board[i][k] + board[k][j]
+floyd()
+
+ans = 0
+for i in range(n):
+    cnt = 0
+    for j in range(n):
+        if i == j:
+            continue
+        elif board[i][j] <=2:
+            cnt+=1
+    ans = max(ans,cnt)
+print(ans)
+```
+
 ## 4. 라이센스
 ```
 MIT License
