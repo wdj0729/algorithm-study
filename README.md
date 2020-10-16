@@ -1832,6 +1832,40 @@ ans = ''
 quad(0,0,n)
 print(ans)
 ```
+
+4. 종이의 개수([https://www.acmicpc.net/problem/1780](https://www.acmicpc.net/problem/1780))
+```
+import sys
+n = int(input())
+board = [list(map(int,sys.stdin.readline().split())) for _ in range(n)]
+
+minus_one = 0
+zero = 0
+one = 0
+
+def quad(x,y,n):
+    global minus_one,zero,one
+    tmp = board[x][y]
+
+    for i in range(x,x+n):
+        for j in range(y,y+n):
+            if tmp != board[i][j]:
+                for k in range(3):
+                    for l in range(3):
+                        quad(x+k*n//3,y+l*n//3,n//3)
+                return
+    if tmp == -1:
+        minus_one += 1
+    elif tmp == 0:
+        zero += 1
+    elif tmp == 1:
+        one +=1
+quad(0,0,n)
+print(minus_one)
+print(zero)
+print(one)
+```
+
 ## 4. 라이센스
 ```
 MIT License
