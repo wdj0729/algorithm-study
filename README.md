@@ -1874,6 +1874,46 @@ while True:
         print(dp[n-1][1])
 ```
 
+### DAY 26 (20.10.16)
+1. 유기농 배추([https://www.acmicpc.net/problem/1012](https://www.acmicpc.net/problem/1012))
+```
+from collections import deque
+
+dx = [-1,0,0,1]
+dy = [0,1,-1,0]
+
+for _ in range(int(input())):
+    m,n,k = map(int,input().split())
+    board = [[0]*(m) for _ in range(n)]
+    for _ in range(k):
+        x,y = map(int,input().split())
+        board[y][x] = 1
+    visited = [[0]*(m) for _ in range(n)]
+
+    def bfs(x,y):
+        visited[x][y] = 1
+        dq = deque()
+        dq.append((x,y))
+        while dq:
+            x,y = dq.popleft()
+            for i in range(4):
+                nx = x + dx[i]
+                ny = y + dy[i]
+                if nx < 0 or nx >= n or ny < 0 or ny >= m:
+                    continue
+                else:
+                    if visited[nx][ny] == 0 and board[nx][ny] == 1:
+                        visited[nx][ny] = 1
+                        dq.append((nx,ny))
+    cnt = 0
+    for i in range(n):
+        for j in range(m):
+            if visited[i][j] == 0 and board[i][j] == 1:
+                bfs(i,j)
+                cnt+=1
+    print(cnt)
+```
+
 ## 4. 라이센스
 ```
 MIT License
