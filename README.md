@@ -1866,6 +1866,71 @@ print(zero)
 print(one)
 ```
 
+### DAY 27 (20.10.18)
+1. 키 순서([https://www.acmicpc.net/problem/2458](https://www.acmicpc.net/problem/2458))
+```
+import sys
+INF=2**32
+n,m = map(int,input().split())
+board = [[INF]*n for _ in range(n)]
+
+for i in range(m):
+    a,b = map(int,sys.stdin.readline().split())
+    board[a-1][b-1] = 1
+
+for i in range(n):
+    board[i][i] = 0
+
+def floyd():
+    for k in range(n):
+        for i in range(n):
+            for j in range(n):
+                if i==j or j==k or k==i:
+                    continue
+                elif board[i][j] == 1 or (board[i][k] == 1 and board[k][j] == 1):
+                    board[i][j] = 1
+floyd()
+cnt = [0]*n
+for i in range(n):
+    for j in range(n):
+        if board[i][j] == 1:
+            cnt[i] += 1
+            cnt[j] += 1
+print(cnt.count(n-1))
+```
+
+2. 알고스팟([https://www.acmicpc.net/problem/1261](https://www.acmicpc.net/problem/1261))
+```
+from collections import deque
+
+m,n = map(int,input().split())
+board = [list(map(int,input())) for _ in range(n)]
+visited =[[-1]*m for _ in range(n)]
+
+dx = [-1,0,1,0]
+dy = [0,1,0,-1]
+
+def bfs():
+    while dq:
+        x,y = dq.popleft()
+        for i in range(4):
+            nx = x + dx[i]
+            ny = y + dy[i]
+            if 0 <= nx < n and 0 <= ny < m:
+                if visited[nx][ny] == -1:
+                    if board[nx][ny] == 0:
+                        visited[nx][ny] = visited[x][y]
+                        dq.appendleft([nx,ny])
+                    else:
+                        visited[nx][ny] = visited[x][y]+1
+                        dq.append([nx,ny])
+dq = deque()
+dq.append([0,0])
+visited[0][0] = 0
+bfs()
+print(visited[n-1][m-1])
+```
+
 ## 4. 라이센스
 ```
 MIT License
