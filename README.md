@@ -76,6 +76,7 @@
 ### DAY 28 (20.10.20)
 1. 최장 공통 부분 수열([https://debuglog.tistory.com/77](https://debuglog.tistory.com/77))
 2. 위상 정렬([https://bit.ly/3dEUu1n](https://bit.ly/3dEUu1n))
+3. 파이썬의 Asterisk * 이해하기([https://bit.ly/2HkuDQd](https://bit.ly/2HkuDQd))
 
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
@@ -1955,6 +1956,11 @@ for i in range(1,len(A)+1):
             lcs[i][j]=max(lcs[i-1][j],lcs[i][j-1])
             
 print(lcs[len(A)][len(B)])
+```
+
+2. 줄 세우기([https://www.acmicpc.net/problem/2252](https://www.acmicpc.net/problem/2252))
+```
+
 ```
 
 ## 4. 라이센스
