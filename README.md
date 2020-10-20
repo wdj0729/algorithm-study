@@ -1934,6 +1934,24 @@ bfs()
 print(visited[n-1][m-1])
 ```
 
+### DAY 28 (20.10.20)
+1. LCS([https://www.acmicpc.net/problem/9251](https://www.acmicpc.net/problem/9251))
+```
+A=list(input())
+B=list(input())
+ 
+lcs=[[0 for _ in range(len(B)+1)] for _ in range(len(A)+1)]
+ 
+for i in range(1,len(A)+1):
+    for j in range(1,len(B)+1):
+        if A[i-1]==B[j-1]:
+            lcs[i][j]=lcs[i-1][j-1]+1
+        else:
+            lcs[i][j]=max(lcs[i-1][j],lcs[i][j-1])
+            
+print(lcs[len(A)][len(B)])
+```
+
 ## 4. 라이센스
 ```
 MIT License
