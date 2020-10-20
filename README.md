@@ -572,16 +572,16 @@ def solution(nums):
                 for j in range(i+i, n, i): # i이후 i의 배수들을 False 판정
                     sieve[j] = False
         # 소수 목록 산출
-        return [i for i in range(2, n) if sieve[i] == True]
+        return sieve
     
-    prime_list = (prime_list(3000))
+    prime = prime_list(3000)
     ans_list = list(combinations(nums, 3))
     ans = 0
     for i in ans_list:
         sum = 0
         for j in i:
             sum += j
-        if sum in prime_list:
+        if sum in prime:
             ans+=1
     return ans
 ```
