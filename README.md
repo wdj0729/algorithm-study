@@ -69,8 +69,13 @@
 ### DAY 15 (20.09.22)
 1. 효율적인 약수의 개수를 찾는 알고리즘([https://hsdevelopment.tistory.com/110](https://hsdevelopment.tistory.com/110))
 
+### DAY 24 (20.10.14)
+1. 다익스트라 알고리즘([https://m.blog.naver.com/ndb796/221234424646](https://m.blog.naver.com/ndb796/221234424646))
+2. 플로이드 와샬 알고리즘([https://m.blog.naver.com/ndb796/221234427842](https://m.blog.naver.com/ndb796/221234427842))
+
 ### DAY 28 (20.10.20)
 1. 최장 공통 부분 수열([https://debuglog.tistory.com/77](https://debuglog.tistory.com/77))
+2. 위상 정렬([https://gmlwjd9405.github.io/2018/08/27/algorithm-topological-sort.html](https://gmlwjd9405.github.io/2018/08/27/algorithm-topological-sort.html))
 
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
