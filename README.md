@@ -68,11 +68,11 @@
 ### DAY 15 (20.09.22)
 1. 효율적인 약수의 개수를 찾는 알고리즘([https://hsdevelopment.tistory.com/110](https://hsdevelopment.tistory.com/110))
 
-### DAY 24 (20.10.14)
+### DAY 25 (20.10.14)
 1. 다익스트라 알고리즘([https://m.blog.naver.com/ndb796/221234424646](https://m.blog.naver.com/ndb796/221234424646))
 2. 플로이드 와샬 알고리즘([https://m.blog.naver.com/ndb796/221234427842](https://m.blog.naver.com/ndb796/221234427842))
 
-### DAY 28 (20.10.20)
+### DAY 29 (20.10.20)
 1. 최장 공통 부분 수열([https://debuglog.tistory.com/77](https://debuglog.tistory.com/77))
 2. 위상 정렬([https://abit.ly/am2qwdt](https://abit.ly/am2qwdt))
 3. 파이썬의 Asterisk * 이해하기([https://abit.ly/bvhvib](https://abit.ly/bvhvib))
@@ -1407,7 +1407,7 @@ def solution(n, edge):
 
 ![1](https://user-images.githubusercontent.com/26870568/93016711-3d781680-f5fe-11ea-8825-891d7737d718.PNG)
 
-### DAY 23 (20.10.13)
+### DAY 24 (20.10.13)
 1. 촌수계산([https://www.acmicpc.net/problem/2644](https://www.acmicpc.net/problem/2644))
 ```
 import sys
@@ -1487,7 +1487,7 @@ for i in range(n-1):
 print(ans)
 ```
 
-### DAY 24 (20.10.14)
+### DAY 25 (20.10.14)
 1. RGB거리([https://www.acmicpc.net/problem/1149](https://www.acmicpc.net/problem/1149))
 ```
 import sys
@@ -1700,7 +1700,7 @@ while left<=right and right<=n+1:
 print(ans)
 ```
 
-### DAY 25 (20.10.15)
+### DAY 26 (20.10.15)
 1. 최소 힙([https://www.acmicpc.net/problem/1927](https://www.acmicpc.net/problem/1927))
 ```
 import sys
@@ -1736,7 +1736,7 @@ while True:
         print(dp[n-1][1])
 ```
 
-### DAY 26 (20.10.16)
+### DAY 27 (20.10.16)
 1. 유기농 배추([https://www.acmicpc.net/problem/1012](https://www.acmicpc.net/problem/1012))
 ```
 from collections import deque
@@ -1874,7 +1874,7 @@ print(zero)
 print(one)
 ```
 
-### DAY 27 (20.10.18)
+### DAY 28 (20.10.18)
 1. 키 순서([https://www.acmicpc.net/problem/2458](https://www.acmicpc.net/problem/2458))
 ```
 import sys
@@ -1939,7 +1939,7 @@ bfs()
 print(visited[n-1][m-1])
 ```
 
-### DAY 28 (20.10.20)
+### DAY 29 (20.10.20)
 1. LCS([https://www.acmicpc.net/problem/9251](https://www.acmicpc.net/problem/9251))
 ```
 A=list(input())
