@@ -1960,7 +1960,34 @@ print(lcs[len(A)][len(B)])
 
 2. 줄 세우기([https://www.acmicpc.net/problem/2252](https://www.acmicpc.net/problem/2252))
 ```
+import sys
+from collections import deque
 
+n,m = map(int,sys.stdin.readline().split())
+tree = [[] for _ in range(n+1)]
+
+inDegree = [0 for _ in range(n+1)]
+dq = deque()
+result = []
+
+for _ in range(m):
+    s,e = map(int,sys.stdin.readline().split())
+    tree[s].append(e)
+    inDegree[e]+=1
+
+for i in range(1,n+1):
+    if inDegree[i] == 0:
+        dq.append(i)
+
+while dq:
+    a = dq.popleft()
+    result.append(a)
+    for t in tree[a]:
+        inDegree[t]-=1
+        if inDegree[t]==0:
+            dq.append(t)
+            
+print(*result)
 ```
 
 ## 4. 라이센스
