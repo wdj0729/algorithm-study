@@ -803,7 +803,7 @@ def solution(land):
     return(max(land[-1]))
 ```
 
-2. 프로그래머스 월간 코드 챌린지 시즌1([https://bit.ly/3icvbVL](https://bit.ly/3icvbVL))
+2. 프로그래머스 월간 코드 챌린지 시즌1([https://abit.ly/kmwkhzb](https://abit.ly/kmwkhzb))
 
 ![1](https://user-images.githubusercontent.com/26870568/92739723-2516ba80-f3b8-11ea-9849-32d7225de37d.PNG)
 
@@ -1301,7 +1301,7 @@ class Solution(object):
 ```
 
 ### DAY 22 (20.10.08)
-1. 프로그래머스 월간 코드 챌린지 시즌1([https://bit.ly/3nFgC0a](https://bit.ly/3nFgC0a))
+1. 프로그래머스 월간 코드 챌린지 시즌1([https://abit.ly/ibnzqvf](https://abit.ly/ibnzqvf))
 
 ![1](https://user-images.githubusercontent.com/26870568/95467986-0ad0fc00-09b9-11eb-888e-cd01dc679f80.PNG)
 
