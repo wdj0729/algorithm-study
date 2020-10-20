@@ -75,7 +75,7 @@
 
 ### DAY 28 (20.10.20)
 1. 최장 공통 부분 수열([https://debuglog.tistory.com/77](https://debuglog.tistory.com/77))
-2. 위상 정렬([https://gmlwjd9405.github.io/2018/08/27/algorithm-topological-sort.html](https://gmlwjd9405.github.io/2018/08/27/algorithm-topological-sort.html))
+2. 위상 정렬([https://bit.ly/3dEUu1n](https://bit.ly/3dEUu1n))
 
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
