@@ -2036,6 +2036,42 @@ for _ in range(m):
             print('NO')
 ```
 
+2. 스타트링크([https://www.acmicpc.net/problem/5014](https://www.acmicpc.net/problem/5014))
+```
+import sys
+from collections import deque
+input = sys.stdin.readline
+
+f,s,g,u,d = map(int,input().split())
+
+dx = [u,-d]
+dp = [-1 for i in range(f)]
+
+def bfs(x):
+    visited = [0 for _ in range(f)]
+    visited[x] = 1
+    dq = deque()
+    dq.append(x)
+    while dq:
+        x = dq.popleft()
+        for i in range(2):
+            nx = x + dx[i]
+            if nx < 0 or nx >= f:
+                continue
+            else:
+                if visited[nx] == 0:
+                    dq.append(nx)
+                    dp[nx] = dp[x] + 1
+                    visited[nx] = 1
+dp[s-1] = 0
+bfs(s-1)
+
+if dp[g-1] == -1:
+    print("use the stairs")
+else:
+    print(dp[g-1])
+```
+
 ## 4. 라이센스
 ```
 MIT License
