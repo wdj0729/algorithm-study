@@ -77,6 +77,9 @@
 2. 위상 정렬([https://abit.ly/am2qwdt](https://abit.ly/am2qwdt))
 3. 파이썬의 Asterisk * 이해하기([https://abit.ly/bvhvib](https://abit.ly/bvhvib))
 
+### DAY 30 (20.10.21)
+1. 유니온-파인드([https://m.blog.naver.com/ndb796/221230967614](https://m.blog.naver.com/ndb796/221230967614))
+
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
 1. 크레인 인형뽑기 게임([https://programmers.co.kr/learn/courses/30/lessons/64061](https://programmers.co.kr/learn/courses/30/lessons/64061))
@@ -1987,6 +1990,50 @@ while dq:
             dq.append(t)
             
 print(*result)
+```
+
+### DAY 30 (20.10.21)
+1. 집합의 표현([https://www.acmicpc.net/problem/1717](https://www.acmicpc.net/problem/1717))
+```
+import sys
+
+input = sys.stdin.readline
+
+def get_parent(x):
+    if parent[x] == x: 
+        return x
+    p = get_parent(parent[x])
+    parent[x] = p
+    return p
+
+def union(x,y):
+    x = get_parent(x)
+    y = get_parent(y)
+
+    if x != y:
+        parent[y] = x
+
+def find_parent(x):
+    if parent[x] == x:
+        return x
+    return find_parent(parent[x])
+
+n,m = map(int,input().split())
+parent = {}
+
+for i in range(n+1):
+    parent[i] = i
+
+for _ in range(m):
+    z,x,y = map(int,input().split())
+
+    if not z:
+        union(x,y)
+    else:
+        if find_parent(x) == find_parent(y):
+            print("YES")
+        else:
+            print('NO')
 ```
 
 ## 4. 라이센스
