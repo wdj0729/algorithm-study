@@ -2072,6 +2072,43 @@ else:
     print(dp[g-1])
 ```
 
+3. 보물섬([https://www.acmicpc.net/problem/2589](https://www.acmicpc.net/problem/2589))
+```
+from collections import deque
+
+n,m = map(int,input().split())
+board = [list(map(str,input())) for _ in range(n)]
+
+dx = [-1,0,1,0]
+dy = [0,1,0,-1]
+
+def bfs(x,y):
+    visited =[[0]*(m) for _ in range(n)]
+    visited[x][y] = 1
+    dq = deque()
+    dq.append((x,y))
+    num = 0
+    while dq:
+        x,y = dq.popleft()
+        for i in range(4):
+            nx = x + dx[i]
+            ny = y + dy[i]
+            if nx < 0 or nx >= n or ny < 0 or ny >= m:
+                continue
+            else:
+                if visited[nx][ny] == 0 and board[nx][ny] == 'L':
+                    visited[nx][ny] = visited[x][y] + 1
+                    num = max(num,visited[nx][ny])
+                    dq.append((nx,ny))
+    return num-1
+cnt = 0
+for i in range(n):
+    for j in range(m):
+        if board[i][j] == 'L':
+            cnt = max(cnt,bfs(i,j))
+print(cnt)
+```
+
 ## 4. 라이센스
 ```
 MIT License
