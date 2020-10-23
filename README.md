@@ -82,30 +82,7 @@
 
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
-1. 크레인 인형뽑기 게임([https://programmers.co.kr/learn/courses/30/lessons/64061](https://programmers.co.kr/learn/courses/30/lessons/64061))
-```
-def solution(board, moves):
-    result = []
-    cnt = 0
-    for i in moves:
-        for j in range(0,len(board)):
-            if board[j][i-1] != 0:
-                if len(result) <= 0:
-                    result.append(board[j][i-1])
-                else:
-                    top = result[-1]
-                    if top == board[j][i-1]:
-                        result.pop()
-                        cnt+=1
-                    else:
-                        result.append(board[j][i-1])
-                board[j][i-1]=0
-                break
-            else:
-                continue
-    return cnt*2
-```
-2. 튜플([https://programmers.co.kr/learn/courses/30/lessons/64065](https://programmers.co.kr/learn/courses/30/lessons/64065))
+1. 튜플([https://programmers.co.kr/learn/courses/30/lessons/64065](https://programmers.co.kr/learn/courses/30/lessons/64065))
 ```
 def solution(s):
     ansList = []
@@ -137,26 +114,7 @@ def solution(s):
     return ans
 ```
 
-3. 스킬트리([https://programmers.co.kr/learn/courses/30/lessons/49993](https://programmers.co.kr/learn/courses/30/lessons/49993))
-```
-def solution(skill, skill_trees):
-    ans = 0
-    for skill_tree in skill_trees:
-        checkList = skill
-        flag = True
-        for j in skill_tree:
-            if j in checkList:
-                if checkList[0] == j:
-                    checkList = checkList.replace(j,'')
-                else:
-                    flag = False
-                    break
-        if flag == True:
-            ans+=1
-    return ans
-```
-
-4. 2 x n 타일링([https://programmers.co.kr/learn/courses/30/lessons/12900](https://programmers.co.kr/learn/courses/30/lessons/12900))
+2. 2 x n 타일링([https://programmers.co.kr/learn/courses/30/lessons/12900](https://programmers.co.kr/learn/courses/30/lessons/12900))
 ```
 def solution(n):
     fibo = [] 
@@ -169,17 +127,7 @@ def solution(n):
     return answer
 ```
 
-5. 전화번호 목록([https://programmers.co.kr/learn/courses/30/lessons/42577](https://programmers.co.kr/learn/courses/30/lessons/42577))
-```
-def solution(phone_book):
-    for i in range(0,len(phone_book)):
-        for j in range(0,len(phone_book)):
-            if phone_book[j].startswith(phone_book[i]) == True and i!=j:
-                return False
-    return True
-```
-
-6. 더 맵게([https://programmers.co.kr/learn/courses/30/lessons/42626](https://programmers.co.kr/learn/courses/30/lessons/42626))
+3. 더 맵게([https://programmers.co.kr/learn/courses/30/lessons/42626](https://programmers.co.kr/learn/courses/30/lessons/42626))
 ```
 import heapq
 
@@ -195,72 +143,6 @@ def solution(scoville, K):
              return -1
         cnt+=1
     return cnt
-```
-
-7. 소수 찾기([https://programmers.co.kr/learn/courses/30/lessons/42839](https://programmers.co.kr/learn/courses/30/lessons/42839))
-```
-import itertools
-
-def solution(numbers):
-    ans=0
-    permut_list = []
-    for i in range(1,len(numbers)+1):
-        permut_list.append(list(map(''.join, itertools.permutations(numbers, i))))
-    ans_list = []
-    for i in permut_list:
-        for j in i:
-            ans_list.append(int(j))
-    my_set = set(ans_list)
-    new_list = list(my_set)
-    def isPrime(a):
-        if(a<2):
-            return False
-        for i in range(2,a):
-            if(a%i==0):
-                return False
-        return True
-    for i in new_list:
-        if(isPrime(i)):
-            ans+=1
-    return ans
-```
-
-8. 체육복([https://programmers.co.kr/learn/courses/30/lessons/42862](https://programmers.co.kr/learn/courses/30/lessons/42862))
-```
-def solution(n, lost, reserve):
-    temp = n - len(lost)
-    for i in range(0,len(reserve)):
-        for j in range(0,len(lost)):
-            if lost[j]==-1 and reserve[i]==-1:
-                continue
-            if lost[j] == reserve[i]:
-                lost[j] = -1
-                reserve[i] = -1
-                temp+=1      
-    for i in range(0,len(lost)):
-        for j in range(0,len(reserve)):
-            if lost[i]==-1 or reserve[j]==-1:
-                continue
-            if abs(lost[i]-reserve[j])==1:
-                temp+=1
-                reserve[j] = -1
-                break
-    return temp
-```
-
-9. 구명보트([https://programmers.co.kr/learn/courses/30/lessons/42885](https://programmers.co.kr/learn/courses/30/lessons/42885))
-```
-def solution(people, limit):
-    people_list = sorted(people)
-    i = 0
-    j = len(people_list)-1
-    ans = 0
-    while i <= j:
-        if people_list[i] + people_list[j] <= limit:
-            i+=1
-        j-=1
-        ans += 1
-    return ans
 ```
 
 ### DAY 2 (20.09.02)
@@ -287,47 +169,7 @@ def solution(record):
     return(ans_list)
 ```
 
-2. 위장([https://programmers.co.kr/learn/courses/30/lessons/42578](https://programmers.co.kr/learn/courses/30/lessons/42578))
-```
-def solution(clothes):
-    count = {}
-    for i in clothes:
-        try: count[i[1]] += 1
-        except: count[i[1]]=1
-    sum = 1
-    for i in count:
-        sum *= (count[i]+1)
-    sum -= 1
-    return sum
-```
-
-3. 실패율([https://programmers.co.kr/learn/courses/30/lessons/42889](https://programmers.co.kr/learn/courses/30/lessons/42889))
-```
-def solution(N, stages):
-    ans_list = []
-    ans_dict = {}
-    for i in range(1,N+1):
-        f=0
-        t=0
-        for j in stages:
-            if j >= i:
-                t +=1
-            if j == i:
-                f +=1
-        if f == 0:
-            ans_dict[i] = 0
-        elif t == 0:
-            ans_dict[i] = 0
-        else:
-            ans_dict[i] = float(f/t)
-    ans_list = (sorted(ans_dict.items(), key=lambda x: x[1], reverse=True))
-    res_list = []
-    for i in ans_list:
-        res_list.append(i[0])
-    return res_list
-```
-
-4. 괄호 변환([https://programmers.co.kr/learn/courses/30/lessons/60058](https://programmers.co.kr/learn/courses/30/lessons/60058))
+2. 괄호 변환([https://programmers.co.kr/learn/courses/30/lessons/60058](https://programmers.co.kr/learn/courses/30/lessons/60058))
 ```
 def solution(p):
     def hi(p):
@@ -440,23 +282,7 @@ def solution(s):
         return min(ans_list)
 ```
 
-3. H-Index([https://programmers.co.kr/learn/courses/30/lessons/42747](https://programmers.co.kr/learn/courses/30/lessons/42747))
-```
-def solution(citations):
-    ans_list = []
-    for h in range(0,10001):
-        y = 0
-        n = 0
-        for j in citations:
-            if j >= h:
-                y+=1
-        nam = len(citations)-y
-        if y>=h and nam<=h:
-            ans_list.append(h)
-    return max((ans_list))
-```
-
-4. 프린터([https://programmers.co.kr/learn/courses/30/lessons/42587](https://programmers.co.kr/learn/courses/30/lessons/42587))
+3. 프린터([https://programmers.co.kr/learn/courses/30/lessons/42587](https://programmers.co.kr/learn/courses/30/lessons/42587))
 ```
 from collections import deque
 
@@ -498,34 +324,7 @@ def solution(n, m):
     return[gcd(n,m),lcm(n,m)]
 ```
 
-2. 영어 끝말잇기([https://programmers.co.kr/learn/courses/30/lessons/12981](https://programmers.co.kr/learn/courses/30/lessons/12981))
-```
-def solution(n, words):
-    tmp = ''
-    word_dict = {}
-    idx = 0
-    time = 1
-    for i in words:
-        idx+=1
-        if tmp == '':
-            tmp = i[len(i)-1]
-            word_dict[i] = 1
-        else:
-            if tmp == i[0]:
-                if i in word_dict:
-                    return(idx,time)
-                else:
-                    tmp = i[len(i)-1]
-                    word_dict[i]= 1
-            else:
-                return (idx,time)
-        if idx%n == 0:
-            idx = 0
-            time += 1
-    return [0,0]
-```
-
-3. 다음 큰 숫자([https://programmers.co.kr/learn/courses/30/lessons/12911](https://programmers.co.kr/learn/courses/30/lessons/12911))
+2. 다음 큰 숫자([https://programmers.co.kr/learn/courses/30/lessons/12911](https://programmers.co.kr/learn/courses/30/lessons/12911))
 ```
 def solution(n):
     bin_n = bin(n)
@@ -545,7 +344,7 @@ def solution(n):
                 return(int(bin_i,2))
 ```
 
-4. N개의 최소공배수([https://programmers.co.kr/learn/courses/30/lessons/12953](https://programmers.co.kr/learn/courses/30/lessons/12953))
+3. N개의 최소공배수([https://programmers.co.kr/learn/courses/30/lessons/12953](https://programmers.co.kr/learn/courses/30/lessons/12953))
 ```
 from math import gcd
 
@@ -626,21 +425,6 @@ def solution(n,a,b):
             else:
                 b /= 2
         ans+=1
-```
-
-4. 숫자 게임([https://programmers.co.kr/learn/courses/30/lessons/12987](https://programmers.co.kr/learn/courses/30/lessons/12987))
-```
-def solution(A, B):
-    A = sorted(A)
-    B = sorted(B)
-    ans = 0
-    for i in A:
-        for j in B:
-            if i<j:
-                ans+=1
-                B.remove(j)
-                break
-    return ans
 ```
 
 ### DAY 6 (20.09.07)
@@ -870,42 +654,7 @@ for i in range(0,n):
     print(rank)
 ```
 
-3. 연속합([https://www.acmicpc.net/problem/1912](https://www.acmicpc.net/problem/1912))
-```
-n = int(input())
-num_list = list(map(int,input().split()))
-dp = [0 for _ in range(n)]
-
-for i in range(n):
-    dp[i] = max(dp[i-1] + num_list[i], num_list[i])
-print(max(dp))
-```
-
-4. 캐시([https://programmers.co.kr/learn/courses/30/lessons/17680](https://programmers.co.kr/learn/courses/30/lessons/17680))
-```
-import collections
-
-def solution(cacheSize, cities):
-    if cacheSize == 0:
-        return len(cities)*5
-    else:
-        ans_list = collections.deque()
-        ans = 0
-        for i in cities:
-            i = i.upper()
-            if i in list(ans_list):
-                ans+=1
-                ans_list.remove(i)
-                ans_list.append(i)
-            else:
-                if len(ans_list) == cacheSize and len(ans_list)!=0:
-                    ans_list.popleft()
-                ans_list.append(i)
-                ans+=5
-        return(ans)
-```
-
-5. 뉴스 클러스터링([https://programmers.co.kr/learn/courses/30/lessons/17677](https://programmers.co.kr/learn/courses/30/lessons/17677))
+3. 뉴스 클러스터링([https://programmers.co.kr/learn/courses/30/lessons/17677](https://programmers.co.kr/learn/courses/30/lessons/17677))
 ```
 from collections import Counter
 
@@ -1016,40 +765,6 @@ def solution(files):
     for i in s_list:
         answer.append(i[2])
     return(answer)
-```
-
-2. 방금그곡([https://programmers.co.kr/learn/courses/30/lessons/17683](https://programmers.co.kr/learn/courses/30/lessons/17683))
-```
-def solution(m, musicinfos):
-    m = m.replace('C#','c').replace('D#','d').replace('E#','e').replace('F#','f').replace('G#','g').replace('A#','a')
-    s_list = []
-    s_dict = {}
-    for i in musicinfos:
-        s_list = i.split(",")
-        s_time = s_list[0]
-        e_time = s_list[1]
-        s_h = int(s_time[0:2])
-        s_m = int(s_time[3:5])
-        e_h = int(e_time[0:2])
-        e_m = int(e_time[3:5])
-        hour = e_h - s_h
-        minute = e_m - s_m
-        t = hour*60 + minute
-        melody = s_list[3].replace('C#','c').replace('D#','d').replace('E#','e').replace('F#','f').replace('G#','g').replace('A#','a')
-        mok = t//len(melody)
-        nam = t%len(melody)
-        new_str = melody*mok + melody[0:nam]
-        s_dict[s_list[2]] = new_str
-    answer = ["",""]
-    for key,value in s_dict.items():
-        if m in value:
-            if len(answer[1]) < len(value): 
-                answer[0] = key
-                answer[1] = value
-    if len(answer[0]) == 0:
-        return "(None)" 
-    else:
-        return answer[0]
 ```
 
 ### DAY 14 (20.09.18)
