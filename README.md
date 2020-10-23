@@ -2176,6 +2176,43 @@ def bfs():
 print(bfs())
 ```
 
+3. 케빈 베이컨의 6단계 법칙([https://www.acmicpc.net/problem/1389](https://www.acmicpc.net/problem/1389))
+```
+import sys
+from collections import deque
+import math
+input = sys.stdin.readline
+INF=2**32
+
+N,M = map(int,input().split())
+board = [[INF]*N for _ in range(N)]
+
+for i in range(M):
+    a,b = map(int,sys.stdin.readline().split())
+    board[a-1][b-1] = 1
+    board[b-1][a-1] = 1
+
+for i in range(N):
+    board[i][i] = 0
+
+def floyd():
+    for k in range(N):
+        for i in range(N):
+            for j in range(N):
+                if i==j or j==k or k==i:
+                    continue
+                else:
+                    board[i][j] = min(board[i][j],board[i][k]+board[k][j])
+floyd()
+ans = []
+for i in board:
+    ans.append(sum(i))
+for i in range(N):
+    if ans[i] == min(ans):
+        print(i+1)
+        break
+```
+
 ## 4. 라이센스
 ```
 MIT License
