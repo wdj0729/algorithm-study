@@ -2109,6 +2109,32 @@ for i in range(n):
 print(cnt)
 ```
 
+### DAY 31 (20.10.23)
+1. 랜선 자르기([https://www.acmicpc.net/problem/1654](https://www.acmicpc.net/problem/1654))
+```
+import sys
+from collections import deque
+import math
+input = sys.stdin.readline
+
+K,N = map(int,input().split())
+lan = [int(sys.stdin.readline()) for _ in range(K)]
+lan.sort()
+left = 1
+right = max(lan)
+
+while left<=right:
+    mid = (left+right)//2
+    lines = 0
+    for i in lan:
+        lines += i//mid
+    if lines >= N:
+        left = mid+1
+    else:
+        right = mid-1
+print(right)
+```
+
 ## 4. 라이센스
 ```
 MIT License
