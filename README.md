@@ -2135,6 +2135,47 @@ while left<=right:
 print(right)
 ```
 
+2. 벽 부수고 이동하기([https://www.acmicpc.net/problem/2206](https://www.acmicpc.net/problem/2206))
+```
+import sys
+from collections import deque
+import math
+input = sys.stdin.readline
+
+N,M= map(int,input().split())
+board = [[0]*M for _ in range(N)]
+for i in range(N):
+    arr = input()
+    for j in range(len(arr)-1):
+        board[i][j] = int(arr[j])
+dx = [-1,1,0,0]
+dy = [0,0,1,-1]
+
+def bfs():
+    dq = deque()
+    dq.append((0,0,1))
+    visited = [[[0]*2 for _ in range(M)] for _ in range(N)]
+    visited[0][0][1] = 1
+    while dq:
+        x,y,z = dq.popleft()
+        if x == N-1 and y == M-1:
+            return visited[x][y][z]
+        for i in range(4):
+            nx = x + dx[i]
+            ny = y + dy[i]
+            if nx < 0 or nx >= N or ny <0 or ny >= M:
+                continue
+            else:
+                if board[nx][ny] == 1 and z == 1:
+                    visited[nx][ny][0] = visited[x][y][1] + 1
+                    dq.append((nx,ny,0))
+                elif board[nx][ny] == 0 and visited[nx][ny][z] == 0:
+                    visited[nx][ny][z] = visited[x][y][z] + 1
+                    dq.append((nx,ny,z))
+    return -1
+print(bfs())
+```
+
 ## 4. 라이센스
 ```
 MIT License
