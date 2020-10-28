@@ -1928,6 +1928,51 @@ for i in range(N):
         break
 ```
 
+### DAY 32 (20.10.28)
+1. 공주님을 구해라!([https://www.acmicpc.net/problem/17836](https://www.acmicpc.net/problem/17836))
+```
+import sys
+from collections import deque
+import math
+import copy
+input = sys.stdin.readline
+
+N,M,T = map(int,input().split())
+board = [list(map(int, input().split())) for _ in range(N)]
+visited = [[[0]*2 for _ in range(M)] for _ in range(N)]
+
+dx = [-1,1,0,0]
+dy = [0,0,1,-1]
+
+def bfs():
+    dq = deque()
+    dq.append((0,0,0,0))
+    visited[0][0][0] = 1
+    while dq:
+        x,y,cnt,sw = dq.popleft()
+        if board[x][y] == 2:
+            sw = 1
+        if x == N-1 and y == M-1: 
+            return cnt
+        for i in range(4):
+            nx = x + dx[i]
+            ny = y + dy[i]
+            if sw == 1:
+                if 0<=nx<N and 0<=ny<M and visited[nx][ny][sw] == 0:
+                    visited[nx][ny][sw] = cnt + 1
+                    dq.append((nx,ny,cnt+1,sw))
+            else:
+                if 0<=nx<N and 0<=ny<M and visited[nx][ny][sw] == 0 and board[nx][ny] != 1:
+                    visited[nx][ny][sw] = cnt + 1
+                    dq.append((nx,ny,cnt+1,sw))
+    return -1
+ans = bfs()
+if 0 <= ans <= T:
+    print(ans)
+else:
+    print("Fail")
+```
+
 ## 4. 라이센스
 ```
 MIT License
