@@ -1976,6 +1976,32 @@ else:
     print("Fail")
 ```
 
+### DAY 33 (20.10.29)
+1. 신기한 소수([https://www.acmicpc.net/problem/2023](https://www.acmicpc.net/problem/2023))
+```
+def prime(num):
+    if num == 0 or num == 1:
+        return False
+    for i in range(2,num):
+        if num%i==0:
+            return False
+    return True
+
+def dfs(num,depth):
+    if depth == n:
+        print(num)
+        return
+    for i in range(1,10,2):
+        if prime(num*10+i):
+            dfs(num*10+i,depth+1)
+
+n = int(input())
+dfs(2,1)
+dfs(3,1)
+dfs(5,1)
+dfs(7,1)
+```
+
 ## 4. 라이센스
 ```
 MIT License
