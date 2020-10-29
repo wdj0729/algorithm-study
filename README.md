@@ -80,6 +80,9 @@
 ### DAY 30 (20.10.21)
 1. 유니온-파인드([https://m.blog.naver.com/ndb796/221230967614](https://m.blog.naver.com/ndb796/221230967614))
 
+### DAY 33 (20.10.29)
+1. 문자열, 배열 입력 받기([https://johnyejin.tistory.com/62](https://johnyejin.tistory.com/62))
+
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
 1. 튜플([https://programmers.co.kr/learn/courses/30/lessons/64065](https://programmers.co.kr/learn/courses/30/lessons/64065))
