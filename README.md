@@ -2002,6 +2002,41 @@ dfs(5,1)
 dfs(7,1)
 ```
 
+### DAY 34 (20.10.30)
+1. 보석 도둑([https://www.acmicpc.net/problem/1202](https://www.acmicpc.net/problem/1202))
+```
+import sys
+from collections import deque
+import math
+import copy
+import heapq
+input = sys.stdin.readline
+
+n,k = map(int,input().split())
+gem = []
+for i in range(n):
+    m,v = map(int,input().split())
+    gem.append((m,v))
+bag = []
+for i in range(k):
+    c = int(input())
+    bag.append(c)
+gem.sort()
+bag.sort()
+
+heap = []
+j = 0
+ans = 0
+for i in range(k):
+    while j<n and bag[i]>=gem[j][0]:
+        heapq.heappush(heap,-gem[j][1])
+        j+=1
+    if heap:
+        temp = heapq.heappop(heap)
+        ans += abs(temp)
+print(ans)
+```
+
 ## 4. 라이센스
 ```
 MIT License
