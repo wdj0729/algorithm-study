@@ -2037,6 +2037,69 @@ for i in range(k):
 print(ans)
 ```
 
+### DAY 35 (20.10.31)
+1. 다리 만들기([https://www.acmicpc.net/problem/2146](https://www.acmicpc.net/problem/2146))
+```
+import sys
+from collections import deque
+input = sys.stdin.readline
+sys.setrecursionlimit(10**6)
+
+n = int(input())
+board = [list(map(int, input().split())) for _ in range(n)]
+visited = [[False]*n for _ in range(n)]
+dx = [-1,1,0,0]
+dy = [0,0,-1,1]
+idx = 1
+
+# 섬 번호 붙이기
+def dfs(x,y):
+    visited[x][y] = True
+    board[x][y] = idx
+    for i in range(4):
+        nx,ny = x + dx[i], y + dy[i]
+        if nx < 0 or nx >= n or ny < 0 or ny >= n:
+            continue
+        if not visited[nx][ny] and board[nx][ny]:
+            dfs(nx,ny)
+
+for i in range(n):
+    for j in range(n):
+        if board[i][j] and not visited[i][j]:
+            dfs(i,j)
+            idx+=1
+
+# 최솟값 저장
+ans = 10**9
+# 섬에서 섬끼리 거리 찾기
+def bfs(idx):
+    global ans
+    dq = deque()
+    dist = [[-1]*n for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            if board[i][j] == idx:
+                dq.append((i,j))
+                dist[i][j] = 0
+    while dq:
+        x,y = dq.popleft()
+        for i in range(4):
+            nx,ny = x + dx[i], y + dy[i]
+            if nx < 0 or nx >= n or ny < 0 or ny >= n:
+                continue
+            if board[nx][ny] and board[nx][ny] != idx:
+                ans = min(ans,dist[x][y])
+                return
+            if not board[nx][ny] and dist[nx][ny] == -1:
+                dist[nx][ny] = dist[x][y] + 1
+                dq.append((nx,ny))
+
+for i in range(1,idx+1):
+    bfs(i)
+
+print(ans)
+```
+
 ## 4. 라이센스
 ```
 MIT License
