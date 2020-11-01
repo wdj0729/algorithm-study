@@ -10,7 +10,8 @@
 ### 알고리즘 이론
 1. 박트리의 블로그([https://baactree.tistory.com/notice/16](https://baactree.tistory.com/notice/16))
 2. Ries 마법의 슈퍼마리오([https://blog.naver.com/kks227/220769870195](https://blog.naver.com/kks227/220769870195))
-3. 안경잡이개발자 ([https://blog.naver.com/ndb796/221226794899](https://blog.naver.com/ndb796/221226794899))
+3. BaaaaaaaarkingDog([https://blog.encrypted.gg/](https://blog.encrypted.gg/))
+4. 안경잡이개발자([https://blog.naver.com/ndb796/221226794899](https://blog.naver.com/ndb796/221226794899))
 
 ## 2. 파이썬 참고자료 목록
 ### DAY 1 (20.09.01)
