@@ -1,10 +1,16 @@
 알고리즘 문제풀이 정리
 ======================
 ## 1. 공부중인 사이트 목록
-1. 코딩테스트 연습 | 프로그래머스([https://programmers.co.kr/learn/courses/30](https://programmers.co.kr/learn/courses/30))
+### 알고리즘 실습
+1. 프로그래머스([https://programmers.co.kr/learn/courses/30](https://programmers.co.kr/learn/courses/30))
 2. AtCoder([https://atcoder.jp/home](https://atcoder.jp/home))
 3. Baekjoon Online Judge([https://www.acmicpc.net/](https://www.acmicpc.net/))
 4. LeetCode([https://leetcode.com/](https://leetcode.com/))
+
+### 알고리즘 이론
+1. 박트리의 블로그([https://baactree.tistory.com/notice/16](https://baactree.tistory.com/notice/16))
+2. Ries 마법의 슈퍼마리오([https://blog.naver.com/kks227/220769870195](https://blog.naver.com/kks227/220769870195))
+3. 안경잡이개발자 ([https://blog.naver.com/ndb796/221226794899](https://blog.naver.com/ndb796/221226794899))
 
 ## 2. 파이썬 참고자료 목록
 ### DAY 1 (20.09.01)
