@@ -2106,6 +2106,30 @@ for i in range(1,idx+1):
 print(ans)
 ```
 
+### DAY 36 (20.11.01)
+1. 점프([https://www.acmicpc.net/problem/1890](https://www.acmicpc.net/problem/1890))
+```
+import sys
+from collections import deque
+import math
+input = sys.stdin.readline
+
+n = int(input())
+board = [list(map(int, input().split())) for _ in range(n)]
+dp = [[0]*n for _ in range(n)]
+dp[0][0] = 1
+
+for i in range(n):
+    for j in range(n):
+        if board[i][j] == 0:
+            continue
+        if i + board[i][j] < n:
+            dp[i+board[i][j]][j] += dp[i][j]
+        if j + board[i][j] < n:
+            dp[i][j+board[i][j]] += dp[i][j]
+print(dp[n-1][n-1])
+```
+
 ## 4. 라이센스
 ```
 MIT License
