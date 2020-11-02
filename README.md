@@ -2,10 +2,10 @@
 ======================
 ## 1. 공부중인 사이트 목록
 ### 알고리즘 실습
-1. 프로그래머스([https://programmers.co.kr/learn/courses/30](https://programmers.co.kr/learn/courses/30))
-2. AtCoder([https://atcoder.jp/home](https://atcoder.jp/home))
-3. Baekjoon Online Judge([https://www.acmicpc.net/](https://www.acmicpc.net/))
-4. LeetCode([https://leetcode.com/](https://leetcode.com/))
+1. Baekjoon Online Judge([https://www.acmicpc.net/](https://www.acmicpc.net/))
+2. 프로그래머스([https://programmers.co.kr/learn/courses/30](https://programmers.co.kr/learn/courses/30))
+3. Codeforces([https://codeforces.com/](https://codeforces.com/))
+4. AtCoder([https://atcoder.jp/home](https://atcoder.jp/home))
 
 ### 알고리즘 이론
 1. 박트리의 블로그([https://baactree.tistory.com/notice/16](https://baactree.tistory.com/notice/16))
@@ -48,46 +48,43 @@
 1. 소수 찾기 - 에라토스테네스의 체([https://abit.ly/xnmgwa](https://abit.ly/xnmgwa))
 2. 입력 값을 변수 두 개에 저장하기([https://abit.ly/jbyc5x](https://abit.ly/jbyc5x))
 
-### DAY 7 (20.09.09)
+### DAY 9 (20.09.09)
 1. count, len 함수 설명과 예제([https://blockdmask.tistory.com/410](https://blockdmask.tistory.com/410))
 2. 얕은 복사(shallow copy)와 깊은 복사(deep copy)([https://wikidocs.net/16038](https://wikidocs.net/16038))
 3. 2차원 list 중복 제거([https://inma.tistory.com/132](https://inma.tistory.com/132))
 4. 하노이 탑([https://www.youtube.com/watch?v=FYCGV6F1NuY](https://www.youtube.com/watch?v=FYCGV6F1NuY))
 5. 다이나믹 프로그래밍([https://blog.naver.com/ndb796/221233570962](https://blog.naver.com/ndb796/221233570962))
 
-### DAY 8 (20.09.10)
+### DAY 10 (20.09.10)
 1. 달팽이삼각형([https://machine-geon.tistory.com/64](https://machine-geon.tistory.com/64))
 
-### DAY 9 (20.09.11)
+### DAY 11 (20.09.11)
 1. Counter([https://www.daleseo.com/python-collections-counter/](https://www.daleseo.com/python-collections-counter/))
 
-### DAY 10 (20.09.12)
-1. 2021 카카오 신입개발자 블라인드 채용 1차 총평([https://blog.encrypted.gg/951](https://blog.encrypted.gg/951))
-
-### DAY 13 (20.09.16)
+### DAY 16 (20.09.16)
 1. 정규표현식([https://wikidocs.net/4308](https://wikidocs.net/4308))
 2. 정규표현식([https://mzl.la/2H0dmvf](https://mzl.la/2H0dmvf))
 
-### DAY 14 (20.09.18)
+### DAY 18 (20.09.18)
 1. 정렬, 다중조건([https://dailyheumsi.tistory.com/67](https://dailyheumsi.tistory.com/67))
 2. Array 사용법([https://blog.wonkyunglee.io/3](https://blog.wonkyunglee.io/3))
 
-### DAY 15 (20.09.22)
+### DAY 22 (20.09.22)
 1. 효율적인 약수의 개수를 찾는 알고리즘([https://hsdevelopment.tistory.com/110](https://hsdevelopment.tistory.com/110))
 
-### DAY 25 (20.10.14)
+### DAY 44 (20.10.14)
 1. 다익스트라 알고리즘([https://m.blog.naver.com/ndb796/221234424646](https://m.blog.naver.com/ndb796/221234424646))
 2. 플로이드 와샬 알고리즘([https://m.blog.naver.com/ndb796/221234427842](https://m.blog.naver.com/ndb796/221234427842))
 
-### DAY 29 (20.10.20)
+### DAY 50 (20.10.20)
 1. 최장 공통 부분 수열([https://debuglog.tistory.com/77](https://debuglog.tistory.com/77))
 2. 위상 정렬([https://abit.ly/am2qwdt](https://abit.ly/am2qwdt))
 3. 파이썬의 Asterisk * 이해하기([https://abit.ly/bvhvib](https://abit.ly/bvhvib))
 
-### DAY 30 (20.10.21)
+### DAY 51 (20.10.21)
 1. 유니온-파인드([https://m.blog.naver.com/ndb796/221230967614](https://m.blog.naver.com/ndb796/221230967614))
 
-### DAY 33 (20.10.29)
+### DAY 59 (20.10.29)
 1. 문자열, 배열 입력 받기([https://johnyejin.tistory.com/62](https://johnyejin.tistory.com/62))
 
 ## 3. 파이썬으로 푼 문제 목록
@@ -251,6 +248,7 @@ def solution(n):
     s_list.reverse()  
     return(''.join(s_list))  # 거꾸로 뒤집어진 리스트를 연결해서 출력
 ```
+
 2. 문자열 압축([https://programmers.co.kr/learn/courses/30/lessons/60057](https://programmers.co.kr/learn/courses/30/lessons/60057))
 ```
 def solution(s):
@@ -437,7 +435,7 @@ def solution(n,a,b):
         ans+=1
 ```
 
-### DAY 6 (20.09.07)
+### DAY 7 (20.09.07)
 1. 네트워크 ([https://programmers.co.kr/learn/courses/30/lessons/43162](https://programmers.co.kr/learn/courses/30/lessons/43162))
 ```
 def solution(n, computers):
@@ -502,7 +500,7 @@ def solution(begin, target, words):
         return min(stack)
 ```
 
-### DAY 7 (20.09.09)
+### DAY 9 (20.09.09)
 1. 여행경로([https://programmers.co.kr/learn/courses/30/lessons/43164](https://programmers.co.kr/learn/courses/30/lessons/43164))
 ```
 import copy
@@ -588,7 +586,7 @@ def solution(n):
     return(dp[n]%1234567)
 ```
 
-### DAY 8 (20.09.10)
+### DAY 10 (20.09.10)
 1. 땅따먹기([https://programmers.co.kr/learn/courses/30/lessons/12913](https://programmers.co.kr/learn/courses/30/lessons/12913))
 ```
 def solution(land):
@@ -604,7 +602,7 @@ def solution(land):
 
 ![1](https://user-images.githubusercontent.com/26870568/92739723-2516ba80-f3b8-11ea-9849-32d7225de37d.PNG)
 
-### DAY 9 (20.09.11)
+### DAY 11 (20.09.11)
 1. 키패드 누르기([https://programmers.co.kr/learn/courses/30/lessons/67256](https://programmers.co.kr/learn/courses/30/lessons/67256))
 ```
 import math
@@ -691,21 +689,7 @@ def solution(str1, str2):
         return int(intersect/union*65536)
 ```
 
-### DAY 10 (20.09.12)
-1. 2021 KAKAO BLIND RECRUITMENT([https://www.welcomekakao.com/competitions/317/2021-kakao-blind-recruitment](https://www.welcomekakao.com/competitions/317/2021-kakao-blind-recruitment)) 
-
-![1](https://user-images.githubusercontent.com/26870568/92994298-21a83e00-f534-11ea-979f-e88409ffa133.PNG)
-
-### DAY 11 (20.09.13)
-1. 2020 SW개발 신입 LINER 공개채용 코딩테스트([https://programmers.co.kr/tryouts/17581/result](https://programmers.co.kr/tryouts/17581/result))
-
-![1](https://user-images.githubusercontent.com/26870568/93016711-3d781680-f5fe-11ea-8825-891d7737d718.PNG)
-
-2. AtCoder Beginner Contest 178([https://atcoder.jp/contests/abc178](https://atcoder.jp/contests/abc178))
-
-![1](https://user-images.githubusercontent.com/26870568/93016870-44535900-f5ff-11ea-8939-127717a54165.PNG)
-
-### DAY 12 (20.09.14)
+### DAY 14 (20.09.14)
 1. 점프와 순간 이동([https://programmers.co.kr/learn/courses/30/lessons/12980](https://programmers.co.kr/learn/courses/30/lessons/12980))
 ```
 def solution(n):
@@ -755,7 +739,7 @@ def solution(routes):
     return(ans)
 ```
 
-### DAY 13 (20.09.16)
+### DAY 16 (20.09.16)
 1. 파일명 정렬([https://programmers.co.kr/learn/courses/30/lessons/17686](https://programmers.co.kr/learn/courses/30/lessons/17686))
 ```
 import re
@@ -777,7 +761,7 @@ def solution(files):
     return(answer)
 ```
 
-### DAY 14 (20.09.18)
+### DAY 18 (20.09.18)
 1. 베스트앨범([https://programmers.co.kr/learn/courses/30/lessons/42579](https://programmers.co.kr/learn/courses/30/lessons/42579))
 ```
 def solution(genres, plays):
@@ -808,7 +792,7 @@ def solution(genres, plays):
     return(answer)
 ```
 
-### DAY 15 (20.09.22)
+### DAY 22 (20.09.22)
 1. 문자열 폭발([https://www.acmicpc.net/problem/9935](https://www.acmicpc.net/problem/9935))
 ```
 n=input()
@@ -831,7 +815,7 @@ else:
     print("".join(ans))
 ```
 
-### DAY 16 (20.09.23)
+### DAY 23 (20.09.23)
 1. 부분합([https://www.acmicpc.net/problem/1806](https://www.acmicpc.net/problem/1806))
 ```
 import sys
@@ -858,7 +842,7 @@ else:
     print(result)
 ```
 
-### DAY 17 (20.09.26)
+### DAY 26 (20.09.26)
 1. 입국심사([https://programmers.co.kr/learn/courses/30/lessons/43238](https://programmers.co.kr/learn/courses/30/lessons/43238))
 ```
 def solution(n, times):
@@ -880,21 +864,7 @@ def solution(n, times):
     return ans
 ```
 
-2. Atcoder ACL Beginner Contest 179([https://atcoder.jp/contests/abl](https://atcoder.jp/contests/abl))
-
-![1](https://user-images.githubusercontent.com/26870568/94339610-12e28080-0036-11eb-933e-3cf9bb4f6b1f.PNG)
-
-### DAY 18 (20.09.27)
-1. NAVER 2020 신입 개발자 공개채용 온라인 코딩테스트([https://programmers.co.kr/tryouts/18041/result](https://programmers.co.kr/tryouts/18041/result))
-
-![1](https://user-images.githubusercontent.com/26870568/93016711-3d781680-f5fe-11ea-8825-891d7737d718.PNG)
-
-### DAY 19 (20.10.03)
-1. Atcoder ACL Regular Contest 104([https://atcoder.jp/contests/arc104](https://atcoder.jp/contests/arc104))
-
-![1](https://user-images.githubusercontent.com/26870568/95008863-623d3800-0658-11eb-8635-aac9c282cae7.PNG)
-
-### DAY 20 (20.10.05)
+### DAY 35 (20.10.05)
 1. 단지번호붙이기([https://www.acmicpc.net/problem/2667](https://www.acmicpc.net/problem/2667))
 ```
 from collections import deque
@@ -968,72 +938,12 @@ def bfs(v):
 bfs(v)
 ```
 
-### DAY 21 (20.10.06)
-1. Climbing Stairs([https://leetcode.com/problems/climbing-stairs/](https://leetcode.com/problems/climbing-stairs/))
-```
-class Solution(object):
-    def climbStairs(self, n):
-        dp = [0 for i in range(n+1)]
-        if n <= 1:
-            return 1
-        dp[0] = 1
-        dp[1] = 1
-        for i in range(2,n+1):
-            dp[i] = dp[i-1] + dp[i-2]
-        return dp[n]
-```
-
-2. House Robber([https://leetcode.com/problems/house-robber/](https://leetcode.com/problems/house-robber/))
-```
-from collections import defaultdict
-
-class Solution(object):
-    def rob(self, nums):
-        if len(nums) == 0:
-            return 0
-        
-        dp = defaultdict(int)
-        dp[0] = 0
-        dp[1] = nums[0]
-        
-        for i in range(2,len(nums)+1):
-            dp[i] = max(dp[i-1],dp[i-2]+nums[i-1])
-            
-        return dp[len(nums)]
-```
-
-3. Valid Parentheses([https://leetcode.com/problems/valid-parentheses/](https://leetcode.com/problems/valid-parentheses/))
-```
-class Solution(object):
-    def isValid(self, s):
-        st = []
-        for i in s:
-            if i == '(' or i=='{' or i=='[':
-                st.append(i)
-            else:
-                if len(st) == 0:
-                    return False
-                else:
-                    if i==')' and st[-1]=='(':
-                        st.pop()
-                    elif i =='}' and st[-1]=='{':
-                        st.pop()
-                    elif i==']' and st[-1]=='[':
-                        st.pop()
-                    else:
-                        return False
-        if len(st) == 0:
-            return True
-        else:
-            return False
-```
-
-### DAY 22 (20.10.08)
+### DAY 38 (20.10.08)
 1. 프로그래머스 월간 코드 챌린지 시즌1([https://abit.ly/ibnzqvf](https://abit.ly/ibnzqvf))
 
 ![1](https://user-images.githubusercontent.com/26870568/95467986-0ad0fc00-09b9-11eb-888e-cd01dc679f80.PNG)
 
-### DAY 23 (20.10.09)
+### DAY 39 (20.10.09)
 1. 트리 순회([https://www.acmicpc.net/problem/1991](https://www.acmicpc.net/problem/1991))
 ```
 class Node:
@@ -1131,11 +1041,7 @@ def solution(n, edge):
     return(visited.count(max(visited)))
 ```
 
-4. 쿠팡 테크 캠퍼스 리크루팅([https://programmers.co.kr/tryouts/18379/result](https://programmers.co.kr/tryouts/18379/result))
-
-![1](https://user-images.githubusercontent.com/26870568/93016711-3d781680-f5fe-11ea-8825-891d7737d718.PNG)
-
-### DAY 24 (20.10.13)
+### DAY 43 (20.10.13)
 1. 촌수계산([https://www.acmicpc.net/problem/2644](https://www.acmicpc.net/problem/2644))
 ```
 import sys
@@ -1215,7 +1121,7 @@ for i in range(n-1):
 print(ans)
 ```
 
-### DAY 25 (20.10.14)
+### DAY 44 (20.10.14)
 1. RGB거리([https://www.acmicpc.net/problem/1149](https://www.acmicpc.net/problem/1149))
 ```
 import sys
@@ -1428,7 +1334,7 @@ while left<=right and right<=n+1:
 print(ans)
 ```
 
-### DAY 26 (20.10.15)
+### DAY 45 (20.10.15)
 1. 최소 힙([https://www.acmicpc.net/problem/1927](https://www.acmicpc.net/problem/1927))
 ```
 import sys
@@ -1464,7 +1370,7 @@ while True:
         print(dp[n-1][1])
 ```
 
-### DAY 27 (20.10.16)
+### DAY 46 (20.10.16)
 1. 유기농 배추([https://www.acmicpc.net/problem/1012](https://www.acmicpc.net/problem/1012))
 ```
 from collections import deque
@@ -1602,7 +1508,7 @@ print(zero)
 print(one)
 ```
 
-### DAY 28 (20.10.18)
+### DAY 48 (20.10.18)
 1. 키 순서([https://www.acmicpc.net/problem/2458](https://www.acmicpc.net/problem/2458))
 ```
 import sys
@@ -1667,7 +1573,7 @@ bfs()
 print(visited[n-1][m-1])
 ```
 
-### DAY 29 (20.10.20)
+### DAY 50 (20.10.20)
 1. LCS([https://www.acmicpc.net/problem/9251](https://www.acmicpc.net/problem/9251))
 ```
 A=list(input())
@@ -1717,7 +1623,7 @@ while dq:
 print(*result)
 ```
 
-### DAY 30 (20.10.21)
+### DAY 51 (20.10.21)
 1. 집합의 표현([https://www.acmicpc.net/problem/1717](https://www.acmicpc.net/problem/1717))
 ```
 import sys
@@ -1834,7 +1740,7 @@ for i in range(n):
 print(cnt)
 ```
 
-### DAY 31 (20.10.23)
+### DAY 53 (20.10.23)
 1. 랜선 자르기([https://www.acmicpc.net/problem/1654](https://www.acmicpc.net/problem/1654))
 ```
 import sys
@@ -1938,7 +1844,7 @@ for i in range(N):
         break
 ```
 
-### DAY 32 (20.10.28)
+### DAY 58 (20.10.28)
 1. 공주님을 구해라!([https://www.acmicpc.net/problem/17836](https://www.acmicpc.net/problem/17836))
 ```
 import sys
@@ -1983,7 +1889,7 @@ else:
     print("Fail")
 ```
 
-### DAY 33 (20.10.29)
+### DAY 59 (20.10.29)
 1. 신기한 소수([https://www.acmicpc.net/problem/2023](https://www.acmicpc.net/problem/2023))
 ```
 def prime(num):
@@ -2009,7 +1915,7 @@ dfs(5,1)
 dfs(7,1)
 ```
 
-### DAY 34 (20.10.30)
+### DAY 60 (20.10.30)
 1. 보석 도둑([https://www.acmicpc.net/problem/1202](https://www.acmicpc.net/problem/1202))
 ```
 import sys
@@ -2044,7 +1950,7 @@ for i in range(k):
 print(ans)
 ```
 
-### DAY 35 (20.10.31)
+### DAY 61 (20.10.31)
 1. 다리 만들기([https://www.acmicpc.net/problem/2146](https://www.acmicpc.net/problem/2146))
 ```
 import sys
@@ -2107,7 +2013,7 @@ for i in range(1,idx+1):
 print(ans)
 ```
 
-### DAY 36 (20.11.01)
+### DAY 62 (20.11.01)
 1. 점프([https://www.acmicpc.net/problem/1890](https://www.acmicpc.net/problem/1890))
 ```
 import sys
