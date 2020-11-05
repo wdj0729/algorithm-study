@@ -2067,6 +2067,70 @@ def dfs(x,y):
 print(dfs(m-1,n-1))
 ```
 
+### DAY 66 (20.11.05)
+1. 뱀([https://www.acmicpc.net/problem/3190](https://www.acmicpc.net/problem/3190))
+```
+import sys
+from collections import deque
+input = sys.stdin.readline
+
+n = int(input())
+board = [[0]*n for _ in range(n)]
+k = int(input())
+for i in range(k):
+    a,b = map(int,input().split())
+    board[a-1][b-1] = 1
+l = int(input())
+move = [list(map(str, input().split())) for _ in range(l)]
+move = deque(move)
+tail = deque()
+
+dx = [0,1,0,-1]
+dy = [1,0,-1,0]
+
+def bfs():
+    dq = deque()
+    dq.append((0,0,0))
+    tail.append((0,0))
+    visited = [[0]*n for _ in range(n)]
+    visited[0][0] = 1
+    time = 0
+    while True:
+        x,y,d = dq.popleft()
+        time+=1
+        nx,ny = x + dx[d], y + dy[d]
+        # 벽에 부딪히거나 자신과 부딪힐 경우
+        if nx < 0 or nx >= n or ny < 0 or ny >= n or visited[nx][ny] == 1:
+            print(time)
+            exit()
+        else:
+            tail.append((nx,ny))
+            visited[nx][ny] = 1
+
+            # 방향 전환
+            if len(move) > 0:
+                if int(move[0][0]) == time:
+                    # 좌회전
+                    if move[0][1] == 'L':
+                        d = (d-1)%4
+                    # 우회전
+                    else:
+                        d = (d+1)%4
+                    move.popleft()
+                    
+            dq.append((nx,ny,d))
+
+            # 사과가 있다면
+            if board[nx][ny] == 1:
+                board[nx][ny] = 0
+                continue
+            # 사과가 없다면
+            else:
+                sx,sy = tail.popleft()
+                visited[sx][sy] = 0
+bfs()
+```
+
 ## 4. 라이센스
 ```
 MIT License
