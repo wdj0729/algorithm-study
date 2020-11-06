@@ -18,48 +18,28 @@
 1. heapq 모듈 사용법([https://www.daleseo.com/python-heapq/](https://www.daleseo.com/python-heapq/))
 2. 순열과 조합 - combinations, permutations([https://abit.ly/wyxcdu](https://abit.ly/wyxcdu))
 3. 리스트 중복 제거하기([https://abit.ly/1ljjxk9](https://abit.ly/1ljjxk9))
-4. 피보나치 수열 갖고 놀기([https://www.crocus.co.kr/1643](https://www.crocus.co.kr/1643))
-5. 파이썬 특정문자 찾기(find,startswith,endswith)([https://dpdpwl.tistory.com/119](https://dpdpwl.tistory.com/119))
 
 ### DAY 2 (20.09.02)
 1. 절대값(abs)함수 ([https://blockdmask.tistory.com/380](https://blockdmask.tistory.com/380))
-2. 리스트 중복 요소 개수 찾기([https://infinitt.tistory.com/78](https://infinitt.tistory.com/78))
-3. 사전 딕셔너리 값 value 로 정렬하는 방법 - lambda 식 응용([https://korbillgates.tistory.com/171](https://korbillgates.tistory.com/171))
-4. 문자열([https://snakify.org/ko/lessons/strings_str/](https://snakify.org/ko/lessons/strings_str/))
 
 ### DAY 3 (20.09.03)
 1. 문자열 거꾸로 출력하기 ([https://itholic.github.io/python-reverse-string/](https://itholic.github.io/python-reverse-string/))
 2. 이진 트리와 순회 알고리즘 구현([https://abit.ly/d7sg68](https://abit.ly/d7sg68))
-3. sorted 에 대해서([http://blog.weirdx.io/post/50236](http://blog.weirdx.io/post/50236))
-4. 회전행렬 / 2차원배열 회전하는 법 구현하기([https://deepwelloper.tistory.com/117](https://deepwelloper.tistory.com/117))
-5. 2차원 배열 간단하게 생성하기([https://andrew0409.tistory.com/53](https://andrew0409.tistory.com/53))
-6. collections 모듈 - deque([https://excelsior-cjh.tistory.com/96](https://excelsior-cjh.tistory.com/96))
-7. 약수구하기([https://sun-kakao.tistory.com/96](https://sun-kakao.tistory.com/96))
+3. 회전행렬 / 2차원배열 회전하는 법 구현하기([https://deepwelloper.tistory.com/117](https://deepwelloper.tistory.com/117))
 
 ### DAY 4 (20.09.04)
 1. 최대공약수, 최소공배수, N개의 최소공배수([https://brownbears.tistory.com/454](https://brownbears.tistory.com/454))
 2. 2진수, 8진수, 16진수 다루기([https://www.daleseo.com/python-int-bases/](https://www.daleseo.com/python-int-bases/))
 3. 행렬의 곱셈([https://brownbears.tistory.com/449](https://brownbears.tistory.com/449))
-4. 리스트에 map 사용하기([https://abit.ly/9zihzn](https://abit.ly/9zihzn))
-5. split, join, slice([https://abit.ly/ekbo9wd](https://abit.ly/ekbo9wd))
-6. 사칙연산을 위한 7가지 연산자([https://includestdio.tistory.com/16](https://includestdio.tistory.com/16))
 
 ### DAY 5 (20.09.05)
 1. 소수 찾기 - 에라토스테네스의 체([https://abit.ly/xnmgwa](https://abit.ly/xnmgwa))
-2. 입력 값을 변수 두 개에 저장하기([https://abit.ly/jbyc5x](https://abit.ly/jbyc5x))
 
 ### DAY 9 (20.09.09)
-1. count, len 함수 설명과 예제([https://blockdmask.tistory.com/410](https://blockdmask.tistory.com/410))
-2. 얕은 복사(shallow copy)와 깊은 복사(deep copy)([https://wikidocs.net/16038](https://wikidocs.net/16038))
-3. 2차원 list 중복 제거([https://inma.tistory.com/132](https://inma.tistory.com/132))
-4. 하노이 탑([https://www.youtube.com/watch?v=FYCGV6F1NuY](https://www.youtube.com/watch?v=FYCGV6F1NuY))
-5. 다이나믹 프로그래밍([https://blog.naver.com/ndb796/221233570962](https://blog.naver.com/ndb796/221233570962))
+1. 2차원 list 중복 제거([https://inma.tistory.com/132](https://inma.tistory.com/132))
 
 ### DAY 10 (20.09.10)
 1. 달팽이삼각형([https://machine-geon.tistory.com/64](https://machine-geon.tistory.com/64))
-
-### DAY 11 (20.09.11)
-1. Counter([https://www.daleseo.com/python-collections-counter/](https://www.daleseo.com/python-collections-counter/))
 
 ### DAY 16 (20.09.16)
 1. 정규표현식([https://wikidocs.net/4308](https://wikidocs.net/4308))
@@ -67,7 +47,6 @@
 
 ### DAY 18 (20.09.18)
 1. 정렬, 다중조건([https://dailyheumsi.tistory.com/67](https://dailyheumsi.tistory.com/67))
-2. Array 사용법([https://blog.wonkyunglee.io/3](https://blog.wonkyunglee.io/3))
 
 ### DAY 22 (20.09.22)
 1. 효율적인 약수의 개수를 찾는 알고리즘([https://hsdevelopment.tistory.com/110](https://hsdevelopment.tistory.com/110))
@@ -86,6 +65,9 @@
 
 ### DAY 59 (20.10.29)
 1. 문자열, 배열 입력 받기([https://johnyejin.tistory.com/62](https://johnyejin.tistory.com/62))
+
+### DAY 67 (20.11.06)
+1. 비트마스크는 무엇인가?([https://mygumi.tistory.com/361](https://mygumi.tistory.com/361))
 
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
