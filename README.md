@@ -68,6 +68,7 @@
 
 ### DAY 67 (20.11.06)
 1. 비트마스크는 무엇인가?([https://mygumi.tistory.com/361](https://mygumi.tistory.com/361))
+2. 우선순위 큐([https://abit.ly/2ri6n3](https://abit.ly/2ri6n3))
 
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
