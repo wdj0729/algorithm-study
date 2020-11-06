@@ -2166,6 +2166,42 @@ for i in range(n):
             print(bfs(i,j))
 ```
 
+2. 부등호([https://www.acmicpc.net/problem/2529](https://www.acmicpc.net/problem/2529))
+```
+import sys
+sys.setrecursionlimit(10000)
+input = sys.stdin.readline
+
+k = int(input())
+st = list(input().split())
+node = [0,1,2,3,4,5,6,7,8,9]
+visited = [0,0,0,0,0,0,0,0,0,0]
+ans = []
+
+def dfs(v,cnt,num,idx):
+    if cnt == k:
+        ans.append(num)
+    else:
+        for i in node:
+            if visited[i] == 0:
+                if st[idx] == '<':
+                    if v >= i:
+                        continue
+                else:
+                    if v <= i:
+                        continue
+                visited[i] = True
+                dfs(i,cnt+1,num+str(i),idx+1)
+    visited[v] = False
+
+for i in node:
+    visited[i] = 1
+    dfs(i,0,str(i),0)
+    
+print(ans[-1])
+print(ans[0])
+```
+
 ## 4. 라이센스
 ```
 MIT License
