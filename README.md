@@ -20,10 +20,10 @@
 3. 리스트 중복 제거하기([https://abit.ly/1ljjxk9](https://abit.ly/1ljjxk9))
 
 ### DAY 2 (20.09.02)
-1. 절대값(abs)함수 ([https://blockdmask.tistory.com/380](https://blockdmask.tistory.com/380))
+1. 절대값(abs)함수([https://blockdmask.tistory.com/380](https://blockdmask.tistory.com/380))
 
 ### DAY 3 (20.09.03)
-1. 문자열 거꾸로 출력하기 ([https://itholic.github.io/python-reverse-string/](https://itholic.github.io/python-reverse-string/))
+1. 문자열 거꾸로 출력하기([https://itholic.github.io/python-reverse-string/](https://itholic.github.io/python-reverse-string/))
 2. 이진 트리와 순회 알고리즘 구현([https://abit.ly/d7sg68](https://abit.ly/d7sg68))
 3. 회전행렬 / 2차원배열 회전하는 법 구현하기([https://deepwelloper.tistory.com/117](https://deepwelloper.tistory.com/117))
 
