@@ -2135,6 +2135,55 @@ bfs()
 
 ![1](https://user-images.githubusercontent.com/26870568/98255167-78744600-1fc0-11eb-9f25-526bc2fea16e.PNG)
 
+### DAY 67 (20.11.06)
+1. 달이 차오른다, 가자.([https://www.acmicpc.net/problem/1194](https://www.acmicpc.net/problem/1194))
+```
+import sys
+from collections import deque
+input = sys.stdin.readline
+
+n,m = map(int,input().split())
+board = [list(input().strip()) for _ in range(n)]
+visited = [[[0]*64 for _ in range(m)] for _ in range(n)]
+
+dx = [-1,1,0,0]
+dy = [0,0,-1,1]
+
+def bfs(x,y):
+    dq = deque()
+    dq.append((x,y,0,0))
+    visited[x][y][0] = 1
+    while dq:
+        x,y,key,dist = dq.popleft()
+
+        if board[x][y] == '1':
+            return dist
+
+        for i in range(4):
+            nx = x + dx[i]
+            ny = y + dy[i]
+            if 0 <= nx < n and 0 <= ny < m and visited[nx][ny][key] == 0 and board[nx][ny] != '#':
+                #print(nx,ny,board[nx][ny],dist)
+                if board[nx][ny].isupper():
+                    if key & 1 << (ord(board[nx][ny]) - 65):
+                        visited[nx][ny][key] = visited[x][y][key] +1
+                        dq.append((nx,ny,key,dist+1))
+                elif board[nx][ny].islower():
+                    nKey = key | (1 << ord(board[nx][ny]) - 97)
+                    if visited[nx][ny][nKey] == 0:
+                        visited[nx][ny][nKey] = visited[x][y][key] + 1
+                        dq.append((nx,ny,nKey,dist+1))
+                else:
+                    visited[nx][ny][key] = visited[x][y][key] + 1
+                    dq.append((nx,ny,key,dist+1))
+    return -1
+
+for i in range(n):
+    for j in range(m):
+        if board[i][j] == '0':
+            print(bfs(i,j))
+```
+
 ## 4. 라이센스
 ```
 MIT License
