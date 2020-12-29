@@ -2137,10 +2137,10 @@ def solution(m, n, board):
         for x in range(m):
             for y in range(n):
                 if x+1 < m and y+1 < n and n_board[x][y] != '0' and (n_board[x][y] == n_board[x+1][y] and n_board[x][y] == n_board[x][y+1] and n_board[x][y] == n_board[x+1][y+1]):
-                    tmp_board[x][y] = '0';
-                    tmp_board[x+1][y] = '0';
-                    tmp_board[x][y+1] = '0';
-                    tmp_board[x+1][y+1] = '0';
+                    tmp_board[x][y] = '0'
+                    tmp_board[x+1][y] = '0'
+                    tmp_board[x][y+1] = '0'
+                    tmp_board[x+1][y+1] = '0'
                     flag = True;
         after_board = []
         # 블록 지우고 아래로 내리기
