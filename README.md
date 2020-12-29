@@ -2214,9 +2214,9 @@ def solution(m, n, board):
     for i in range(m):
         for j in range(n):
             n_board[i][j] = board[i][j]
-    # 지울 블록 담은 배열
     flag = True;
     while flag:
+        # 지울 블록 담은 배열
         tmp_board = copy.deepcopy(n_board)
         # 지울 블록 선택하기
         flag = False;
