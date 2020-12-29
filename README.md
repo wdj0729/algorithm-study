@@ -2203,6 +2203,59 @@ print(ans[-1])
 print(ans[0])
 ```
 
+### DAY 120 (20.12.29)
+1. 프렌즈4블록([https://programmers.co.kr/learn/courses/30/lessons/17679](https://programmers.co.kr/learn/courses/30/lessons/17679))
+```
+import copy
+
+def solution(m, n, board):
+    # 초기 배열
+    n_board = [[0]*n for _ in range(m)]
+    for i in range(m):
+        for j in range(n):
+            n_board[i][j] = board[i][j]
+    # 지울 블록 담은 배열
+    flag = True;
+    while flag:
+        tmp_board = copy.deepcopy(n_board)
+        # 지울 블록 선택하기
+        flag = False;
+        for x in range(m):
+            for y in range(n):
+                if x+1 < m and y+1 < n and n_board[x][y] != '0' and (n_board[x][y] == n_board[x+1][y] and n_board[x][y] == n_board[x][y+1] and n_board[x][y] == n_board[x+1][y+1]):
+                    tmp_board[x][y] = '0';
+                    tmp_board[x+1][y] = '0';
+                    tmp_board[x][y+1] = '0';
+                    tmp_board[x+1][y+1] = '0';
+                    flag = True;
+        after_board = []
+        # 블록 지우고 아래로 내리기
+        for i in range(n):
+            tmp_list = []
+            for j in range(m):
+                if tmp_board[j][i] != '0':
+                    tmp_list.append(tmp_board[j][i])
+            after_board.append(tmp_list)
+        # 마지막 연산후 배열
+        last_board = [['0']*n for _ in range(m)]
+        for i in range(n):
+            cnt = len(after_board[i])
+            idx = 0
+            for j in range(m):
+                if cnt == m:
+                    last_board[j][i] = after_board[i][idx]
+                    idx+=1
+                else:
+                    cnt+=1
+        n_board = last_board
+    ans = 0
+    for i in range(m):
+        for j in range(n):
+            if last_board[i][j] == '0':
+                ans+=1
+    return ans
+```
+
 ## 4. 라이센스
 ```
 MIT License
