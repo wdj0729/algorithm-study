@@ -117,24 +117,6 @@ def solution(n):
     return answer
 ```
 
-3. 더 맵게([https://programmers.co.kr/learn/courses/30/lessons/42626](https://programmers.co.kr/learn/courses/30/lessons/42626))
-```
-import heapq
-
-def solution(scoville, K):
-    heap = []
-    for num in scoville:
-        heapq.heappush(heap, num)
-    cnt=0
-    while heap[0]<K:
-        try:
-            heapq.heappush(heap, heapq.heappop(heap) + (heapq.heappop(heap) * 2))
-        except:
-             return -1
-        cnt+=1
-    return cnt
-```
-
 ### DAY 2 (20.09.02)
 1. 오픈채팅방([https://programmers.co.kr/learn/courses/30/lessons/42888](https://programmers.co.kr/learn/courses/30/lessons/42888))
 ```
@@ -558,17 +540,6 @@ def solution(numbers):
         return ans
 ```
 
-4. 멀리 뛰기([https://programmers.co.kr/learn/courses/30/lessons/12914](https://programmers.co.kr/learn/courses/30/lessons/12914))
-```
-def solution(n):
-    dp = [0 for _ in range(n+1)]
-    dp[0]=1
-    dp[1]=1
-    for i in range(2,n+1):
-        dp[i] = dp[i-1]+dp[i-2]
-    return(dp[n]%1234567)
-```
-
 ### DAY 10 (20.09.10)
 1. 땅따먹기([https://programmers.co.kr/learn/courses/30/lessons/12913](https://programmers.co.kr/learn/courses/30/lessons/12913))
 ```
@@ -645,48 +616,8 @@ for i in range(0,n):
     print(rank)
 ```
 
-3. 뉴스 클러스터링([https://programmers.co.kr/learn/courses/30/lessons/17677](https://programmers.co.kr/learn/courses/30/lessons/17677))
-```
-from collections import Counter
-
-def solution(str1, str2):
-    str1 = str1.upper()
-    str2 = str2.upper()
-    str1_list = []
-    str2_list = []
-    for i in range(0,len(str1)-1):
-        if (str1[i:i+1] >= 'A' and str1[i:i+1] <= 'Z') and (str1[i+1:i+2] >= 'A' and str1[i+1:i+2] <= 'Z'): 
-            str1_list.append(str1[i:i+2])
-    for i in range(0,len(str2)-1):
-        if (str2[i:i+1] >= 'A' and str2[i:i+1] <= 'Z') and (str2[i+1:i+2] >= 'A' and str2[i+1:i+2] <= 'Z'): 
-            str2_list.append(str2[i:i+2])
-    if len(str1_list) == 0 and len(str2_list) == 0:
-        return 65536
-    else:
-        str1_cnt = Counter(str1_list)
-        str2_cnt = Counter(str2_list)
-        intersect = set(str1_list) & set(str2_list)
-        union = set(str1_list) | set(str2_list)
-        intersect = sum([min(str1_cnt[i], str2_cnt[i]) for i in intersect])
-        union = sum([max(str1_cnt[i], str2_cnt[i]) for i in union])
-        return int(intersect/union*65536)
-```
-
 ### DAY 14 (20.09.14)
-1. 점프와 순간 이동([https://programmers.co.kr/learn/courses/30/lessons/12980](https://programmers.co.kr/learn/courses/30/lessons/12980))
-```
-def solution(n):
-    ans = 0
-    while n > 0:
-        if n%2 == 1:
-            ans+=1
-            n = (n-1)//2
-        else:
-            n = n//2
-    return ans
-```
-
-2. N진수 게임([https://programmers.co.kr/learn/courses/30/lessons/17687](https://programmers.co.kr/learn/courses/30/lessons/17687))
+1. N진수 게임([https://programmers.co.kr/learn/courses/30/lessons/17687](https://programmers.co.kr/learn/courses/30/lessons/17687))
 ```
 def solution(n, t, m, p):
     s = "0"
@@ -707,7 +638,7 @@ def solution(n, t, m, p):
     return(result)
 ```
 
-3. 단속카메라([https://programmers.co.kr/learn/courses/30/lessons/42884](https://programmers.co.kr/learn/courses/30/lessons/42884))
+2. 단속카메라([https://programmers.co.kr/learn/courses/30/lessons/42884](https://programmers.co.kr/learn/courses/30/lessons/42884))
 ```
 def solution(routes):
     ans = 1
@@ -1085,23 +1016,6 @@ recur(num,1,cal[0],cal[1],cal[2],cal[3],num[0])
 
 print(max(ans))
 print(min(ans))
-```
-
-3. 비슷한 단어([https://www.acmicpc.net/problem/2607](https://www.acmicpc.net/problem/2607))
-```
-import sys
-from collections import Counter
-
-n = int(sys.stdin.readline())
-s1 = sys.stdin.readline()
-ans = 0
-c = Counter(s1)
-for i in range(n-1):
-    temp = sys.stdin.readline()
-    t_c = Counter(temp)
-    if len(list((c-t_c).elements()))<=1 and len(list((t_c-c).elements()))<=1:
-        ans+=1
-print(ans)
 ```
 
 ### DAY 44 (20.10.14)
