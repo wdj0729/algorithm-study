@@ -2256,6 +2256,32 @@ def solution(m, n, board):
     return ans
 ```
 
+2. 압축([https://programmers.co.kr/learn/courses/30/lessons/17684](https://programmers.co.kr/learn/courses/30/lessons/17684))
+```
+def solution(msg):
+    table = {}
+    num = 65
+    for i in range(1,27):
+        table[chr(num)] = i
+        num+=1
+    w = 0
+    c = 0
+    ans = []
+    while True:
+        # 현재글자 + 다음글자가 사전에 있다면 w는 변화없음, c = c + 1
+        c += 1
+        # c가 마지막 인덱스 번호라면 while문 종료
+        if len(msg) == c:
+            ans.append(table[msg[w:c]])
+            break
+        # 현재글자 + 다음글자가 사전에 없다면 w = c, c = c + 1
+        if msg[w:c+1] not in table:
+            table[msg[w:c+1]] = len(table) + 1
+            ans.append(table[msg[w:c]])
+            w = c
+    return ans
+```
+
 ## 4. 라이센스
 ```
 MIT License
