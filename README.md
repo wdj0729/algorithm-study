@@ -2,74 +2,74 @@
 ======================
 ## 1. 공부중인 사이트 목록
 ### 알고리즘 실습
-1. Baekjoon Online Judge([https://www.acmicpc.net/](https://www.acmicpc.net/))
-2. 프로그래머스([https://programmers.co.kr/learn/courses/30](https://programmers.co.kr/learn/courses/30))
-3. Codeforces([https://codeforces.com/](https://codeforces.com/))
-4. AtCoder([https://atcoder.jp/home](https://atcoder.jp/home))
+1. Baekjoon Online Judge(https://www.acmicpc.net/)
+2. 프로그래머스(https://programmers.co.kr/learn/courses/30)
+3. Codeforces(https://codeforces.com/)
+4. AtCoder(https://atcoder.jp/home)
 
 ### 알고리즘 이론
-1. 박트리의 블로그([https://baactree.tistory.com/notice/16](https://baactree.tistory.com/notice/16))
-2. Ries 마법의 슈퍼마리오([https://blog.naver.com/kks227/220769870195](https://blog.naver.com/kks227/220769870195))
-3. BaaaaaaaarkingDog([https://blog.encrypted.gg/](https://blog.encrypted.gg/))
-4. 안경잡이개발자([https://blog.naver.com/ndb796/221226794899](https://blog.naver.com/ndb796/221226794899))
+1. 박트리의 블로그(https://baactree.tistory.com/notice/16)
+2. Ries 마법의 슈퍼마리오(https://blog.naver.com/kks227/220769870195)
+3. BaaaaaaaarkingDog(https://blog.encrypted.gg/)
+4. 안경잡이개발자((https://blog.naver.com/ndb796/221226794899)
 
 ## 2. 파이썬 참고자료 목록
 ### DAY 1 (20.09.01)
-1. heapq 모듈 사용법([https://www.daleseo.com/python-heapq/](https://www.daleseo.com/python-heapq/))
-2. 순열과 조합 - combinations, permutations([https://abit.ly/wyxcdu](https://abit.ly/wyxcdu))
-3. 리스트 중복 제거하기([https://abit.ly/1ljjxk9](https://abit.ly/1ljjxk9))
+1. heapq 모듈 사용법(https://www.daleseo.com/python-heapq/)
+2. 순열과 조합 - combinations, permutations(https://abit.ly/wyxcdu)
+3. 리스트 중복 제거하기(https://abit.ly/1ljjxk9)
 
 ### DAY 3 (20.09.03)
-1. 문자열 거꾸로 출력하기([https://itholic.github.io/python-reverse-string/](https://itholic.github.io/python-reverse-string/))
-2. 이진 트리와 순회 알고리즘 구현([https://abit.ly/d7sg68](https://abit.ly/d7sg68))
-3. 회전행렬 / 2차원배열 회전하는 법 구현하기([https://deepwelloper.tistory.com/117](https://deepwelloper.tistory.com/117))
+1. 문자열 거꾸로 출력하기(https://itholic.github.io/python-reverse-string/)
+2. 이진 트리와 순회 알고리즘 구현(https://abit.ly/d7sg68)
+3. 회전행렬 / 2차원배열 회전하는 법 구현하기(https://deepwelloper.tistory.com/117)
 
 ### DAY 4 (20.09.04)
-1. 최대공약수, 최소공배수, N개의 최소공배수([https://brownbears.tistory.com/454](https://brownbears.tistory.com/454))
-2. 2진수, 8진수, 16진수 다루기([https://www.daleseo.com/python-int-bases/](https://www.daleseo.com/python-int-bases/))
-3. 행렬의 곱셈([https://brownbears.tistory.com/449](https://brownbears.tistory.com/449))
+1. 최대공약수, 최소공배수, N개의 최소공배수((https://brownbears.tistory.com/454)
+2. 2진수, 8진수, 16진수 다루기(https://www.daleseo.com/python-int-bases/)
+3. 행렬의 곱셈(https://brownbears.tistory.com/449)
 
 ### DAY 5 (20.09.05)
-1. 소수 찾기 - 에라토스테네스의 체([https://abit.ly/xnmgwa](https://abit.ly/xnmgwa))
+1. 소수 찾기 - 에라토스테네스의 체(https://abit.ly/xnmgwa)
 
 ### DAY 9 (20.09.09)
-1. 2차원 list 중복 제거([https://inma.tistory.com/132](https://inma.tistory.com/132))
+1. 2차원 list 중복 제거(https://inma.tistory.com/132)
 
 ### DAY 10 (20.09.10)
-1. 달팽이삼각형([https://machine-geon.tistory.com/64](https://machine-geon.tistory.com/64))
+1. 달팽이삼각형(https://machine-geon.tistory.com/64)
 
 ### DAY 16 (20.09.16)
-1. 정규표현식([https://wikidocs.net/4308](https://wikidocs.net/4308))
-2. 정규표현식([https://mzl.la/2H0dmvf](https://mzl.la/2H0dmvf))
+1. 정규표현식(https://wikidocs.net/4308)
+2. 정규표현식(https://mzl.la/2H0dmvf)
 
 ### DAY 18 (20.09.18)
-1. 정렬, 다중조건([https://dailyheumsi.tistory.com/67](https://dailyheumsi.tistory.com/67))
+1. 정렬, 다중조건(https://dailyheumsi.tistory.com/67)
 
 ### DAY 22 (20.09.22)
-1. 효율적인 약수의 개수를 찾는 알고리즘([https://hsdevelopment.tistory.com/110](https://hsdevelopment.tistory.com/110))
+1. 효율적인 약수의 개수를 찾는 알고리즘(https://hsdevelopment.tistory.com/110)
 
 ### DAY 44 (20.10.14)
-1. 다익스트라 알고리즘([https://m.blog.naver.com/ndb796/221234424646](https://m.blog.naver.com/ndb796/221234424646))
-2. 플로이드 와샬 알고리즘([https://m.blog.naver.com/ndb796/221234427842](https://m.blog.naver.com/ndb796/221234427842))
+1. 다익스트라 알고리즘(https://m.blog.naver.com/ndb796/221234424646)
+2. 플로이드 와샬 알고리즘(https://m.blog.naver.com/ndb796/221234427842)
 
 ### DAY 50 (20.10.20)
-1. 최장 공통 부분 수열([https://debuglog.tistory.com/77](https://debuglog.tistory.com/77))
-2. 위상 정렬([https://abit.ly/am2qwdt](https://abit.ly/am2qwdt))
-3. 파이썬의 Asterisk * 이해하기([https://abit.ly/bvhvib](https://abit.ly/bvhvib))
+1. 최장 공통 부분 수열(https://debuglog.tistory.com/77)
+2. 위상 정렬(https://abit.ly/am2qwdt)
+3. 파이썬의 Asterisk * 이해하기(https://abit.ly/bvhvib)
 
 ### DAY 51 (20.10.21)
-1. 유니온-파인드([https://m.blog.naver.com/ndb796/221230967614](https://m.blog.naver.com/ndb796/221230967614))
+1. 유니온-파인드(https://m.blog.naver.com/ndb796/221230967614)
 
 ### DAY 59 (20.10.29)
-1. 문자열, 배열 입력 받기([https://johnyejin.tistory.com/62](https://johnyejin.tistory.com/62))
+1. 문자열, 배열 입력 받기(https://johnyejin.tistory.com/62)
 
 ### DAY 67 (20.11.06)
-1. 비트마스크는 무엇인가?([https://mygumi.tistory.com/361](https://mygumi.tistory.com/361))
-2. 우선순위 큐([https://lipcoder.tistory.com/100](https://lipcoder.tistory.com/100))
+1. 비트마스크는 무엇인가?(https://mygumi.tistory.com/361)
+2. 우선순위 큐(https://lipcoder.tistory.com/100)
 
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
-1. 튜플([https://programmers.co.kr/learn/courses/30/lessons/64065](https://programmers.co.kr/learn/courses/30/lessons/64065))
+1. 튜플(https://programmers.co.kr/learn/courses/30/lessons/64065)
 ```
 def solution(s):
     ansList = []
@@ -101,7 +101,7 @@ def solution(s):
     return ans
 ```
 
-2. 2 x n 타일링([https://programmers.co.kr/learn/courses/30/lessons/12900](https://programmers.co.kr/learn/courses/30/lessons/12900))
+2. 2 x n 타일링(https://programmers.co.kr/learn/courses/30/lessons/12900)
 ```
 def solution(n):
     fibo = [] 
@@ -115,7 +115,7 @@ def solution(n):
 ```
 
 ### DAY 2 (20.09.02)
-1. 오픈채팅방([https://programmers.co.kr/learn/courses/30/lessons/42888](https://programmers.co.kr/learn/courses/30/lessons/42888))
+1. 오픈채팅방(https://programmers.co.kr/learn/courses/30/lessons/42888)
 ```
 def solution(record):
     name_dict = {}
@@ -138,7 +138,7 @@ def solution(record):
     return(ans_list)
 ```
 
-2. 괄호 변환([https://programmers.co.kr/learn/courses/30/lessons/60058](https://programmers.co.kr/learn/courses/30/lessons/60058))
+2. 괄호 변환(https://programmers.co.kr/learn/courses/30/lessons/60058)
 ```
 def solution(p):
     def hi(p):
@@ -196,7 +196,7 @@ def solution(p):
 ```
 
 ### DAY 3 (20.09.03)
-1. 124 나라의 숫자([https://programmers.co.kr/learn/courses/30/lessons/12899](https://programmers.co.kr/learn/courses/30/lessons/12899))
+1. 124 나라의 숫자(https://programmers.co.kr/learn/courses/30/lessons/12899)
 ```
 def solution(n):
     s_list = []
@@ -211,7 +211,7 @@ def solution(n):
     return(''.join(s_list))  # 거꾸로 뒤집어진 리스트를 연결해서 출력
 ```
 
-2. 문자열 압축([https://programmers.co.kr/learn/courses/30/lessons/60057](https://programmers.co.kr/learn/courses/30/lessons/60057))
+2. 문자열 압축(https://programmers.co.kr/learn/courses/30/lessons/60057)
 ```
 def solution(s):
     if len(s) == 1:
@@ -252,7 +252,7 @@ def solution(s):
         return min(ans_list)
 ```
 
-3. 프린터([https://programmers.co.kr/learn/courses/30/lessons/42587](https://programmers.co.kr/learn/courses/30/lessons/42587))
+3. 프린터(https://programmers.co.kr/learn/courses/30/lessons/42587)
 ```
 from collections import deque
 
@@ -283,7 +283,7 @@ def solution(priorities, location):
 ```
 
 ### DAY 4 (20.09.04)
-1. 최대공약수와 최소공배수([https://programmers.co.kr/learn/courses/30/lessons/12940](https://programmers.co.kr/learn/courses/30/lessons/12940))
+1. 최대공약수와 최소공배수(https://programmers.co.kr/learn/courses/30/lessons/12940)
 ```
 from math import gcd
 
@@ -294,7 +294,7 @@ def solution(n, m):
     return[gcd(n,m),lcm(n,m)]
 ```
 
-2. 다음 큰 숫자([https://programmers.co.kr/learn/courses/30/lessons/12911](https://programmers.co.kr/learn/courses/30/lessons/12911))
+2. 다음 큰 숫자(https://programmers.co.kr/learn/courses/30/lessons/12911)
 ```
 def solution(n):
     bin_n = bin(n)
@@ -314,7 +314,7 @@ def solution(n):
                 return(int(bin_i,2))
 ```
 
-3. N개의 최소공배수([https://programmers.co.kr/learn/courses/30/lessons/12953](https://programmers.co.kr/learn/courses/30/lessons/12953))
+3. N개의 최소공배수(https://programmers.co.kr/learn/courses/30/lessons/12953)
 ```
 from math import gcd
 
@@ -329,7 +329,7 @@ def solution(arr):
 ```
 
 ### DAY 5 (20.09.05)
-1. 소수 만들기([https://programmers.co.kr/learn/courses/30/lessons/12977](https://programmers.co.kr/learn/courses/30/lessons/12977))
+1. 소수 만들기(https://programmers.co.kr/learn/courses/30/lessons/12977)
 ```
 from itertools import combinations
 
@@ -358,7 +358,7 @@ def solution(nums):
     return ans
 ```
 
-2. 짝지어 제거하기([https://programmers.co.kr/learn/courses/30/lessons/12973](https://programmers.co.kr/learn/courses/30/lessons/12973))
+2. 짝지어 제거하기(https://programmers.co.kr/learn/courses/30/lessons/12973)
 ```
 def solution(s):
     stk = []
@@ -376,7 +376,7 @@ def solution(s):
         return 0          
 ```
 
-3. 예상 대진표([https://programmers.co.kr/learn/courses/30/lessons/12985](https://programmers.co.kr/learn/courses/30/lessons/12985))
+3. 예상 대진표(https://programmers.co.kr/learn/courses/30/lessons/12985)
 ```
 def solution(n,a,b):
     ans = 1
@@ -398,7 +398,7 @@ def solution(n,a,b):
 ```
 
 ### DAY 7 (20.09.07)
-1. 네트워크 ([https://programmers.co.kr/learn/courses/30/lessons/43162](https://programmers.co.kr/learn/courses/30/lessons/43162))
+1. 네트워크 (https://programmers.co.kr/learn/courses/30/lessons/43162)
 ```
 def solution(n, computers):
     def dfs(computers,visited,v):
@@ -415,7 +415,7 @@ def solution(n, computers):
     return ans
 ```
 
-2. 타켓 넘버([https://programmers.co.kr/learn/courses/30/lessons/43165](https://programmers.co.kr/learn/courses/30/lessons/43165))
+2. 타켓 넘버(https://programmers.co.kr/learn/courses/30/lessons/43165)
 ```
 ans = 0
 
@@ -433,7 +433,7 @@ def solution(numbers, target):
     return ans
 ```
 
-3. 단어 변환([https://programmers.co.kr/learn/courses/30/lessons/43163](https://programmers.co.kr/learn/courses/30/lessons/43163))
+3. 단어 변환(https://programmers.co.kr/learn/courses/30/lessons/43163)
 ```
 stack = []
 visited = []
@@ -463,7 +463,7 @@ def solution(begin, target, words):
 ```
 
 ### DAY 9 (20.09.09)
-1. 여행경로([https://programmers.co.kr/learn/courses/30/lessons/43164](https://programmers.co.kr/learn/courses/30/lessons/43164))
+1. 여행경로(https://programmers.co.kr/learn/courses/30/lessons/43164)
 ```
 import copy
 
@@ -485,7 +485,7 @@ def solution(tickets):
     return sorted(ans)[0]
 ```
 
-2. 불량 사용자([https://programmers.co.kr/learn/courses/30/lessons/64064](https://programmers.co.kr/learn/courses/30/lessons/64064))
+2. 불량 사용자(https://programmers.co.kr/learn/courses/30/lessons/64064)
 ```
 import itertools
 
@@ -520,7 +520,7 @@ def solution(user_id, banned_id):
     return(len(set([tuple(set(item)) for item in ans])))
 ```
 
-3. 가장 큰 수([https://programmers.co.kr/learn/courses/30/lessons/42746](https://programmers.co.kr/learn/courses/30/lessons/42746))
+3. 가장 큰 수(https://programmers.co.kr/learn/courses/30/lessons/42746)
 ```
 def solution(numbers):
     str_numbers = []
@@ -538,7 +538,7 @@ def solution(numbers):
 ```
 
 ### DAY 10 (20.09.10)
-1. 땅따먹기([https://programmers.co.kr/learn/courses/30/lessons/12913](https://programmers.co.kr/learn/courses/30/lessons/12913))
+1. 땅따먹기(https://programmers.co.kr/learn/courses/30/lessons/12913)
 ```
 def solution(land):
     for i in range(len(land)-1):
@@ -549,12 +549,12 @@ def solution(land):
     return(max(land[-1]))
 ```
 
-2. 프로그래머스 월간 코드 챌린지 시즌1([https://abit.ly/kmwkhzb](https://abit.ly/kmwkhzb))
+2. 프로그래머스 월간 코드 챌린지 시즌1(https://abit.ly/kmwkhzb)
 
 ![1](https://user-images.githubusercontent.com/26870568/92739723-2516ba80-f3b8-11ea-9849-32d7225de37d.PNG)
 
 ### DAY 11 (20.09.11)
-1. 키패드 누르기([https://programmers.co.kr/learn/courses/30/lessons/67256](https://programmers.co.kr/learn/courses/30/lessons/67256))
+1. 키패드 누르기(https://programmers.co.kr/learn/courses/30/lessons/67256)
 ```
 import math
 
@@ -597,7 +597,7 @@ def solution(numbers, hand):
     return(ans)
 ```
 
-2. 덩치([https://www.acmicpc.net/problem/7568](https://www.acmicpc.net/problem/7568))
+2. 덩치(https://www.acmicpc.net/problem/7568)
 ```
 n = int(input())
 p_list = []
@@ -614,7 +614,7 @@ for i in range(0,n):
 ```
 
 ### DAY 14 (20.09.14)
-1. N진수 게임([https://programmers.co.kr/learn/courses/30/lessons/17687](https://programmers.co.kr/learn/courses/30/lessons/17687))
+1. N진수 게임(https://programmers.co.kr/learn/courses/30/lessons/17687)
 ```
 def solution(n, t, m, p):
     s = "0"
@@ -635,7 +635,7 @@ def solution(n, t, m, p):
     return(result)
 ```
 
-2. 단속카메라([https://programmers.co.kr/learn/courses/30/lessons/42884](https://programmers.co.kr/learn/courses/30/lessons/42884))
+2. 단속카메라(https://programmers.co.kr/learn/courses/30/lessons/42884)
 ```
 def solution(routes):
     ans = 1
@@ -651,7 +651,7 @@ def solution(routes):
 ```
 
 ### DAY 16 (20.09.16)
-1. 파일명 정렬([https://programmers.co.kr/learn/courses/30/lessons/17686](https://programmers.co.kr/learn/courses/30/lessons/17686))
+1. 파일명 정렬(https://programmers.co.kr/learn/courses/30/lessons/17686)
 ```
 import re
 
@@ -673,7 +673,7 @@ def solution(files):
 ```
 
 ### DAY 18 (20.09.18)
-1. 베스트앨범([https://programmers.co.kr/learn/courses/30/lessons/42579](https://programmers.co.kr/learn/courses/30/lessons/42579))
+1. 베스트앨범(https://programmers.co.kr/learn/courses/30/lessons/42579)
 ```
 def solution(genres, plays):
     answer = []
@@ -704,7 +704,7 @@ def solution(genres, plays):
 ```
 
 ### DAY 22 (20.09.22)
-1. 문자열 폭발([https://www.acmicpc.net/problem/9935](https://www.acmicpc.net/problem/9935))
+1. 문자열 폭발(https://www.acmicpc.net/problem/9935)
 ```
 n=input()
 k=input()
@@ -727,7 +727,7 @@ else:
 ```
 
 ### DAY 23 (20.09.23)
-1. 부분합([https://www.acmicpc.net/problem/1806](https://www.acmicpc.net/problem/1806))
+1. 부분합(https://www.acmicpc.net/problem/1806)
 ```
 import sys
 
@@ -754,7 +754,7 @@ else:
 ```
 
 ### DAY 26 (20.09.26)
-1. 입국심사([https://programmers.co.kr/learn/courses/30/lessons/43238](https://programmers.co.kr/learn/courses/30/lessons/43238))
+1. 입국심사(https://programmers.co.kr/learn/courses/30/lessons/43238)
 ```
 def solution(n, times):
     left = 0
@@ -776,7 +776,7 @@ def solution(n, times):
 ```
 
 ### DAY 35 (20.10.05)
-1. 단지번호붙이기([https://www.acmicpc.net/problem/2667](https://www.acmicpc.net/problem/2667))
+1. 단지번호붙이기(https://www.acmicpc.net/problem/2667)
 ```
 from collections import deque
 
@@ -813,7 +813,7 @@ for i in st:
     print(i)
 ```
 
-2. DFS와 BFS([https://www.acmicpc.net/problem/1260](https://www.acmicpc.net/problem/1260))
+2. DFS와 BFS(https://www.acmicpc.net/problem/1260)
 ```
 from collections import deque
 
@@ -850,12 +850,12 @@ bfs(v)
 ```
 
 ### DAY 38 (20.10.08)
-1. 프로그래머스 월간 코드 챌린지 시즌1([https://abit.ly/ibnzqvf](https://abit.ly/ibnzqvf))
+1. 프로그래머스 월간 코드 챌린지 시즌1(https://abit.ly/ibnzqvf)
 
 ![1](https://user-images.githubusercontent.com/26870568/95467986-0ad0fc00-09b9-11eb-888e-cd01dc679f80.PNG)
 
 ### DAY 39 (20.10.09)
-1. 트리 순회([https://www.acmicpc.net/problem/1991](https://www.acmicpc.net/problem/1991))
+1. 트리 순회(https://www.acmicpc.net/problem/1991)
 ```
 class Node:
     def __init__(self,item,left,right):
@@ -898,7 +898,7 @@ print()
 postorder(tree['A'])
 ```
 
-2. 트리의 부모 찾기([https://www.acmicpc.net/problem/11725](https://www.acmicpc.net/problem/11725))
+2. 트리의 부모 찾기(https://www.acmicpc.net/problem/11725)
 ```
 import sys
 sys.setrecursionlimit(10 ** 9)
@@ -925,7 +925,7 @@ for i in range(2,n+1):
     print(parents[i])
 ```
 
-3. 가장 먼 노드([https://programmers.co.kr/learn/courses/30/lessons/49189](https://programmers.co.kr/learn/courses/30/lessons/49189))
+3. 가장 먼 노드(https://programmers.co.kr/learn/courses/30/lessons/49189)
 ```
 import sys
 sys.setrecursionlimit(10 ** 9)
@@ -953,7 +953,7 @@ def solution(n, edge):
 ```
 
 ### DAY 43 (20.10.13)
-1. 촌수계산([https://www.acmicpc.net/problem/2644](https://www.acmicpc.net/problem/2644))
+1. 촌수계산(https://www.acmicpc.net/problem/2644)
 ```
 import sys
 
@@ -983,7 +983,7 @@ if visited[ey] != 1:
     print(-1)
 ```
 
-2. 연산자 끼워넣기 (2)([https://www.acmicpc.net/problem/15658](https://www.acmicpc.net/problem/15658))
+2. 연산자 끼워넣기(https://www.acmicpc.net/problem/15658)
 ```
 import sys
 
@@ -1016,7 +1016,7 @@ print(min(ans))
 ```
 
 ### DAY 44 (20.10.14)
-1. RGB거리([https://www.acmicpc.net/problem/1149](https://www.acmicpc.net/problem/1149))
+1. RGB거리(https://www.acmicpc.net/problem/1149)
 ```
 import sys
 
@@ -1038,7 +1038,7 @@ for i in range(n):
 print(min(dp[n-1][0],dp[n-1][1],dp[n-1][2]))
 ```
 
-2. 섬의 개수([https://www.acmicpc.net/problem/4963](https://www.acmicpc.net/problem/4963))
+2. 섬의 개수(https://www.acmicpc.net/problem/4963)
 ```
 import sys
 sys.setrecursionlimit(10**5)
@@ -1081,7 +1081,7 @@ while True:
         print(cnt)
 ```
 
-3. 경로 찾기([https://www.acmicpc.net/problem/11403](https://www.acmicpc.net/problem/11403))
+3. 경로 찾기(https://www.acmicpc.net/problem/11403)
 ```
 import sys
 
@@ -1103,7 +1103,7 @@ for row in graph:
     print()
 ```
 
-4. 플로이드([https://www.acmicpc.net/problem/11404](https://www.acmicpc.net/problem/11404))
+4. 플로이드(https://www.acmicpc.net/problem/11404)
 ```
 import sys
 INF=2**32
@@ -1145,7 +1145,7 @@ for i in range(n):
     print()
 ```
 
-5. 최단경로([https://www.acmicpc.net/problem/1753](https://www.acmicpc.net/problem/1753))
+5. 최단경로(https://www.acmicpc.net/problem/1753)
 ```
 import sys
 from heapq import heappush, heappop
@@ -1181,7 +1181,7 @@ for i in dp[1:]:
         print('INF')
 ```
 
-6. 숫자 카드([https://www.acmicpc.net/problem/10815](https://www.acmicpc.net/problem/10815))
+6. 숫자 카드(https://www.acmicpc.net/problem/10815)
 ```
 import sys
 
@@ -1205,7 +1205,7 @@ for i in arr2:
     print(binary_search(i), end=' ')
 ```
 
-7. 수들의 합 5([https://www.acmicpc.net/problem/2018](https://www.acmicpc.net/problem/2018))
+7. 수들의 합 5(https://www.acmicpc.net/problem/2018)
 ```
 n = int(input())
 
@@ -1229,7 +1229,7 @@ print(ans)
 ```
 
 ### DAY 45 (20.10.15)
-1. 최소 힙([https://www.acmicpc.net/problem/1927](https://www.acmicpc.net/problem/1927))
+1. 최소 힙(https://www.acmicpc.net/problem/1927)
 ```
 import sys
 import heapq
@@ -1245,7 +1245,7 @@ for _ in range(int(input())):
             print(0)
 ```
 
-2. 알약([https://www.acmicpc.net/problem/4811](https://www.acmicpc.net/problem/4811))
+2. 알약(https://www.acmicpc.net/problem/4811)
 ```
 dp =[[0 for _ in range(32)] for _ in range(32)]
 for i in range(0,31):
@@ -1265,7 +1265,7 @@ while True:
 ```
 
 ### DAY 46 (20.10.16)
-1. 유기농 배추([https://www.acmicpc.net/problem/1012](https://www.acmicpc.net/problem/1012))
+1. 유기농 배추(https://www.acmicpc.net/problem/1012)
 ```
 from collections import deque
 
@@ -1304,7 +1304,7 @@ for _ in range(int(input())):
     print(cnt)
 ```
 
-2. 친구([https://www.acmicpc.net/problem/1058](https://www.acmicpc.net/problem/1058))
+2. 친구(https://www.acmicpc.net/problem/1058)
 ```
 INF = 2**32
 
@@ -1342,7 +1342,7 @@ for i in range(n):
 print(ans)
 ```
 
-3. 쿼드트리([https://www.acmicpc.net/problem/1992](https://www.acmicpc.net/problem/1992))
+3. 쿼드트리(https://www.acmicpc.net/problem/1992)
 ```
 n = int(input())
 board = [input() for _ in range(n)]
@@ -1369,7 +1369,7 @@ quad(0,0,n)
 print(ans)
 ```
 
-4. 종이의 개수([https://www.acmicpc.net/problem/1780](https://www.acmicpc.net/problem/1780))
+4. 종이의 개수(https://www.acmicpc.net/problem/1780)
 ```
 import sys
 n = int(input())
@@ -1403,7 +1403,7 @@ print(one)
 ```
 
 ### DAY 48 (20.10.18)
-1. 키 순서([https://www.acmicpc.net/problem/2458](https://www.acmicpc.net/problem/2458))
+1. 키 순서(https://www.acmicpc.net/problem/2458)
 ```
 import sys
 INF=2**32
@@ -1435,7 +1435,7 @@ for i in range(n):
 print(cnt.count(n-1))
 ```
 
-2. 알고스팟([https://www.acmicpc.net/problem/1261](https://www.acmicpc.net/problem/1261))
+2. 알고스팟(https://www.acmicpc.net/problem/1261)
 ```
 from collections import deque
 
@@ -1468,7 +1468,7 @@ print(visited[n-1][m-1])
 ```
 
 ### DAY 50 (20.10.20)
-1. LCS([https://www.acmicpc.net/problem/9251](https://www.acmicpc.net/problem/9251))
+1. LCS(https://www.acmicpc.net/problem/9251)
 ```
 A=list(input())
 B=list(input())
@@ -1485,7 +1485,7 @@ for i in range(1,len(A)+1):
 print(lcs[len(A)][len(B)])
 ```
 
-2. 줄 세우기([https://www.acmicpc.net/problem/2252](https://www.acmicpc.net/problem/2252))
+2. 줄 세우기(https://www.acmicpc.net/problem/2252)
 ```
 import sys
 from collections import deque
@@ -1518,7 +1518,7 @@ print(*result)
 ```
 
 ### DAY 51 (20.10.21)
-1. 집합의 표현([https://www.acmicpc.net/problem/1717](https://www.acmicpc.net/problem/1717))
+1. 집합의 표현(https://www.acmicpc.net/problem/1717)
 ```
 import sys
 
@@ -1561,7 +1561,7 @@ for _ in range(m):
             print('NO')
 ```
 
-2. 스타트링크([https://www.acmicpc.net/problem/5014](https://www.acmicpc.net/problem/5014))
+2. 스타트링크(https://www.acmicpc.net/problem/5014)
 ```
 import sys
 from collections import deque
@@ -1597,7 +1597,7 @@ else:
     print(dp[g-1])
 ```
 
-3. 보물섬([https://www.acmicpc.net/problem/2589](https://www.acmicpc.net/problem/2589))
+3. 보물섬(https://www.acmicpc.net/problem/2589)
 ```
 from collections import deque
 
@@ -1635,7 +1635,7 @@ print(cnt)
 ```
 
 ### DAY 53 (20.10.23)
-1. 랜선 자르기([https://www.acmicpc.net/problem/1654](https://www.acmicpc.net/problem/1654))
+1. 랜선 자르기(https://www.acmicpc.net/problem/1654)
 ```
 import sys
 from collections import deque
@@ -1660,7 +1660,7 @@ while left<=right:
 print(right)
 ```
 
-2. 벽 부수고 이동하기([https://www.acmicpc.net/problem/2206](https://www.acmicpc.net/problem/2206))
+2. 벽 부수고 이동하기(https://www.acmicpc.net/problem/2206)
 ```
 import sys
 from collections import deque
@@ -1701,7 +1701,7 @@ def bfs():
 print(bfs())
 ```
 
-3. 케빈 베이컨의 6단계 법칙([https://www.acmicpc.net/problem/1389](https://www.acmicpc.net/problem/1389))
+3. 케빈 베이컨의 6단계 법칙(https://www.acmicpc.net/problem/1389)
 ```
 import sys
 from collections import deque
@@ -1739,7 +1739,7 @@ for i in range(N):
 ```
 
 ### DAY 58 (20.10.28)
-1. 공주님을 구해라!([https://www.acmicpc.net/problem/17836](https://www.acmicpc.net/problem/17836))
+1. 공주님을 구해라!(https://www.acmicpc.net/problem/17836)
 ```
 import sys
 from collections import deque
@@ -1784,7 +1784,7 @@ else:
 ```
 
 ### DAY 59 (20.10.29)
-1. 신기한 소수([https://www.acmicpc.net/problem/2023](https://www.acmicpc.net/problem/2023))
+1. 신기한 소수(https://www.acmicpc.net/problem/2023)
 ```
 def prime(num):
     if num == 0 or num == 1:
@@ -1810,7 +1810,7 @@ dfs(7,1)
 ```
 
 ### DAY 60 (20.10.30)
-1. 보석 도둑([https://www.acmicpc.net/problem/1202](https://www.acmicpc.net/problem/1202))
+1. 보석 도둑(https://www.acmicpc.net/problem/1202)
 ```
 import sys
 from collections import deque
@@ -1845,7 +1845,7 @@ print(ans)
 ```
 
 ### DAY 61 (20.10.31)
-1. 다리 만들기([https://www.acmicpc.net/problem/2146](https://www.acmicpc.net/problem/2146))
+1. 다리 만들기(https://www.acmicpc.net/problem/2146)
 ```
 import sys
 from collections import deque
@@ -1908,7 +1908,7 @@ print(ans)
 ```
 
 ### DAY 62 (20.11.01)
-1. 점프([https://www.acmicpc.net/problem/1890](https://www.acmicpc.net/problem/1890))
+1. 점프(https://www.acmicpc.net/problem/1890)
 ```
 import sys
 from collections import deque
@@ -1931,7 +1931,7 @@ for i in range(n):
 print(dp[n-1][n-1])
 ```
 
-2. 내리막 길([https://www.acmicpc.net/problem/1520](https://www.acmicpc.net/problem/1520))
+2. 내리막 길(https://www.acmicpc.net/problem/1520)
 ```
 import sys
 from collections import deque
@@ -1962,7 +1962,7 @@ print(dfs(m-1,n-1))
 ```
 
 ### DAY 66 (20.11.05)
-1. 뱀([https://www.acmicpc.net/problem/3190](https://www.acmicpc.net/problem/3190))
+1. 뱀(https://www.acmicpc.net/problem/3190)
 ```
 import sys
 from collections import deque
@@ -2025,12 +2025,12 @@ def bfs():
 bfs()
 ```
 
-2. 프로그래머스 월간 코드 챌린지 시즌1([https://abit.ly/d76z0m](https://abit.ly/d76z0m))
+2. 프로그래머스 월간 코드 챌린지 시즌1(https://abit.ly/d76z0m)
 
 ![1](https://user-images.githubusercontent.com/26870568/98255167-78744600-1fc0-11eb-9f25-526bc2fea16e.PNG)
 
 ### DAY 67 (20.11.06)
-1. 달이 차오른다, 가자.([https://www.acmicpc.net/problem/1194](https://www.acmicpc.net/problem/1194))
+1. 달이 차오른다, 가자.(https://www.acmicpc.net/problem/1194)
 ```
 import sys
 from collections import deque
@@ -2078,7 +2078,7 @@ for i in range(n):
             print(bfs(i,j))
 ```
 
-2. 부등호([https://www.acmicpc.net/problem/2529](https://www.acmicpc.net/problem/2529))
+2. 부등호(https://www.acmicpc.net/problem/2529)
 ```
 import sys
 sys.setrecursionlimit(10000)
@@ -2115,7 +2115,7 @@ print(ans[0])
 ```
 
 ### DAY 120 (20.12.29)
-1. 프렌즈4블록([https://programmers.co.kr/learn/courses/30/lessons/17679](https://programmers.co.kr/learn/courses/30/lessons/17679))
+1. 프렌즈4블록(https://programmers.co.kr/learn/courses/30/lessons/17679)
 ```
 import copy
 
@@ -2167,7 +2167,7 @@ def solution(m, n, board):
     return ans
 ```
 
-2. 압축([https://programmers.co.kr/learn/courses/30/lessons/17684](https://programmers.co.kr/learn/courses/30/lessons/17684))
+2. 압축(https://programmers.co.kr/learn/courses/30/lessons/17684)
 ```
 def solution(msg):
     table = {}
