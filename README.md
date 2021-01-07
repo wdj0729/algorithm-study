@@ -2195,7 +2195,6 @@ def solution(msg):
 
 ### DAY 129 (21.01.07)
 1. 길 찾기 게임(https://programmers.co.kr/learn/courses/30/lessons/42892)
-
 ```
 import sys
 sys.setrecursionlimit(10**6)
