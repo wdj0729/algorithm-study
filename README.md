@@ -67,7 +67,7 @@
 1. 비트마스크는 무엇인가?(https://mygumi.tistory.com/361)
 2. 우선순위 큐(https://lipcoder.tistory.com/100)
 
-### DAY 129 (20.01.07)
+### DAY 129 (21.01.07)
 1. zip(), 배열 회전(https://abit.ly/xwejxd7)
 
 ## 3. 파이썬으로 푼 문제 목록
