@@ -2193,6 +2193,82 @@ def solution(msg):
     return ans
 ```
 
+### DAY 129 (21.01.07)
+1. 길 찾기 게임(https://programmers.co.kr/learn/courses/30/lessons/42892)
+
+```
+import sys
+sys.setrecursionlimit(10**6)
+
+class Tree:
+    def __init__(self,data,left=None,right=None):
+        self.data = data
+        self.left = left
+        self.right = right
+        
+preorderList = []
+postorderList = []
+
+def preorder(node,nodeinfo):
+    # root -> left -> right
+    preorderList.append(nodeinfo.index(node.data)+1)
+    if node.left:
+        preorder(node.left,nodeinfo)
+    if node.right:
+        preorder(node.right,nodeinfo)
+        
+def postorder(node,nodeinfo):
+    # left -> right -> root
+    if node.left:
+        postorder(node.left,nodeinfo)
+    if node.right:
+        postorder(node.right,nodeinfo)
+    postorderList.append(nodeinfo.index(node.data)+1)
+
+def solution(nodeinfo):
+    answer = []
+    sortedNodeinfo = sorted(nodeinfo, key = lambda x: (-x[1],x[0]))
+    root = None
+    for node in sortedNodeinfo:
+        if not root:
+            root = Tree(node)
+        else:
+            current = root
+            while True:
+                # left에 위치
+                if node[0] < current.data[0]:
+                    # left 자식 노드가 존재
+                    if current.left:
+                        # 현재 노드의 left 자식 노드로 이동
+                        current = current.left
+                        continue
+                    # left 자식 노드 존재 X
+                    else:
+                        # left 자식 노드로 넣어줌
+                        current.left = Tree(node)
+                        break
+                # right에 위치
+                if node[0] > current.data[0]:
+                    # right 자식 노드가 존재
+                    if current.right:
+                        # 현재 노드의 right 자식 노드로 이동
+                        current = current.right
+                        continue
+                    # right 자식 노드 존재 X
+                    else:
+                        # right 자식 노드로 넣어줌
+                        current.right = Tree(node)
+                        break
+                break
+    preorder(root,nodeinfo)
+    postorder(root,nodeinfo)
+    print(preorderList)
+    print(postorderList)
+    answer.append(preorderList)
+    answer.append(postorderList)
+    return answer
+```
+
 ## 4. 라이센스
 ```
 MIT License
