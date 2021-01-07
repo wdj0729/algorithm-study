@@ -68,7 +68,7 @@
 2. 우선순위 큐(https://lipcoder.tistory.com/100)
 
 ### DAY 129 (20.01.07)
-1. 2차원 배열 회전(https://abit.ly/xwejxd7)
+1. zip(), 배열 회전(https://abit.ly/xwejxd7)
 
 ## 3. 파이썬으로 푼 문제 목록
 ### DAY 1 (20.09.01)
