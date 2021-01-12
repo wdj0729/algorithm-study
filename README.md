@@ -2320,3 +2320,38 @@ def solution(key, lock):
                 detach(x, y, M, rotated_key, board)          
     return False
 ```
+
+### DAY 134 (21.01.12)
+1. 연료 채우기(https://www.acmicpc.net/problem/1826)
+```
+import heapq
+
+n = int(input())
+# 최소힙
+heap = []
+for i in range(n):
+    heapq.heappush(heap, list(map(int,input().split())))
+l,p = map(int,input().split())
+
+cnt = 0
+# 최대힙
+target = []
+# 현재 기름으로 도착지에 도착할 수 있으면 멈춤
+while p < l:
+    # 현재 연료로 갈 수 있는 주유소 리스트 최대힙에 push
+    while heap and heap[0][0] <= p:
+        a,b = heapq.heappop(heap)
+        heapq.heappush(target, [-1*b,a])
+        
+    # 이동할 수 있는 주유소 없으면 불가능
+    if not target:
+        cnt = -1
+        break
+        
+    # 최대힙에서 연료가 가장 많은 주유소 pop
+    a,b = heapq.heappop(target)
+    p += -1*a
+    cnt+=1
+    
+print(cnt)
+```
