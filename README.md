@@ -2355,3 +2355,26 @@ while p < l:
     
 print(cnt)
 ```
+
+### DAY 136 (21.01.14)
+1. 카드 정렬하기(https://www.acmicpc.net/problem/1715)
+```
+import sys
+import heapq
+input = sys.stdin.readline
+
+n = int(input())
+heap = []
+for i in range(n):
+    heapq.heappush(heap,int(input()))
+
+if len(heap) == 1:
+    print(0)
+else:
+    ans = 0
+    while len(heap) > 1:
+        Sum = heapq.heappop(heap) + heapq.heappop(heap)
+        ans += Sum
+        heapq.heappush(heap,Sum)
+    print(ans)
+```
