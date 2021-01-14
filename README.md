@@ -2378,3 +2378,27 @@ else:
         heapq.heappush(heap,Sum)
     print(ans)
 ```
+
+2. 빗물(https://www.acmicpc.net/problem/14719)
+```
+h,w = map(int,input().split())
+arr = list(map(int,input().split()))
+maxH = 0
+maxIdx = 0
+for i in range(len(arr)):
+    if maxH < arr[i]:
+        maxH = arr[i]
+        maxIdx = i
+total = 0
+temp = 0
+for i in range(0,maxIdx+1):
+    if arr[i] > temp:
+        temp = arr[i]
+    total += temp
+temp = 0
+for i in range(len(arr)-1,maxIdx,-1):
+    if arr[i] > temp:
+        temp = arr[i]
+    total += temp
+print(total-sum(arr))
+```
