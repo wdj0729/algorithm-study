@@ -38,10 +38,6 @@
 ### DAY 10 (20.09.10)
 1. 달팽이삼각형(https://machine-geon.tistory.com/64)
 
-### DAY 16 (20.09.16)
-1. 정규표현식(https://wikidocs.net/4308)
-2. 정규표현식(https://mzl.la/2H0dmvf)
-
 ### DAY 18 (20.09.18)
 1. 정렬, 다중조건(https://dailyheumsi.tistory.com/67)
 
@@ -102,19 +98,6 @@ def solution(s):
                         ans.append(j[k])
     ans = [int (i) for i in ans]
     return ans
-```
-
-2. 2 x n 타일링(https://programmers.co.kr/learn/courses/30/lessons/12900)
-```
-def solution(n):
-    fibo = [] 
-    for x in range(0,n+1): 
-        if x < 2: 
-            fibo.append(1) 
-        else: 
-            fibo.append(fibo[x-2]%1000000007 + fibo[x-1]%1000000007)
-    answer = fibo[len(fibo)-1]%1000000007
-    return answer
 ```
 
 ### DAY 2 (20.09.02)
@@ -199,22 +182,7 @@ def solution(p):
 ```
 
 ### DAY 3 (20.09.03)
-1. 124 나라의 숫자(https://programmers.co.kr/learn/courses/30/lessons/12899)
-```
-def solution(n):
-    s_list = []
-    while(n>0):
-        nam = n%3
-        n = int(n/3)
-        if nam == 0:
-            nam = 4
-            n -= 1
-        s_list.append(str(nam))
-    s_list.reverse()  
-    return(''.join(s_list))  # 거꾸로 뒤집어진 리스트를 연결해서 출력
-```
-
-2. 문자열 압축(https://programmers.co.kr/learn/courses/30/lessons/60057)
+1. 문자열 압축(https://programmers.co.kr/learn/courses/30/lessons/60057)
 ```
 def solution(s):
     if len(s) == 1:
@@ -255,7 +223,7 @@ def solution(s):
         return min(ans_list)
 ```
 
-3. 프린터(https://programmers.co.kr/learn/courses/30/lessons/42587)
+2. 프린터(https://programmers.co.kr/learn/courses/30/lessons/42587)
 ```
 from collections import deque
 
@@ -283,52 +251,6 @@ def solution(priorities, location):
             deq_list.popleft()
         deq_list = list(deq_list)
         cnt+=1
-```
-
-### DAY 4 (20.09.04)
-1. 최대공약수와 최소공배수(https://programmers.co.kr/learn/courses/30/lessons/12940)
-```
-from math import gcd
-
-def lcm(x,y):
-    return x*y//gcd(x,y)
-
-def solution(n, m):
-    return[gcd(n,m),lcm(n,m)]
-```
-
-2. 다음 큰 숫자(https://programmers.co.kr/learn/courses/30/lessons/12911)
-```
-def solution(n):
-    bin_n = bin(n)
-    cnt1 = 0
-    for i in range(0,len(bin_n)):
-        if bin_n[i] == '1':
-            cnt1+=1
-    ans_list = []
-    for i in range(n+1,2*n):
-        cnt2 = 0
-        bin_i = bin(i)
-        if int(bin_i,2) > n:
-            for i in range(0,len(bin_i)):
-                if bin_i[i] == '1':
-                    cnt2+=1
-            if cnt1 == cnt2:
-                return(int(bin_i,2))
-```
-
-3. N개의 최소공배수(https://programmers.co.kr/learn/courses/30/lessons/12953)
-```
-from math import gcd
-
-def solution(arr):
-    def lcm(x,y):
-        return x*y // gcd(x,y)
-
-    while True:
-        arr.append(lcm(arr.pop(),arr.pop()))
-        if len(arr) == 1:
-            return arr[0]
 ```
 
 ### DAY 5 (20.09.05)
@@ -359,45 +281,6 @@ def solution(nums):
         if sum in prime:
             ans+=1
     return ans
-```
-
-2. 짝지어 제거하기(https://programmers.co.kr/learn/courses/30/lessons/12973)
-```
-def solution(s):
-    stk = []
-    for i in s:
-        if len(stk) == 0:
-            stk.append(i)
-        else:
-            if i == stk[len(stk)-1]:
-                stk.pop()
-            else:
-                stk.append(i)
-    if len(stk) == 0:
-        return 1
-    else:
-        return 0          
-```
-
-3. 예상 대진표(https://programmers.co.kr/learn/courses/30/lessons/12985)
-```
-def solution(n,a,b):
-    ans = 1
-    for i in range(0,n//2):
-        if a < b and abs(a-b) == 1 and (a%2==1 and b%2==0):
-            return ans
-        elif a > b and abs(a-b) == 1 and (a%2==0 and b%2==1):
-            return ans
-        else:
-            if a%2==1:
-                a = (a+1)/2
-            else:
-                a /= 2
-            if b%2==1:
-                b = (b+1)/2
-            else:
-                b /= 2
-        ans+=1
 ```
 
 ### DAY 7 (20.09.07)
@@ -523,23 +406,6 @@ def solution(user_id, banned_id):
     return(len(set([tuple(set(item)) for item in ans])))
 ```
 
-3. 가장 큰 수(https://programmers.co.kr/learn/courses/30/lessons/42746)
-```
-def solution(numbers):
-    str_numbers = []
-    # numbers의 원소가 1000이 최대이므로 4자리까지 맞춰서 비교
-    for i in numbers:
-        str_numbers.append(str(i)*4)
-    str_numbers = (sorted(str_numbers,reverse=True))
-    ans = ''
-    for i in str_numbers:
-        ans += i[0:len(i)//4]
-    if int(ans) == 0:
-        return "0"
-    else:
-        return ans
-```
-
 ### DAY 10 (20.09.10)
 1. 땅따먹기(https://programmers.co.kr/learn/courses/30/lessons/12913)
 ```
@@ -636,21 +502,6 @@ def solution(n, t, m, p):
         result += s[q]
         q += m
     return(result)
-```
-
-2. 단속카메라(https://programmers.co.kr/learn/courses/30/lessons/42884)
-```
-def solution(routes):
-    ans = 1
-    routes = sorted(routes)
-    camera = routes[0][1]
-    for i in range(0,len(routes)):
-        if camera >= routes[i][1]:
-            camera = routes[i][1]
-        if camera < routes[i][0]:
-            ans+=1
-            camera = routes[i][1]
-    return(ans)
 ```
 
 ### DAY 16 (20.09.16)
@@ -1232,23 +1083,7 @@ print(ans)
 ```
 
 ### DAY 45 (20.10.15)
-1. 최소 힙(https://www.acmicpc.net/problem/1927)
-```
-import sys
-import heapq
-heap = []
-for _ in range(int(input())):
-    num = int(sys.stdin.readline())
-    if num != 0:
-        heapq.heappush(heap,num)
-    else:
-        if heap:
-            print(heapq.heappop(heap))
-        else:
-            print(0)
-```
-
-2. 알약(https://www.acmicpc.net/problem/4811)
+1. 알약(https://www.acmicpc.net/problem/4811)
 ```
 dp =[[0 for _ in range(32)] for _ in range(32)]
 for i in range(0,31):
@@ -2285,7 +2120,7 @@ def detach(x, y, M, key, board):
 
 def rotate90(arr):
     return list(zip(*arr[::-1]))
-
+    
 def check(board, M, N):
     for i in range(N):
         for j in range(N):
@@ -2401,4 +2236,23 @@ for i in range(len(arr)-1,maxIdx,-1):
         temp = arr[i]
     total += temp
 print(total-sum(arr))
+```
+
+3. 평범한 배낭(https://www.acmicpc.net/problem/12865)
+```
+n,k = map(int,input().split())
+bag = [(0,0)]
+for i in range(n):
+    w,v = map(int,input().split())
+    bag.append((w,v))
+dp = [[0]*(k+1) for _ in range(n+1)]
+for i in range(1,n+1):
+    for j in range(1,k+1):
+        w = bag[i][0]
+        v = bag[i][1]
+        if j >= w:
+            dp[i][j] = max(v+dp[i-1][j-w],dp[i-1][j])
+        else:
+            dp[i][j] = dp[i-1][j]
+print(dp[n][k])
 ```
