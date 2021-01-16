@@ -2256,3 +2256,41 @@ for i in range(1,n+1):
             dp[i][j] = dp[i-1][j]
 print(dp[n][k])
 ```
+
+### DAY 138 (21.01.16)
+1. ABCDE(https://www.acmicpc.net/problem/13023)
+```
+import sys
+input = sys.stdin.readline
+sys.setrecursionlimit(10 ** 9)
+
+n,m = map(int,input().split())
+graph = [[] for _ in range(n)]
+
+for i in range(m):
+    a,b = map(int,input().split())
+    graph[a].append(b)
+    graph[b].append(a)
+
+visited = [False for _ in range(n)]
+
+def dfs(v,depth):
+    global ans
+    visited[v] = True
+    if depth >= 4:
+        ans = True
+        return
+    for next_node in graph[v]:
+        if not visited[next_node]:
+            dfs(next_node,depth+1)
+            visited[next_node] = False
+            
+ans = False
+for i in range(n):
+    dfs(i,0)
+    visited[i] = False
+    if ans:
+        print(1)
+        exit()
+print(0)
+```
