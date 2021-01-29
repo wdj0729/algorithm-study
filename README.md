@@ -2294,3 +2294,40 @@ for i in range(n):
         exit()
 print(0)
 ```
+
+### DAY 151 (21.01.29)
+1. 신규 아이디 추천(https://programmers.co.kr/learn/courses/30/lessons/72410)
+```
+import re
+
+def solution(new_id):
+    # 1단계
+    new_id = new_id.lower();
+    # 2단계
+    new_id = re.sub('[^a-z0-9-_.]', '', new_id)
+    # 3단계
+    temp = ''
+    temp_cnt = 0
+    for i in new_id:
+        if i =='.':
+            temp_cnt+=1
+            if temp_cnt == 1:
+                temp+=i
+        else:
+            temp+=i
+            temp_cnt=0
+    new_id = temp
+    # 4단계
+    new_id = new_id.strip('.')
+    # 5단계
+    if len(new_id) == 0:
+        new_id = 'a'
+    # 6단계
+    if len(new_id) >= 16:
+        new_id = new_id[0:15].rstrip('.')
+    # 7단계
+    if len(new_id) <= 2:
+        while len(new_id) < 3:
+            new_id += new_id[-1]
+    return new_id
+```
