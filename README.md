@@ -1015,6 +1015,7 @@ heap = []
 
 for i in range(e):
     u,v,w = map(int,input().split())
+    # 방향 그래프
     graph[u].append([v,w])
 
 def dijkstra(start):
@@ -1024,6 +1025,8 @@ def dijkstra(start):
         wei,now = heappop(heap)
         for next_node, w in graph[now]:
             next_wei = w + wei
+            if dp[now] < wei:
+                continue
             if next_wei < dp[next_node]:
                 dp[next_node] = next_wei
                 heappush(heap,[next_wei,next_node])
@@ -2377,6 +2380,7 @@ def solution(n, s, a, b, fares):
     graph = [[] for _ in range(n+1)]
     
     for i in fares:
+        # 무방향 그래프
         graph[i[0]].append([i[1],i[2]])
         graph[i[1]].append([i[0],i[2]])
     
