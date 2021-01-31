@@ -2366,3 +2366,39 @@ def solution(orders, course):
                 ans.append(j)
     return(sorted(ans))
 ```
+
+2. 합승 택시 요금(https://programmers.co.kr/learn/courses/30/lessons/72413)
+```
+import sys
+from heapq import heappush, heappop
+INF = sys.maxsize
+
+def solution(n, s, a, b, fares):
+    graph = [[] for _ in range(n+1)]
+    
+    for i in fares:
+        graph[i[0]].append([i[1],i[2]])
+        graph[i[1]].append([i[0],i[2]])
+    
+    def dijkstra(start,target):
+        dp = [INF for i in range(n+1)]
+        heap = []
+        dp[start] = 0
+        heappush(heap,[0,start])
+        while heap:
+            wei,now = heappop(heap)
+            
+            if dp[now] < wei:
+                continue
+            for next_node, w in graph[now]:
+                next_wei = w + wei
+                if next_wei < dp[next_node]:
+                    dp[next_node] = next_wei
+                    heappush(heap,[next_wei,next_node])
+        return dp[target]
+    ans = dijkstra(s,a) + dijkstra(s,b)
+    for i in range(1,n+1):
+        if s!= i:
+            ans = min(ans,dijkstra(s,i) + dijkstra(i,a) + dijkstra(i,b))
+    return ans
+```
