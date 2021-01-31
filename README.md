@@ -2331,3 +2331,38 @@ def solution(new_id):
             new_id += new_id[-1]
     return new_id
 ```
+
+### DAY 153 (21.01.31)
+1. 메뉴 리뉴얼(https://programmers.co.kr/learn/courses/30/lessons/72411)
+```
+from itertools import combinations
+
+def solution(orders, course):
+    Dict = {}
+    for i in orders:
+        arr = []
+        for j in i:
+            arr.append(j)
+        #print(arr)
+        for j in course:
+            if j <= len(arr):
+                #print(j)
+                n_course = list(combinations(arr,j))
+                for k in n_course:
+                    elem = ''.join(sorted(k))
+                    #print(elem)
+                    if elem not in Dict:
+                        Dict[elem] = 1
+                    else:
+                        Dict[elem] += 1
+    ans = []
+    for i in course:
+        Max = 2
+        for j in Dict:
+            if i == len(j):
+                Max = max(Max,Dict[j])
+        for j in Dict:
+            if i == len(j) and Max == Dict[j]:
+                ans.append(j)
+    return(sorted(ans))
+```
