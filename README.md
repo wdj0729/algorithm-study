@@ -301,25 +301,7 @@ def solution(n, computers):
     return ans
 ```
 
-2. 타켓 넘버(https://programmers.co.kr/learn/courses/30/lessons/43165)
-```
-ans = 0
-
-def solution(numbers, target):
-    def dfs(numbers,temp,idx):
-        if idx == len(numbers):
-            if temp == target:
-                global ans
-                ans+=1
-            return
-        else:
-            dfs(numbers,temp+numbers[idx],idx+1)
-            dfs(numbers,temp-numbers[idx],idx+1)
-    dfs(numbers,0,0)
-    return ans
-```
-
-3. 단어 변환(https://programmers.co.kr/learn/courses/30/lessons/43163)
+2. 단어 변환(https://programmers.co.kr/learn/courses/30/lessons/43163)
 ```
 stack = []
 visited = []
@@ -835,38 +817,6 @@ dfs(ex,0)
 
 if visited[ey] != 1:
     print(-1)
-```
-
-2. 연산자 끼워넣기(https://www.acmicpc.net/problem/15658)
-```
-import sys
-
-n = int(input())
-num = list(map(int,sys.stdin.readline().split()))
-cal = list(map(int,sys.stdin.readline().split()))
-
-ans = []
-
-def recur(num,idx,plus,minus,multi,div,res):
-    if idx == n:
-        ans.append(res)
-        return
-    if plus > 0:
-        recur(num,idx+1,plus-1,minus,multi,div,res+num[idx])
-    if minus > 0:
-        recur(num,idx+1,plus,minus-1,multi,div,res-num[idx])
-    if multi > 0:
-        recur(num,idx+1,plus,minus,multi-1,div,res*num[idx])
-    if div > 0:
-        if res < 0:
-            recur(num,idx+1,plus,minus,multi,div-1,-(-res//num[idx]))
-        else:
-            recur(num,idx+1,plus,minus,multi,div-1,res//num[idx])
-
-recur(num,1,cal[0],cal[1],cal[2],cal[3],num[0])
-
-print(max(ans))
-print(min(ans))
 ```
 
 ### DAY 44 (20.10.14)
@@ -1624,32 +1574,6 @@ else:
     print("Fail")
 ```
 
-### DAY 59 (20.10.29)
-1. 신기한 소수(https://www.acmicpc.net/problem/2023)
-```
-def prime(num):
-    if num == 0 or num == 1:
-        return False
-    for i in range(2,num):
-        if num%i==0:
-            return False
-    return True
-
-def dfs(num,depth):
-    if depth == n:
-        print(num)
-        return
-    for i in range(1,10,2):
-        if prime(num*10+i):
-            dfs(num*10+i,depth+1)
-
-n = int(input())
-dfs(2,1)
-dfs(3,1)
-dfs(5,1)
-dfs(7,1)
-```
-
 ### DAY 60 (20.10.30)
 1. 보석 도둑(https://www.acmicpc.net/problem/1202)
 ```
@@ -2035,81 +1959,7 @@ def solution(msg):
 ```
 
 ### DAY 129 (21.01.07)
-1. 길 찾기 게임(https://programmers.co.kr/learn/courses/30/lessons/42892)
-```
-import sys
-sys.setrecursionlimit(10**6)
-
-class Tree:
-    def __init__(self,data,left=None,right=None):
-        self.data = data
-        self.left = left
-        self.right = right
-        
-preorderList = []
-postorderList = []
-
-def preorder(node,nodeinfo):
-    # root -> left -> right
-    preorderList.append(nodeinfo.index(node.data)+1)
-    if node.left:
-        preorder(node.left,nodeinfo)
-    if node.right:
-        preorder(node.right,nodeinfo)
-        
-def postorder(node,nodeinfo):
-    # left -> right -> root
-    if node.left:
-        postorder(node.left,nodeinfo)
-    if node.right:
-        postorder(node.right,nodeinfo)
-    postorderList.append(nodeinfo.index(node.data)+1)
-
-def solution(nodeinfo):
-    answer = []
-    sortedNodeinfo = sorted(nodeinfo, key = lambda x: (-x[1],x[0]))
-    root = None
-    for node in sortedNodeinfo:
-        if not root:
-            root = Tree(node)
-        else:
-            current = root
-            while True:
-                # left에 위치
-                if node[0] < current.data[0]:
-                    # left 자식 노드가 존재
-                    if current.left:
-                        # 현재 노드의 left 자식 노드로 이동
-                        current = current.left
-                        continue
-                    # left 자식 노드 존재 X
-                    else:
-                        # left 자식 노드로 넣어줌
-                        current.left = Tree(node)
-                        break
-                # right에 위치
-                if node[0] > current.data[0]:
-                    # right 자식 노드가 존재
-                    if current.right:
-                        # 현재 노드의 right 자식 노드로 이동
-                        current = current.right
-                        continue
-                    # right 자식 노드 존재 X
-                    else:
-                        # right 자식 노드로 넣어줌
-                        current.right = Tree(node)
-                        break
-                break
-    preorder(root,nodeinfo)
-    postorder(root,nodeinfo)
-    print(preorderList)
-    print(postorderList)
-    answer.append(preorderList)
-    answer.append(postorderList)
-    return answer
-```
-
-2. 자물쇠와 열쇠(https://programmers.co.kr/learn/courses/30/lessons/60059)
+1. 자물쇠와 열쇠(https://programmers.co.kr/learn/courses/30/lessons/60059)
 ```
 def attach(x, y, M, key, board):
     for i in range(M):
@@ -2298,43 +2148,6 @@ for i in range(n):
 print(0)
 ```
 
-### DAY 151 (21.01.29)
-1. 신규 아이디 추천(https://programmers.co.kr/learn/courses/30/lessons/72410)
-```
-import re
-
-def solution(new_id):
-    # 1단계
-    new_id = new_id.lower();
-    # 2단계
-    new_id = re.sub('[^a-z0-9-_.]', '', new_id)
-    # 3단계
-    temp = ''
-    temp_cnt = 0
-    for i in new_id:
-        if i =='.':
-            temp_cnt+=1
-            if temp_cnt == 1:
-                temp+=i
-        else:
-            temp+=i
-            temp_cnt=0
-    new_id = temp
-    # 4단계
-    new_id = new_id.strip('.')
-    # 5단계
-    if len(new_id) == 0:
-        new_id = 'a'
-    # 6단계
-    if len(new_id) >= 16:
-        new_id = new_id[0:15].rstrip('.')
-    # 7단계
-    if len(new_id) <= 2:
-        while len(new_id) < 3:
-            new_id += new_id[-1]
-    return new_id
-```
-
 ### DAY 153 (21.01.31)
 1. 메뉴 리뉴얼(https://programmers.co.kr/learn/courses/30/lessons/72411)
 ```
@@ -2427,4 +2240,40 @@ def dfs(index,snow,depth):
 ans = -1
 dfs(0,1,0)
 print(ans)
+```
+2. 헌내기는 친구가 필요해(https://www.acmicpc.net/problem/21736)
+```
+from collections import deque
+
+dx = [0,0,1,-1]
+dy = [1,-1,0,0]
+n,m = map(int,input().split())
+board = [list(map(str, input())) for _ in range(n)]
+
+def bfs(x,y):
+    dq = deque()
+    dq.append((x,y))
+    visited = [[False]*m for _ in range(n)]
+    cnt = 0
+    while dq:
+        x,y = dq.popleft()
+        for k in range(4):
+            nx,ny = x+dx[k],y+dy[k]
+            if 0 <= nx < n and 0 <= ny < m:
+                if visited[nx][ny] == False:
+                    if board[nx][ny] == 'O':
+                        dq.append((nx,ny))
+                        visited[nx][ny] = True
+                    elif board[nx][ny] == 'P':
+                        dq.append((nx,ny))
+                        cnt+=1
+                        visited[nx][ny] = True
+    if cnt == 0:
+        print('TT')
+    else:
+        print(cnt)
+for i in range(n):
+    for j in range(m):
+        if board[i][j] == 'I':
+            bfs(i,j)
 ```
