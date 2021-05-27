@@ -2406,3 +2406,25 @@ def solution(n, s, a, b, fares):
             ans = min(ans,dijkstra(s,i) + dijkstra(i,a) + dijkstra(i,b))
     return ans
 ```
+
+### DAY 300 (21.05.27)
+1. 눈덩이 굴리기(https://www.acmicpc.net/problem/21735)
+```
+n,m = map(int,input().split())
+arr = [0] + list(map(int,input().split()))
+
+def dfs(index,snow,depth):
+    global ans
+    if depth > m:
+        return
+    if depth <= m:
+        ans = max(ans,snow)
+    if index <= n-1:
+        dfs(index+1,snow+arr[index+1],depth+1)
+    if index <= n-2:
+        dfs(index+2,snow//2+arr[index+2],depth+1)
+    return
+ans = -1
+dfs(0,1,0)
+print(ans)
+```
