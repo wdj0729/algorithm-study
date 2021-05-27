@@ -2277,3 +2277,73 @@ for i in range(n):
         if board[i][j] == 'I':
             bfs(i,j)
 ```
+
+3. SMUPC 계산기(https://www.acmicpc.net/problem/21737)
+```
+from collections import deque
+
+n = int(input())
+s = input()
+if s.count('C') == 0:
+    print("NO OUTPUT")
+else:
+    dq = deque()
+    NUM = ''
+    for i in s:
+        if i == 'S':
+            if NUM != '':
+                dq.append(int(NUM))
+                NUM = ''
+            dq.append('-')
+        elif i == 'M':
+            if NUM != '':
+                dq.append(int(NUM))
+                NUM = ''
+            dq.append('*')
+        elif i == 'U':
+            if NUM != '':
+                dq.append(int(NUM))
+                NUM = ''
+            dq.append('/')
+        elif i == 'P':
+            if NUM != '':
+                dq.append(int(NUM))
+                NUM = ''
+            dq.append('+')
+        elif i == 'C':
+            result = 0
+            if NUM != '':
+                dq.append(int(NUM))
+                NUM = ''
+            cnt = 0
+            while dq:
+                x = dq.popleft()
+                if cnt == 0:
+                    result = x
+                    cnt+=1
+                if x == '-':
+                    y = dq.popleft()
+                    result -= y
+                if x == '+':
+                    y = dq.popleft()
+                    result += y
+                if x == '/':
+                    y = dq.popleft()
+                    if result < 0 and y > 0:
+                        result *= -1
+                        result //= y
+                        result *= -1
+                    elif result > 0 and y < 0:
+                        y *= -1
+                        result //= y
+                        result *= -1
+                    else:
+                        result //= y
+                if x == '*':
+                    y = dq.popleft()
+                    result *= y
+            print(result,end=' ')
+            dq.append(result)
+        else:
+            NUM += i
+```
